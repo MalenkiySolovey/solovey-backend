@@ -1,0 +1,52 @@
+name: Backend source
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: backend-source-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  GOWORK: off
+  GOFLAGS: -mod=readonly
+  CGO_ENABLED: '1'
+
+jobs:
+  qualify:
+    name: Backend source (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+      - uses: actions/setup-go@4a3601121dd01d1626a1e23e37211e3254c1c06c
+        with:
+          go-version-file: go.mod
+          cache: true
+          cache-dependency-path: go.sum
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
+        with:
+          node-version: '24.19.0'
+      - name: Source provenance, dependency and credential checks
+        run: node tools/verify-source.mjs
+      - name: Reproducible module graph
+        run: go mod tidy -diff
+      - name: Verify downloaded modules
+        run: go mod verify
+      - name: Unit and behavior tests
+        run: go test -count=1 -timeout=15m ./...
+      - name: Race and concurrency tests
+        run: go test -race -count=1 -timeout=15m ./...
+      - name: Vet
+        run: go vet ./...
+      - name: Verify qualification did not edit source
+        run: git diff --exit-code
