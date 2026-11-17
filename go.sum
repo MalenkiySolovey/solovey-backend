@@ -1,3 +1,5 @@
+filippo.io/edwards25519 v1.2.0 h1:crnVqOiS4jqYleHd9vaKZ+HKtHfllngJIiOpNpoJsjo=
+filippo.io/edwards25519 v1.2.0/go.mod h1:xzAOLCNug/yB62zG1bQ8uziwrIqIuxhctzJT18Q77mc=
 github.com/MalenkiySolovey/solovey-contracts v1.0.0 h1:me6uddB3lN19zfYkGp6iuOT46LOshbSelIECAt4Y7aY=
 github.com/MalenkiySolovey/solovey-contracts v1.0.0/go.mod h1:2fPj6/IiP0jvioVnW2OKurqGPwilJ+gcXNs74aX1VcI=
 github.com/MalenkiySolovey/solovey-host v0.10.0 h1:jZePH9C8Pq/ziw4OI6HdUr/6iuAPN5KiLZcdGplLcj8=
