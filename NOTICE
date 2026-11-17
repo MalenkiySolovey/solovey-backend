@@ -1,0 +1,14 @@
+Solovey Backend contains source extracted from MalenkiySolovey/solovey-ui.
+The original project remains licensed under GNU General Public License version 3.
+The complete license is included in LICENSE. Existing per-file notices are retained.
+
+Solovey UI is based on the S-UI family and acknowledges related open source work:
+  alireza0/s-ui; deposist/s-ui-x; admin8800/s-ui; shenaba/2s-ui;
+  printfer/v2sing; sub-store-org/Sub-Store.
+This attribution follows the source project's README and does not imply that
+all files from those projects are included in this module.
+
+SOURCE_PROVENANCE.json records the original Product commit, tree and blob
+identities. Go self imports are rewritten to the canonical Backend module path;
+other selected source bytes remain unchanged. Test conformance vectors retain
+the published solovey-contracts v1.0.0 source and digest attribution.
