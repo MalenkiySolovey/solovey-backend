@@ -1,8 +1,8 @@
 {
   "status": "CANONICAL_BACKEND_SOURCE",
   "sourceRepository": "https://github.com/MalenkiySolovey/solovey-ui",
-  "sourceCommit": "6541e26a867cf876bf138799c8e4f735d60aeca9",
-  "sourceTree": "58a1b4efebee6646ec40f3d5c5dad126d7423307",
+  "sourceCommit": "473f6a612432fa7f346e65a142c70b395719cc75",
+  "sourceTree": "90dc1e8d8f413ae4ade2be6e7e7bf1cc13a4e3d6",
   "files": [
     {
       "source": "LICENSE",
@@ -11,6 +11,174 @@
       "output": "LICENSE",
       "outputSHA256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
       "adaptation": "none"
+    },
+    {
+      "source": "backend/accounting/import.go",
+      "sourceBlob": "83b3702dd48b8af7e25b01ad89eb04eec5ad285a",
+      "sourceSHA256": "d493400281ef8c4f14ad5cd2f44ca38417a231bed12ea10e467fe02e4cdeb1b5",
+      "output": "accounting/import.go",
+      "outputSHA256": "4d86315c52f1cd60e5d29f107579e12182457973841c37f53647e1d2548feaec",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/ipmonitor/admission_test.go",
+      "sourceBlob": "df32fa09521a3d483b07faa57149d1e1c97cac36",
+      "sourceSHA256": "440f3e3334dc34ecdde44e1256deb8585b0cd712a1ab5f0e9137bb20f31efb74",
+      "output": "accounting/ipmonitor/admission_test.go",
+      "outputSHA256": "f8482e223aa01ab98355a1238f3b0499ebcf7cc209ef70c2da264cdc38c25659",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/ipmonitor/database_test.go",
+      "sourceBlob": "3ba4bd4b09ac5ccd0974b833a5f0f932c60ea044",
+      "sourceSHA256": "4f538b0981c36d8735e6e61fc4c41807d9122a3cda074a28608d0941c70fad54",
+      "output": "accounting/ipmonitor/database_test.go",
+      "outputSHA256": "52e45e208f289eb46d696ac5289f44276a8f548de87e37ed4689d117ddda64d9",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/ipmonitor/doc.go",
+      "sourceBlob": "bb18dec576f7f32b4eba11dc7a4c3690749e2e00",
+      "sourceSHA256": "cb60005ad51ebba725bd92298a76c2bbaac66e0347985279260d161b0e8cb6d1",
+      "output": "accounting/ipmonitor/doc.go",
+      "outputSHA256": "cb60005ad51ebba725bd92298a76c2bbaac66e0347985279260d161b0e8cb6d1",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/ipmonitor/events.go",
+      "sourceBlob": "6022089c1f2c6ded201759bf02aae2f4f9fbba53",
+      "sourceSHA256": "f95eeb89a701aaa1de96c37c97bb79f7172f96fbcc2238a56810bb55510240a7",
+      "output": "accounting/ipmonitor/events.go",
+      "outputSHA256": "ec58f27bdee98779a3eba92dcf5157dd215f15a84c2e43f216d073c74df2b78e",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/ipmonitor/events_test.go",
+      "sourceBlob": "787542dcb53dcf0253e451777f2a31f10953fb59",
+      "sourceSHA256": "7bb75d652127a00834588f5eb97ef3097d30bf6a1c7dae51fd2c24493c347c91",
+      "output": "accounting/ipmonitor/events_test.go",
+      "outputSHA256": "7bb75d652127a00834588f5eb97ef3097d30bf6a1c7dae51fd2c24493c347c91",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/ipmonitor/history.go",
+      "sourceBlob": "b3d81eb245e050db3c2b6aebbfce22d1827eaaa1",
+      "sourceSHA256": "11b3464cf01915aac3a6dfbd7eac10b64525bcdbe57fa2b4a616e8e5e6ff130c",
+      "output": "accounting/ipmonitor/history.go",
+      "outputSHA256": "54689cef99ed8acc31f5c0887e9203397d886b04e8c8edba4172ca99c6806e97",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/ipmonitor/integration_enforce_path_test.go",
+      "sourceBlob": "e9e456875ecd5554747f84267e8cb78537be38e9",
+      "sourceSHA256": "06563e956c33a6068251aa8d88da2f16a41f956f38371014931a694d96825c05",
+      "output": "accounting/ipmonitor/integration_enforce_path_test.go",
+      "outputSHA256": "514311f9993628708415b3efbc24c5f49d7097e0cc6d30afdd5a0e32cbfee960",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/ipmonitor/ipmonitor_bench_test.go",
+      "sourceBlob": "33fa3d6e82866e55e93430edee042d4b203a1889",
+      "sourceSHA256": "a5f65f9787797a493cfeebcdce418721c30cdeb78c41b0cf6a503ba389f24970",
+      "output": "accounting/ipmonitor/ipmonitor_bench_test.go",
+      "outputSHA256": "9b12dcdca108235807cfc27cb082307921fa699e2f7d4084fe3fc158620d683f",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/ipmonitor/ipmonitor_extra_test.go",
+      "sourceBlob": "360a5aa8190070fe70061a40da8bc78cf7a05e08",
+      "sourceSHA256": "e773329b9a350c4604ab7bc2ad256bd182f9fc738cfd75a0f6f41596c0472077",
+      "output": "accounting/ipmonitor/ipmonitor_extra_test.go",
+      "outputSHA256": "48b2dcd4055ca16e31185a976d590747c833906626cdd816894d9d40a9da5d81",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/ipmonitor/ipmonitor_test.go",
+      "sourceBlob": "c52684aa0bd74d2a851fb2b2e9e02738ae4b0e21",
+      "sourceSHA256": "37f866adb855bd9595bf61d5e7685100c971ff3ea83a91b23a87d5a60ed748b3",
+      "output": "accounting/ipmonitor/ipmonitor_test.go",
+      "outputSHA256": "2f8e6238a8d6dd6481627c38bae7fb4e4072fd517927605708142ef0765c546c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/ipmonitor/observer.go",
+      "sourceBlob": "b789a987ff8cf97105d63cdd8c594bbfdccbd9ca",
+      "sourceSHA256": "103494b8380f4c27326860db1f1e5f7b6ff18130f565207791650c3c8640703f",
+      "output": "accounting/ipmonitor/observer.go",
+      "outputSHA256": "103494b8380f4c27326860db1f1e5f7b6ff18130f565207791650c3c8640703f",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/ipmonitor/persistence.go",
+      "sourceBlob": "4b75cd416d07e571360e5900bbd426fcec616025",
+      "sourceSHA256": "5aaf8173b31fdfbbf8c22e802539010c52050e636f8b7ccc082b5910232e42e4",
+      "output": "accounting/ipmonitor/persistence.go",
+      "outputSHA256": "7006155a00505010f0ccb41f391ba108fca50ff6fdb598b11f336a9643719704",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/ipmonitor/policy.go",
+      "sourceBlob": "c5354159bc09d05d611485e88d1fb75533a16320",
+      "sourceSHA256": "1f8c14a73837d5a93f674daa393b73b55f84d12ccb8581faf9f607c3710208de",
+      "output": "accounting/ipmonitor/policy.go",
+      "outputSHA256": "1f8c14a73837d5a93f674daa393b73b55f84d12ccb8581faf9f607c3710208de",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/ipmonitor/privacy.go",
+      "sourceBlob": "e28672bd7b12a46ef0158a4a9c7318a1f453d460",
+      "sourceSHA256": "b6a50b75aee05c38b178ea2bc4b41d71fdc4321664da897cfb74b1df537c5140",
+      "output": "accounting/ipmonitor/privacy.go",
+      "outputSHA256": "87102c5bb801b7e464fe308b37cd986020cd70185df02707c9172a6b68faf38c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/ipmonitor/record.go",
+      "sourceBlob": "ea123e4b253bb89e168b5ff2377f75f8bc6d4f29",
+      "sourceSHA256": "50f7e8e8910f7237791da505bc8e1ca0088c69d79a5d539b5ae18f53d71b138a",
+      "output": "accounting/ipmonitor/record.go",
+      "outputSHA256": "50f7e8e8910f7237791da505bc8e1ca0088c69d79a5d539b5ae18f53d71b138a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/ipmonitor/state.go",
+      "sourceBlob": "a640fdcf59cf965bbe2a686b0d019c5e74f37431",
+      "sourceSHA256": "5348996424d5391f02aa0ebedf5a5efb7df2c7d9ec09ceb52f0f3c003639b248",
+      "output": "accounting/ipmonitor/state.go",
+      "outputSHA256": "ff00c6d573138b14f7d0896bcf46902bdf6df6faa24974b883ca8cd322039e27",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/stats.go",
+      "sourceBlob": "1a7b9ea75fb4637f0d357f2bc71d56db89ef7d0b",
+      "sourceSHA256": "6d89d619de7fe2ab8e2ca715180a290892e5ce37af39fa1bdb298bf1a561200b",
+      "output": "accounting/stats.go",
+      "outputSHA256": "eeba071c65544d9fc11ee9388038470b10a9cab4ab46f054abea0ecd1fdb6cd1",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/stats_bench_test.go",
+      "sourceBlob": "4e4ef174daed99d9934e05e461a0d09b1af11f9a",
+      "sourceSHA256": "460dfa72d633372c3ef35abf2e832a33857d5ebc004a467c9503575f6c822d38",
+      "output": "accounting/stats_bench_test.go",
+      "outputSHA256": "f8a29fe1c59369a6eb7f11646fd5b2db9d879caee327734281b27b9ad950fd0f",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/stats_test.go",
+      "sourceBlob": "430c4d5aaef4a28887b764a112a2319ec34f77f9",
+      "sourceSHA256": "c59072d7b009d50cd33f68684b914bd6280bee4a6467f5fe6ea9342cf59b737c",
+      "output": "accounting/stats_test.go",
+      "outputSHA256": "385f5c98c4c0f125f97d122c699e61fc48971464df51de5b7b7a010ffc7b4113",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/accounting/transaction_test.go",
+      "sourceBlob": "db6430333d92e26fc989467afcd5c0bda58d5493",
+      "sourceSHA256": "25cfb01c24ba3364c93ff13f866ef2d8b38c5465c723f88f86df22d6273620dc",
+      "output": "accounting/transaction_test.go",
+      "outputSHA256": "c7336a956e9b2cdeea7a75af8a4f0089f6bc34b0603621c285c5c01d4386b84b",
+      "adaptation": "canonical Backend self-import prefix only"
     },
     {
       "source": "backend/actions/README.md",
