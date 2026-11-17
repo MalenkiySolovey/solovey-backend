@@ -1,0 +1,2272 @@
+{
+  "status": "LOCAL_SOURCE_CLOSURE_CANDIDATE",
+  "sourceRepository": "https://github.com/MalenkiySolovey/solovey-ui",
+  "sourceCommit": "3561326f343098609be018846b04ff7b52933cf2",
+  "sourceTree": "02eee694aaac51107b7883b2387b9f738956adac",
+  "files": [
+    {
+      "source": "LICENSE",
+      "sourceBlob": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "sourceSHA256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "output": "LICENSE",
+      "outputSHA256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "adaptation": "none"
+    },
+    {
+      "source": "backend/actions/README.md",
+      "sourceBlob": "72a9c257dd85d4ef7a003040f0f4b67f034696cd",
+      "sourceSHA256": "7ac74d00609aa2fd8e8bfcf6255a2a3e736064486df43661046ffa2679aa3c38",
+      "output": "actions/README.md",
+      "outputSHA256": "7ac74d00609aa2fd8e8bfcf6255a2a3e736064486df43661046ffa2679aa3c38",
+      "adaptation": "none"
+    },
+    {
+      "source": "backend/actions/actions.go",
+      "sourceBlob": "43090a8d43d9d7396336c8271551b0ac243c4d52",
+      "sourceSHA256": "487ed6e4122fc789e9b5cb324d882ff2ea83ed25b5eda2223a5cc643512a8909",
+      "output": "actions/actions.go",
+      "outputSHA256": "487ed6e4122fc789e9b5cb324d882ff2ea83ed25b5eda2223a5cc643512a8909",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/actions/actions_test.go",
+      "sourceBlob": "25dd4bb5b56763c8cfcd7c412fb4648648b04b37",
+      "sourceSHA256": "5864baef424db75123d36faf1940c2c5d575c64d4360260ead2d17b0d4bcf91b",
+      "output": "actions/actions_test.go",
+      "outputSHA256": "5864baef424db75123d36faf1940c2c5d575c64d4360260ead2d17b0d4bcf91b",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/audit/event.go",
+      "sourceBlob": "4b63ccb41ebcc4685b4f0eb385b4ea071bc32a80",
+      "sourceSHA256": "2a695238faaefcbcf669248782f0c2cc1462980d3bfb8a2dde5fcb0dec97cd52",
+      "output": "audit/event.go",
+      "outputSHA256": "2a695238faaefcbcf669248782f0c2cc1462980d3bfb8a2dde5fcb0dec97cd52",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/audit/record/record.go",
+      "sourceBlob": "7091c0f54f0e23dee7af2785b0407315fcd31d6f",
+      "sourceSHA256": "167cbf5a31b022de3a88bad41f71074086ecc61e0d083b0e58c63ce101d1fa51",
+      "output": "audit/record/record.go",
+      "outputSHA256": "67df09fbc1ceb4beaf74a01e8215a47ec1c2c20f9aebc3c1f10f69c69a0d9fd2",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/audit/store/aggregation.go",
+      "sourceBlob": "7a999fcdb7084438e8e484cbf8cadeae00494270",
+      "sourceSHA256": "ce0a35cd5beba8f87859d8a82a08c58493518b414f582d8853d9f218d82b75c9",
+      "output": "audit/store/aggregation.go",
+      "outputSHA256": "ce0a35cd5beba8f87859d8a82a08c58493518b414f582d8853d9f218d82b75c9",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/audit/store/aggregation_test.go",
+      "sourceBlob": "000f8c2c42d173756ba7a67b714a238ea5205e93",
+      "sourceSHA256": "35cb32b399a0f9db0df5ab2c392751c04a3bb00f425fa0a7fbb53760c4f74f22",
+      "output": "audit/store/aggregation_test.go",
+      "outputSHA256": "35cb32b399a0f9db0df5ab2c392751c04a3bb00f425fa0a7fbb53760c4f74f22",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/audit/store/audit_writer_bench_test.go",
+      "sourceBlob": "364858f7ae768efac036a9a5969a3ec936ba1cd2",
+      "sourceSHA256": "e658a79ddb8234ec3a6da5cc00169af8953463007b225a01571dda5d251d99b5",
+      "output": "audit/store/audit_writer_bench_test.go",
+      "outputSHA256": "c0143f0c8ee360a38e96db7e0f6b0619292e940e97808ce4415380195c9a5800",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/audit/store/audit_writer_extra_test.go",
+      "sourceBlob": "28e60a770ab071c6d278665d1e12d83e726d9485",
+      "sourceSHA256": "3f3fef0f3df0a5d3aac2578f6a8a9deb9ac73cf1ab90a085365d6e50f5c1ccee",
+      "output": "audit/store/audit_writer_extra_test.go",
+      "outputSHA256": "04b7e2a879f79f16af3cc49480ee3618b300c7651470912a882b12e969585347",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/audit/store/ports.go",
+      "sourceBlob": "df13e425ff52a0c2308c2215bd25c5081ceebb70",
+      "sourceSHA256": "4c2268b599341d52fb5169f47315e29ae782571f9c181e66f8da378fd2d93c90",
+      "output": "audit/store/ports.go",
+      "outputSHA256": "0e16d5a74707890c3c572e3c50c43bf492d1575d6082846b4ccc660fa660d7b1",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/audit/store/service.go",
+      "sourceBlob": "f46fcb7d114f2d260c83217b34a5edc0b33e9beb",
+      "sourceSHA256": "b1031dc311ee423199afd5a82d182db33f4e44f1f6fb017ba23c490b661cdec6",
+      "output": "audit/store/service.go",
+      "outputSHA256": "633b1e6f7565a1c2d3837e9ac5007af843530d60c1057051f3c913ca27c288a4",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/audit/store/service_test.go",
+      "sourceBlob": "40aad88afae8fed64c90358e97347e8359476d46",
+      "sourceSHA256": "d29968f624842d99b3b4f66bafefd04fb9d5e2b51ed68eb13f6f6cd7875b1181",
+      "output": "audit/store/service_test.go",
+      "outputSHA256": "b219df5dd785be219e3881a48e84841298ffee5373d15ced8a36f52b0db757ee",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/audit/store/transaction.go",
+      "sourceBlob": "c4d7115c6a12fff27fe89fea5c830f20db9bb939",
+      "sourceSHA256": "f350fb28653ae75f73192553ac659e409ab84197673458b9bf6b4c686fdabcc5",
+      "output": "audit/store/transaction.go",
+      "outputSHA256": "042ee112420ba150c37751882549bf9db6b259eaa7350f1d3f9b7ccabdc74300",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/audit/store/writer.go",
+      "sourceBlob": "1e089495b7adcc08e535b9f3fb959d629b783501",
+      "sourceSHA256": "568183647cb87899b149ff6fb434529ef1d7437247cc0da513765db5612377c4",
+      "output": "audit/store/writer.go",
+      "outputSHA256": "8831f64073a1e015c9dbb4aff71c3d327260a62614bda733b0711896330548fc",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/audit/store/writer_marker_test.go",
+      "sourceBlob": "140104c0f7e861837f3e03945ae771f1b2e4e2cc",
+      "sourceSHA256": "56541bf82eb9fb5be930b5e88575508d6202d8bd887a81c5aa80b5db7bbdc299",
+      "output": "audit/store/writer_marker_test.go",
+      "outputSHA256": "e91eadac4156c10205a06e25418435fd1e5b8043e6d46ab12bfffd890180a5ac",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/audit/store/writer_test.go",
+      "sourceBlob": "9580819222d6f36e4b79c0dea27e17020d478345",
+      "sourceSHA256": "49b922fa1baa0a447c6f2ab9709b12af48cba2678fb6e62bd2704a229c29bec8",
+      "output": "audit/store/writer_test.go",
+      "outputSHA256": "ac8c1ab72a39af128a74dc7fb68939437f1b94e18eebec3e58ab9d7ef85b571d",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/componentapi/handler.go",
+      "sourceBlob": "a285391dddda5ef5982724dcad4321828ca897de",
+      "sourceSHA256": "00c904dce4818e0c258355d24b68c7200a8d151e8b485dfb3763d6b3507f5de2",
+      "output": "componentapi/handler.go",
+      "outputSHA256": "b6400e2aeaf5bc99c939648de40f0f5a36ad28df02c992f026564f84231eb995",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/componentapi/handler_test.go",
+      "sourceBlob": "e8c2b2efc6fb112e80e66e4ead4f94593af6f7b8",
+      "sourceSHA256": "44d4f639ae17d91067716f01744dbfb0a830e0c2ee4bdd1ebf54b6dc45da3306",
+      "output": "componentapi/handler_test.go",
+      "outputSHA256": "da9d500b89aecd66a18e826dce3c37b1375f4a72645c43e2f1c863857fdb5360",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/componentroutes/composition.go",
+      "sourceBlob": "2bc2e32f2d1d0da59db202e4312121e9eadea973",
+      "sourceSHA256": "29da0eb2a8bb06b3831c84bc7a87748792dcdb1fd7934d9d1c5642879d5ed01b",
+      "output": "componentroutes/composition.go",
+      "outputSHA256": "a968634ddf71992816fffecb21ce7648177830f81c958ee9019f0c4c18600d8a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/componentview/runtime.go",
+      "sourceBlob": "881b6f53b703c650bf39767a538f3f154aca66ac",
+      "sourceSHA256": "68cfd34b20edede132135abdaeb356793235c9d5cfc678e85b6bb34801d39371",
+      "output": "componentview/runtime.go",
+      "outputSHA256": "68cfd34b20edede132135abdaeb356793235c9d5cfc678e85b6bb34801d39371",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/componentview/types.go",
+      "sourceBlob": "1ab5d7335e78655ac7b85eefdd04ab40fb4f92b9",
+      "sourceSHA256": "9e0f63f9b216831bbbe18391bb2eaddcb9003cad7082635c0193fc4e561ed7dc",
+      "output": "componentview/types.go",
+      "outputSHA256": "43c53a3c3f8d2ea4894972150da00a54e2200b6a6fcbd9628fdcbb190b5a0200",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/action_authorization_test.go",
+      "sourceBlob": "beef81f60d93122f7dc220f2e2c7ada9e0b1eb7e",
+      "sourceSHA256": "4e02234877e2049f5fd3180a08db7685e1a06b0f813a9d4fe802fd52d2536f20",
+      "output": "datalifecycle/action_authorization_test.go",
+      "outputSHA256": "3481e7a7c1e97950b4386e5e5ab05b84f173c7d989663310d2f3e132e8a04331",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/change.go",
+      "sourceBlob": "4215b3dc7a3de4e618df63f2e12111ad0c448e43",
+      "sourceSHA256": "7caf2d39caf678da870d1c12b2d14c3ef07235d4deb22c518fc622fe68f70b45",
+      "output": "datalifecycle/change.go",
+      "outputSHA256": "a36e35ff15322d2c50f69283c8012083e46c47aea76e53b8eaec4acfc8da155e",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/change_test.go",
+      "sourceBlob": "9ef97d0af83efc113d4644f87ddaa2e58dffb44c",
+      "sourceSHA256": "c0ea4dc7735d05b07c6359dbda545fd9023a8f6f3e29bea4a3a2e54d84910f93",
+      "output": "datalifecycle/change_test.go",
+      "outputSHA256": "9be79acd91c34c9d9dc1237479efdbca79049bc5ba5c0bff5b3883b237c05361",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/drop.go",
+      "sourceBlob": "e4ed73fcb3869038d94f271dc67116b1d519dddc",
+      "sourceSHA256": "86902685dcb540e0ef2141b4a80b99fd44118cef1e0888fbd99068fbcf8bab00",
+      "output": "datalifecycle/drop.go",
+      "outputSHA256": "0ae7b0069fbc7ca1e597b63db31e1f14c50236c4dcde8533f65154244bf15ba6",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/drop_test.go",
+      "sourceBlob": "0af82cf61ff18d633d15a6fb9891ba34ac9bcf08",
+      "sourceSHA256": "b3e1b603e3a32c179373c57b09b0d26ada083a29b1b14175998330d502145cee",
+      "output": "datalifecycle/drop_test.go",
+      "outputSHA256": "c997d76b22774a003699f10f155468fb82b503e2f4f29cc9a020c90b43e31f8c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/job.go",
+      "sourceBlob": "cdbdb178277c64d0f24afa56ed3e7983a0f3f5a0",
+      "sourceSHA256": "58f5f1e2d1e0eabbc4523f29e191187d505fd7b4fded324a1a12e270c5a0eb08",
+      "output": "datalifecycle/job.go",
+      "outputSHA256": "bb8105ff8d1afeeccd199f53e6fabee341fef4b98a729900430cb3b0a30858af",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/journal.go",
+      "sourceBlob": "9099ea04406feb7b01a8df8ebd790048c85ca2a6",
+      "sourceSHA256": "8fd6da4e987388808824e9606e82b9ac15bda6355544708c36a7df1dbfa9f9e1",
+      "output": "datalifecycle/journal.go",
+      "outputSHA256": "61a44b5620087297f0b68f69ed8eec431e92d0944c45fd96d1f60c98b997d133",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/management_contract_replay_test.go",
+      "sourceBlob": "60f37de55e201efe6aec40351bc6f38ca90363e3",
+      "sourceSHA256": "cb86e7c8e4f14358fceba7431934c55aea8b11247138df5f48922229620c5557",
+      "output": "datalifecycle/management_contract_replay_test.go",
+      "outputSHA256": "35720f688b315893db1541043901e5b99d1df42c5e654bae538953a9c4f4217c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/owner_fixture_test.go",
+      "sourceBlob": "5be7a4adb08900da15c15223c946b0241bf7686d",
+      "sourceSHA256": "fd0bef5144218e498780697420ce5fa43f6877d2fa09d18d3bd9fa7acc78eb89",
+      "output": "datalifecycle/owner_fixture_test.go",
+      "outputSHA256": "fd0bef5144218e498780697420ce5fa43f6877d2fa09d18d3bd9fa7acc78eb89",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/ports.go",
+      "sourceBlob": "7a8b00d85e7be7dbd55a937e86fcc4bd92e3b3cb",
+      "sourceSHA256": "103be766f063cbd3259388f898fb80eb22921ec217b74f7c32fd0067f9459d35",
+      "output": "datalifecycle/ports.go",
+      "outputSHA256": "997efb67d725094f7225d733bd8bcccb92ff3caccf85933556be0802c57c3d0d",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/reconcile.go",
+      "sourceBlob": "8130c185ba8d7eeb83f1f81613c16a6357a77a9d",
+      "sourceSHA256": "f843cc4a87152face41289abdc92fc789267bc4a69f621d08e9f91337c2b772f",
+      "output": "datalifecycle/reconcile.go",
+      "outputSHA256": "3c25f17da589211133b856a565f8cfe1fe0cd766e3f0e7fc8bc2a1ce74ad037d",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/reconcile_test.go",
+      "sourceBlob": "638dbd9a2b81622751e036113e419e24ef4085ba",
+      "sourceSHA256": "4d6e1378b8f0ea7ec2a1e673c1315a53ecd83a9179e40e271833df0060b77309",
+      "output": "datalifecycle/reconcile_test.go",
+      "outputSHA256": "09c7fbd586049d0a6f84e91cfcd2e95ba79392bb419e8396ed5485ef2ca322f5",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/recovery_durability_linux.go",
+      "sourceBlob": "e32755e8cfd16691e68563f7dc57905f5b2c6d7c",
+      "sourceSHA256": "cdf85ac87584f1c6845b2f0d418e2426b51fcd7a3500a44cb33a68786c37c74d",
+      "output": "datalifecycle/recovery_durability_linux.go",
+      "outputSHA256": "cdf85ac87584f1c6845b2f0d418e2426b51fcd7a3500a44cb33a68786c37c74d",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/recovery_durability_other.go",
+      "sourceBlob": "2251198a9a15b0c255f0ae0e3159957f81216998",
+      "sourceSHA256": "b940c7252140e9d04191e58a8b1f3aa8be6ac2d28a724683261d375e5527cd4e",
+      "output": "datalifecycle/recovery_durability_other.go",
+      "outputSHA256": "b940c7252140e9d04191e58a8b1f3aa8be6ac2d28a724683261d375e5527cd4e",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/recovery_durability_test.go",
+      "sourceBlob": "3c3870a0e71879688eeafc13d72383085241358e",
+      "sourceSHA256": "5d7e1381c67cc6ba38d3e7287df421e2640a7224563db444bfcc15d2b9443bbc",
+      "output": "datalifecycle/recovery_durability_test.go",
+      "outputSHA256": "437d30a6864fe48b29832e83f9df2459f9d7884f2949495bfbb8664f751ffd9f",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/recovery_files.go",
+      "sourceBlob": "8010e0e6a228fff125e9c65182a283c8f9dc204c",
+      "sourceSHA256": "01c583ddd8bb0e8689ee7ad8d4c674bed50d04da5037f1e8352e94a563fe6c40",
+      "output": "datalifecycle/recovery_files.go",
+      "outputSHA256": "f67715da664a5c9afc7636af887dcd3f03279e734d61ea7439ab1f49ba8cada8",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/removal_test.go",
+      "sourceBlob": "b860a9656d5c9440814215ca7b8f00ba3a484c62",
+      "sourceSHA256": "b2eb440b697b2275f052ca552b49c69359e0395524474bc2af73bd3c35f8a976",
+      "output": "datalifecycle/removal_test.go",
+      "outputSHA256": "b2eb440b697b2275f052ca552b49c69359e0395524474bc2af73bd3c35f8a976",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/restore.go",
+      "sourceBlob": "4abdcedc7b5e2a093f8514b587ef32fee0b1e647",
+      "sourceSHA256": "b6dc4bbe767f9fcf42d66c22127402fdc226b3fdf90520e3cdb00a329384df3c",
+      "output": "datalifecycle/restore.go",
+      "outputSHA256": "f3a512eddbbca4944dc6a3e2451f52a78ceaeaf91ef9b4d28ed2903ee383ddc0",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/restore_operation_test.go",
+      "sourceBlob": "df01ab7b8cec780272862b6f8948668fd4bd8843",
+      "sourceSHA256": "a8fbb3883927048168b1e8b1a0a8d0e78a789dc5ea76f574c1ab9543dca259d9",
+      "output": "datalifecycle/restore_operation_test.go",
+      "outputSHA256": "831286c11af51925a6239246dae6bbf9f9249701f31d5874d717539d1af405ac",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/retention.go",
+      "sourceBlob": "c3c4dd376e50018b75581710caeff8912321b01a",
+      "sourceSHA256": "60b8a5621df60fbd46ca0ea632ae98611a6c1957d4a96479aab78e42d22ea2cb",
+      "output": "datalifecycle/retention.go",
+      "outputSHA256": "8851eaf3114b49708d4a5b8ec3f4e47c5cc44d38b5c441fcc19c49de08cf028e",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/retention_bounds_test.go",
+      "sourceBlob": "0be1491194c34506b44849a5577e257cfedb29b4",
+      "sourceSHA256": "f9ca463ed880edbdb20390e2bc007fe7c19a4924134312b87df21da90f38b800",
+      "output": "datalifecycle/retention_bounds_test.go",
+      "outputSHA256": "6d2842595c4162e71dce5e4a38c87f039c969f0716ebf9869ce75eae848cc37b",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/datalifecycle/testdata/README.md",
+      "sourceBlob": "a7e3194b25ebf2bfd6f6aeb8988af9defe057ec8",
+      "sourceSHA256": "e6bef0d1876e49a89915649e2d8a363d08cd8f4bc954bbdb577e9f8a9c80e664",
+      "output": "datalifecycle/testdata/README.md",
+      "outputSHA256": "e6bef0d1876e49a89915649e2d8a363d08cd8f4bc954bbdb577e9f8a9c80e664",
+      "adaptation": "none"
+    },
+    {
+      "source": "backend/datalifecycle/testdata/management-v1-vectors.json",
+      "sourceBlob": "3f15ebdc2969ba950395fd9921ec18c738d3e3c2",
+      "sourceSHA256": "1e3e87c62ad4bbdd47a1c34d41b0a0be156d9c76851ecef61bf2d9fde3ab90ff",
+      "output": "datalifecycle/testdata/management-v1-vectors.json",
+      "outputSHA256": "1e3e87c62ad4bbdd47a1c34d41b0a0be156d9c76851ecef61bf2d9fde3ab90ff",
+      "adaptation": "none"
+    },
+    {
+      "source": "backend/entityidentity/inbound_binding.go",
+      "sourceBlob": "1d63c0925c1627a88b298dcf0ef279ecf6d6dd1c",
+      "sourceSHA256": "996a9a8cb6b2c9b408aa0702a0f3c028e9ec4bf6035dd52b415389961aee44cc",
+      "output": "entityidentity/inbound_binding.go",
+      "outputSHA256": "996a9a8cb6b2c9b408aa0702a0f3c028e9ec4bf6035dd52b415389961aee44cc",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/entityidentity/principals.go",
+      "sourceBlob": "d3df10d2017d007eda5686a52719e2d3b7cf4304",
+      "sourceSHA256": "aa8dc06a451e56e06ef6d9d59f6251932caeeec288149695f0dfae73f3d37475",
+      "output": "entityidentity/principals.go",
+      "outputSHA256": "f8e217d8c4dc4e242528268f7292a399fe2535f6f4f3fea153bb86135fe4029b",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/entityidentity/runtime.go",
+      "sourceBlob": "a975b4036a4975b7426f37fdf126b18ecf449f03",
+      "sourceSHA256": "36b2f0e961605d9641b69f8674d688a8907fc4c6b223650add5e2b17a8ee692c",
+      "output": "entityidentity/runtime.go",
+      "outputSHA256": "36b2f0e961605d9641b69f8674d688a8907fc4c6b223650add5e2b17a8ee692c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/hostcontext/local.go",
+      "sourceBlob": "0fa9de52c8a03f67f585aef12a7f49549ca6a64a",
+      "sourceSHA256": "a77891108ca147251245563dfefc9c6d0750471ee53632f3d44120ab9cea0b52",
+      "output": "hostcontext/local.go",
+      "outputSHA256": "a77891108ca147251245563dfefc9c6d0750471ee53632f3d44120ab9cea0b52",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/hostcontext/local_test.go",
+      "sourceBlob": "35b9b0ec51ecf30edf739251ee5628dcba2a5d26",
+      "sourceSHA256": "ce2edb1387f38e9195d3d8510676ccfe53965bd461fdc538172c00e58eb13537",
+      "output": "hostcontext/local_test.go",
+      "outputSHA256": "ce2edb1387f38e9195d3d8510676ccfe53965bd461fdc538172c00e58eb13537",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/auth/admins.go",
+      "sourceBlob": "2c116578c9e7a0550c151ae84d3896d10fcc33c4",
+      "sourceSHA256": "3bb24afba5f2b1edd4c8923322b0257316c9fc8279d6f19f1cc837493cfb13b4",
+      "output": "http/auth/admins.go",
+      "outputSHA256": "270914f470f3d359431b094e927018053619265d021f79a00d80cda5f56564ee",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/auth/auth_handlers.go",
+      "sourceBlob": "00dfaefac48ce6a1e50b9638e189661d3ba28012",
+      "sourceSHA256": "a448f380c6522d2a0dd07f604d129fc2e5a297bbb435e76ae742e1012febe045",
+      "output": "http/auth/auth_handlers.go",
+      "outputSHA256": "82fb20ca68d75ddac472d3ebc0e02b665ee86d38a55a1fc9cfc6d87b6949a383",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/auth/auth_handlers_log_test.go",
+      "sourceBlob": "2b79e4c0ecf217716c5786a84e73c56ec3e1d06f",
+      "sourceSHA256": "d95b26989ef4f476241b6e3208992807843a4f0afed5d3b9f6429ebde991e81b",
+      "output": "http/auth/auth_handlers_log_test.go",
+      "outputSHA256": "d95b26989ef4f476241b6e3208992807843a4f0afed5d3b9f6429ebde991e81b",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/auth/commands.go",
+      "sourceBlob": "c733749783debd123cf0ac9fbe7c5f044ff8b85a",
+      "sourceSHA256": "f9b3bf735e448675c913056e155891c9e1217b09054af0f45d42d340e2e4cddf",
+      "output": "http/auth/commands.go",
+      "outputSHA256": "04c53430955211bff786e24888f88e02a21e2974326fb97d1bc6ac5b8744933c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/auth/handler.go",
+      "sourceBlob": "1d3efe2f979e2bfb0a0f963c3ba33e98b0ddd090",
+      "sourceSHA256": "bdaeea9c071844df7d61a91b806a9ac3b34d28f540aa3f99943029c885ab1c9c",
+      "output": "http/auth/handler.go",
+      "outputSHA256": "e058ef31cc1a1537a89e10f0e9f3df9f6a2d4a72152f2e36b18dc73da4d790ea",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/auth/notification_fields.go",
+      "sourceBlob": "da9c3edaf0922fbc56ebb1279aa32eecaeaa5621",
+      "sourceSHA256": "9c3c68f177e4b4cc1e7daeaa7e7773369954109a801aa509a9f5b0288ab110c5",
+      "output": "http/auth/notification_fields.go",
+      "outputSHA256": "9c3c68f177e4b4cc1e7daeaa7e7773369954109a801aa509a9f5b0288ab110c5",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/auth/notification_fields_test.go",
+      "sourceBlob": "c2126a2cb450510792166233c91a9148c3a223d6",
+      "sourceSHA256": "c643346128959320c1221588805237576ee38d5667e57480b7aae1fc9c3081ab",
+      "output": "http/auth/notification_fields_test.go",
+      "outputSHA256": "ed6da8460b49ebc2a4366feddac8e79afa40c74ef8258bd8e7d6db31872afbeb",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/auth/step_up_test.go",
+      "sourceBlob": "0c52680bf4c95dfc37501b2da03477f32d1c1575",
+      "sourceSHA256": "3daf7499a853e6676918147a90b81395665494771997fde01fe094893c933f9c",
+      "output": "http/auth/step_up_test.go",
+      "outputSHA256": "3daf7499a853e6676918147a90b81395665494771997fde01fe094893c933f9c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/auth/token_commands_test.go",
+      "sourceBlob": "f18a7bac521eaecdf95dc41472649cba8a728f93",
+      "sourceSHA256": "d71043bf5542e68d5c5b0f00dddc96b4718fec3d2b95097d51a6b719ed0f98a6",
+      "output": "http/auth/token_commands_test.go",
+      "outputSHA256": "d71043bf5542e68d5c5b0f00dddc96b4718fec3d2b95097d51a6b719ed0f98a6",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/auth/tokens.go",
+      "sourceBlob": "41e378d5dfbebe46f263dc46b351f99cf9924b3b",
+      "sourceSHA256": "2c54a97bf06c8f4c1cbff88cf9fc7ac6dfd3df5e8a9d0ba222269b1a582de569",
+      "output": "http/auth/tokens.go",
+      "outputSHA256": "abc5fcacb9d0f1d2d44dcd15ca39d346228ef2f6e5b6eee93345deec36ce4345",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/browser/cookie_policy.go",
+      "sourceBlob": "ed57b2406be69bf54b483224b1f9d3ccea9dbaa8",
+      "sourceSHA256": "8e765add32b9327ce7a28e845a13cdf82c2d674d6ba375ea6909c8bcf4a94965",
+      "output": "http/browser/cookie_policy.go",
+      "outputSHA256": "6cff81ddf0483d03b0c4ed937acae8235133b10120bab6b24d22007ee4be2414",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/browser/csrf.go",
+      "sourceBlob": "27381c607c9902e732dae3d462166556349087b5",
+      "sourceSHA256": "7f21b8ed130ccbc13ee417b4ad41de428f37e8d45041b110a79978024f345e9e",
+      "output": "http/browser/csrf.go",
+      "outputSHA256": "03aa52b05064f8e2747074b1d86a9249ce057fcffb33e751a943eccd6b5d8803",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/browser/security_test.go",
+      "sourceBlob": "fb1df98f2dd16431197b46a658857ad9ed0c57c5",
+      "sourceSHA256": "d3ba07ea9eda1aaa4da1cc9e75d3b3bf1d1cef83be6dee9b841ee6cd44615a57",
+      "output": "http/browser/security_test.go",
+      "outputSHA256": "96ea806caf3b37dee538326d955fe83c6ee4bddd252bc33978e697e4c2b41b05",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/browser/service.go",
+      "sourceBlob": "0b506318b0396576327da692857280bd2fe7d1cd",
+      "sourceSHA256": "50aeb91d169fd33c9397a593bc8367c87f530005723e45bc4f253769bc922c08",
+      "output": "http/browser/service.go",
+      "outputSHA256": "50aeb91d169fd33c9397a593bc8367c87f530005723e45bc4f253769bc922c08",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/browser/session.go",
+      "sourceBlob": "cdd900b1c55df7a78255b7008d3c5aea61c1334d",
+      "sourceSHA256": "39692e31f3a99957eb55fd4109d9ca8e56327e418e0a7ae5824f39b5f6a02682",
+      "output": "http/browser/session.go",
+      "outputSHA256": "23c64ebcfb7039329133ff817221475af0661300bc5bf3492a3375c1fe5cf39d",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/databaseoperation/operation.go",
+      "sourceBlob": "dfd1c5cbd69c57bc07f7d0e6c737fb394f5619e5",
+      "sourceSHA256": "929051bcfc5545ac077f1694e68506d9e8fdfefb8b09aeddc44ae0b60c8d39e2",
+      "output": "http/databaseoperation/operation.go",
+      "outputSHA256": "62a139e1f336d2d3dae39f616d6eee910d23ad9210da829893262584338c0521",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/databaseoperation/operation_test.go",
+      "sourceBlob": "7444f174aa679a89beea888b0d09ab7225c025f6",
+      "sourceSHA256": "30c7025dac951b062dd27ec3f5dfdfba9a3b2a54bf8b1a5a5f61c27da64ae9dc",
+      "output": "http/databaseoperation/operation_test.go",
+      "outputSHA256": "aea2b1340a241c1cbb76b1faa80e0fea4b6099c127ee78bb9aec5bfc406cf3d9",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/domain/validator.go",
+      "sourceBlob": "ab17ccf10c71e6260d7ee75a61c59cef5f3a0489",
+      "sourceSHA256": "a40ca09f894d21ac3334deed1f0d9f49bc0dd16437cdcd39a504b7a35b5f7d00",
+      "output": "http/domain/validator.go",
+      "outputSHA256": "a40ca09f894d21ac3334deed1f0d9f49bc0dd16437cdcd39a504b7a35b5f7d00",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/domain/validator_test.go",
+      "sourceBlob": "25947ac65b8c3997535496cdc0101b3b75c48674",
+      "sourceSHA256": "4eb4fde25b9762b88cd42ffb92b3ff94dfda296c98f49c52938dd4078723a11d",
+      "output": "http/domain/validator_test.go",
+      "outputSHA256": "4eb4fde25b9762b88cd42ffb92b3ff94dfda296c98f49c52938dd4078723a11d",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/ratelimit/common.go",
+      "sourceBlob": "78029932adfe0e37f00536436efa713e738ceb9c",
+      "sourceSHA256": "a8ffce97fd26448a50e02fc0e2d8a7737fac9b95b0ad3ef12a747e9827febc4c",
+      "output": "http/ratelimit/common.go",
+      "outputSHA256": "a8ffce97fd26448a50e02fc0e2d8a7737fac9b95b0ad3ef12a747e9827febc4c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/ratelimit/failure.go",
+      "sourceBlob": "e57e4ccbc406b577afcd52e72cb9110326a68cff",
+      "sourceSHA256": "33739b75f3a091ddeadbf34598343fba5380fd63d709e21266e54b34c69f77c6",
+      "output": "http/ratelimit/failure.go",
+      "outputSHA256": "33739b75f3a091ddeadbf34598343fba5380fd63d709e21266e54b34c69f77c6",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/ratelimit/fixed.go",
+      "sourceBlob": "24d01fb520e2b78e8d5c7d70646d1b9d39c19c67",
+      "sourceSHA256": "1ca62faaa439ddf0960b2d33b091f0321f70f939f215e9a3b3304c99594e7730",
+      "output": "http/ratelimit/fixed.go",
+      "outputSHA256": "1ca62faaa439ddf0960b2d33b091f0321f70f939f215e9a3b3304c99594e7730",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/ratelimit/ratelimit_test.go",
+      "sourceBlob": "2fe3264199dce252a5a2f247a626d35dfee57a12",
+      "sourceSHA256": "bdd46bc87e01a9fcb098f471a69772ef56d6fb24e007926566b0a66ae491084a",
+      "output": "http/ratelimit/ratelimit_test.go",
+      "outputSHA256": "bdd46bc87e01a9fcb098f471a69772ef56d6fb24e007926566b0a66ae491084a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/ratelimit/sliding.go",
+      "sourceBlob": "78bc32e10403bbaeddd29932019289c3fdc51b13",
+      "sourceSHA256": "7df94e0313bbd8dc4a256502dcb9eb6ec124a06aa3f2f89b10561207cd017e97",
+      "output": "http/ratelimit/sliding.go",
+      "outputSHA256": "7df94e0313bbd8dc4a256502dcb9eb6ec124a06aa3f2f89b10561207cd017e97",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/ratelimit/threshold.go",
+      "sourceBlob": "8ed69ecf7608fa82b5d7db019a3ff4092cb4ad60",
+      "sourceSHA256": "e4fab77c56b6f6705d11268a7ff637d0875e3c07e429806d77850e3ea53cc1e2",
+      "output": "http/ratelimit/threshold.go",
+      "outputSHA256": "e4fab77c56b6f6705d11268a7ff637d0875e3c07e429806d77850e3ea53cc1e2",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/realtime/handler.go",
+      "sourceBlob": "9ce12383b9b4c157e6b236bfa7c5b9a5267535af",
+      "sourceSHA256": "03a6690544e833b0379d551a6f8d7bb4de76bdc09892c6755a22187adc8348ef",
+      "output": "http/realtime/handler.go",
+      "outputSHA256": "c1bffbad282c3272d3cb66041430cc68cfb01ff2d3316d6a4e11c980ae0b6197",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/realtime/handler_test.go",
+      "sourceBlob": "e77fa4b1e29f8890782248c26c2c8fbb3d9fd269",
+      "sourceSHA256": "fb6425560687d83198090a1ae678395e552f08ddd5f4df725868c40ead224d62",
+      "output": "http/realtime/handler_test.go",
+      "outputSHA256": "4a37a779d2bb53ff7b62cb4b4e213fc785fa63c2ad9bc0af820c1c277b0df09a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/realtime/handshake.go",
+      "sourceBlob": "5fdb2690ba25d8036294b09e4a8a15235da6db35",
+      "sourceSHA256": "1282dff30dbfffba86d4a23a11f9ed3187711628ca7bd6eb4ff4b6e4501d2074",
+      "output": "http/realtime/handshake.go",
+      "outputSHA256": "2289de35d9833b9f712c56a2b9c0d2e7adc353426443df5a8ea4b8bfb45347fa",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/realtime/origin.go",
+      "sourceBlob": "bc3d4e5802900a286ed9d2ab6a384192f8fc7d9e",
+      "sourceSHA256": "3325a3c6262f43a419c6a3798fc2e9f9b1bbded6819ea8ae0b3b369518d91811",
+      "output": "http/realtime/origin.go",
+      "outputSHA256": "5c241aa0a4b2c96d994999c1efa4a6b816ec4f687309db88095f9fd19d255001",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/realtime/origin_test.go",
+      "sourceBlob": "d17126726ec0c11b589b613a2821f10042756074",
+      "sourceSHA256": "9bab24f16112322efdc9827ca75e909ab75390ad11b15ffebda0f0fc163e1146",
+      "output": "http/realtime/origin_test.go",
+      "outputSHA256": "132b686ec27965b08db16fc4bfc96f94a3204f59156b40bda07e336620bc1692",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/realtime/routes.go",
+      "sourceBlob": "91b73c91bdb3b02f9aaf961be31a200e61a1dca1",
+      "sourceSHA256": "87b0a2b91a19de778c4e43cefe930f34eec1cedef7028d8530790f3bf08de7ad",
+      "output": "http/realtime/routes.go",
+      "outputSHA256": "ccda0a66b5af85e7292f88d29dfc83e528fb53e0fdc256a733eed1d2f8baa6bf",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/realtime/tokens.go",
+      "sourceBlob": "7f7d0caec05c4ce8c57e19b6dec2830a54e3fc05",
+      "sourceSHA256": "7d475db75c3a52ece647a8f11950d876b5c12ef22ccfcbbaa402b5ebb1ac0812",
+      "output": "http/realtime/tokens.go",
+      "outputSHA256": "9925065c40b92126e43f8960e7878502788a69297c4f4e117e791e0a08edde58",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/realtime/tokens_test.go",
+      "sourceBlob": "81e0890f556ac0d1e8eac062ea559fc10b073499",
+      "sourceSHA256": "ad2ef482d1d600b7a67862e118d1c8445e737c10ad3e4c93d516b07a20e5f8dd",
+      "output": "http/realtime/tokens_test.go",
+      "outputSHA256": "ad2ef482d1d600b7a67862e118d1c8445e737c10ad3e4c93d516b07a20e5f8dd",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/requestbudget/budget.go",
+      "sourceBlob": "f856fc5082ab0584274291d4b7c0c7e06d3f0160",
+      "sourceSHA256": "2ebb9b80ca52117fc582937a007d7916ba7d0ab9ef592b61700d1b864403834a",
+      "output": "http/requestbudget/budget.go",
+      "outputSHA256": "2ebb9b80ca52117fc582937a007d7916ba7d0ab9ef592b61700d1b864403834a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/requestbudget/budget_test.go",
+      "sourceBlob": "6ef1ca7e5f1c91cd59d508ac2357daf099346127",
+      "sourceSHA256": "b557f676d308a8006598a3866ad684875d736b8675332b086ffb64dc5b79a3a9",
+      "output": "http/requestbudget/budget_test.go",
+      "outputSHA256": "b557f676d308a8006598a3866ad684875d736b8675332b086ffb64dc5b79a3a9",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/requestbudget/ssh_management_test.go",
+      "sourceBlob": "dcfe933d7526fe87f4f59dd328588cb6a1673c20",
+      "sourceSHA256": "707e9cb57da8143bacea19ab2f2a43551c87253ed2f4d8b26be5bf7ab94896df",
+      "output": "http/requestbudget/ssh_management_test.go",
+      "outputSHA256": "707e9cb57da8143bacea19ab2f2a43551c87253ed2f4d8b26be5bf7ab94896df",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/requestidentity/context.go",
+      "sourceBlob": "cc4a3363afc27f48416fd102cca03ddad7c4218b",
+      "sourceSHA256": "6030e5f3e582acd3c43c29ab731350631e45eafed3e6542b42c982301938e493",
+      "output": "http/requestidentity/context.go",
+      "outputSHA256": "f4fe2f327debe8fae8c01cfa63b269e42def54b8bf6540dc4a7451d287d51025",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/response/response.go",
+      "sourceBlob": "79c29a1f39366a7a5dd2c2b62ff821938718da2d",
+      "sourceSHA256": "e816ad8668ba5eb630aa723cf7564dc839e71befb7c9e6362f0381bfc710182d",
+      "output": "http/response/response.go",
+      "outputSHA256": "e816ad8668ba5eb630aa723cf7564dc839e71befb7c9e6362f0381bfc710182d",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/response/response_security_test.go",
+      "sourceBlob": "fc6d8631824ef776473415e3b8204e696598d294",
+      "sourceSHA256": "ffda0a1a92c1303046b9f1cabff80ff20e9dadca949a32fcedddcb8f50a044a9",
+      "output": "http/response/response_security_test.go",
+      "outputSHA256": "ffda0a1a92c1303046b9f1cabff80ff20e9dadca949a32fcedddcb8f50a044a9",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/security/headers.go",
+      "sourceBlob": "246e7b9fab78f82766f35d780e24d5a791a5587a",
+      "sourceSHA256": "5777f5e6e6827e27448af7e20cdbef31b6bda8d4cdf41dec74666b36249610ed",
+      "output": "http/security/headers.go",
+      "outputSHA256": "5777f5e6e6827e27448af7e20cdbef31b6bda8d4cdf41dec74666b36249610ed",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/security/headers_test.go",
+      "sourceBlob": "4e80b45c3bf318a23b8efc0ba3cffe963e8a4cd0",
+      "sourceSHA256": "f1aabc14f391609c474c2e9822a1b520cdd98a07fbab86e425139f60efdfdaa1",
+      "output": "http/security/headers_test.go",
+      "outputSHA256": "f1aabc14f391609c474c2e9822a1b520cdd98a07fbab86e425139f60efdfdaa1",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/security/origin.go",
+      "sourceBlob": "99f14dd4d9bb77aee09a57753b785a5ca1151475",
+      "sourceSHA256": "04489a97ed8cd256605fd3ebc43bf1d1e39ebed391bb0952e9bc742fd8ded835",
+      "output": "http/security/origin.go",
+      "outputSHA256": "9bf10c582fb14f14a06d7b6014412e630f8fe2da7637cb5e60deedb4cad18abe",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/securityroutes/commands.go",
+      "sourceBlob": "3a2c6e6a483abc9292279b844bd2af9663855ccd",
+      "sourceSHA256": "4ce42b2943a28fcda94907f8ba7a27a79e079db108fc1986a9c2160bdd4482a2",
+      "output": "http/securityroutes/commands.go",
+      "outputSHA256": "93fb97ead7adf5c911c4946b0e789fc0bab3121b9d74ff00e364d54a5f58bf6b",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/securityroutes/query.go",
+      "sourceBlob": "993cf93f6d50295c7fd45f7122870c86171d3ba5",
+      "sourceSHA256": "9c149ff03b4d517760e419e3a052f2a3d6abc6a940e6d65a78dd8f8eee6c5e70",
+      "output": "http/securityroutes/query.go",
+      "outputSHA256": "9c149ff03b4d517760e419e3a052f2a3d6abc6a940e6d65a78dd8f8eee6c5e70",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/securityroutes/routes.go",
+      "sourceBlob": "1031115276827642de9f1e6b4926f471b490ca9c",
+      "sourceSHA256": "a361c0d412e3c90bd8e3a8bcb26727331d2fa5dbaedbf63866fc69c30ea008df",
+      "output": "http/securityroutes/routes.go",
+      "outputSHA256": "70bc596f3d28f23047c15e072b318949364f2b3960763c76e2bbe1cc12b11967",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/operations/coordination/JOBS.md",
+      "sourceBlob": "3167d36c462f623e56ce0e4e629ac863aa052016",
+      "sourceSHA256": "99b3d7ce525f755ec6a4ec4cc468d197733e3d9f0d5e905dfbfbb9e16571bc03",
+      "output": "operations/coordination/JOBS.md",
+      "outputSHA256": "99b3d7ce525f755ec6a4ec4cc468d197733e3d9f0d5e905dfbfbb9e16571bc03",
+      "adaptation": "none"
+    },
+    {
+      "source": "backend/operations/coordination/JOURNAL.md",
+      "sourceBlob": "51985f413d13184510d80a33ebc77e1a59057db0",
+      "sourceSHA256": "31effb18ed6af7dfeb46ac815f18c90514ba2d77c2fb426764e1587b43288f6f",
+      "output": "operations/coordination/JOURNAL.md",
+      "outputSHA256": "31effb18ed6af7dfeb46ac815f18c90514ba2d77c2fb426764e1587b43288f6f",
+      "adaptation": "none"
+    },
+    {
+      "source": "backend/operations/coordination/README.md",
+      "sourceBlob": "1a3faeee3b47b313059cbe12a7862195fcdb02ab",
+      "sourceSHA256": "50ac5be4353517bdd9b5b8ba6b3048a8970c6eecd4472cb6f403e282a2e60520",
+      "output": "operations/coordination/README.md",
+      "outputSHA256": "50ac5be4353517bdd9b5b8ba6b3048a8970c6eecd4472cb6f403e282a2e60520",
+      "adaptation": "none"
+    },
+    {
+      "source": "backend/operations/coordination/blocker.go",
+      "sourceBlob": "b0f15c24b20922a77e1793ba2c7018a96533a9c5",
+      "sourceSHA256": "43b0ea7d6a4ef6a593bd690e0eb08d2d31c9f7d6dfa700be595cb87fb4b6566c",
+      "output": "operations/coordination/blocker.go",
+      "outputSHA256": "b689315094ea28dad8a5e26f9255b302857068d8993573d0b03a3e547a939263",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/operations/coordination/blocker_test.go",
+      "sourceBlob": "197f956926cd313d19dc70746cb98532c794e5e4",
+      "sourceSHA256": "72cf62a97f908e8a3c3f86c3bed3e61945ad43943af10a1d2fe361b64fd8a343",
+      "output": "operations/coordination/blocker_test.go",
+      "outputSHA256": "72cf62a97f908e8a3c3f86c3bed3e61945ad43943af10a1d2fe361b64fd8a343",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/operations/coordination/change.go",
+      "sourceBlob": "a940d79b484900818073773cf9094b3dd9ff58a7",
+      "sourceSHA256": "5ac364c2be0c287bcbf9e4ff8736d35dd6d433adfbaed9303926ae975c64357f",
+      "output": "operations/coordination/change.go",
+      "outputSHA256": "5ac364c2be0c287bcbf9e4ff8736d35dd6d433adfbaed9303926ae975c64357f",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/operations/coordination/job.go",
+      "sourceBlob": "db4403d4d2b0d0a28fe9f7b8bc1e0d6d0f6fb66e",
+      "sourceSHA256": "51940444d5b04a17f583e5f5ef81f86531e5a74e3ea25e4baead942f1eded8b1",
+      "output": "operations/coordination/job.go",
+      "outputSHA256": "51940444d5b04a17f583e5f5ef81f86531e5a74e3ea25e4baead942f1eded8b1",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/operations/coordination/journal.go",
+      "sourceBlob": "ac9fa14c43c428a6b4b89e712ee702cbf25ef837",
+      "sourceSHA256": "03e1cc72edd47d0d9005e3e0765c9a08ac429899e5e38ba9cb2cf46cb7f3e1ba",
+      "output": "operations/coordination/journal.go",
+      "outputSHA256": "03e1cc72edd47d0d9005e3e0765c9a08ac429899e5e38ba9cb2cf46cb7f3e1ba",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/operations/coordination/journal_test.go",
+      "sourceBlob": "4afc305906c214f87798907ebde0d5697d8bdedd",
+      "sourceSHA256": "7b1a54ce9496167613ae886aebc2b7a481714aaecd45d1629f2a3961acaaf4fe",
+      "output": "operations/coordination/journal_test.go",
+      "outputSHA256": "7b1a54ce9496167613ae886aebc2b7a481714aaecd45d1629f2a3961acaaf4fe",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/operations/coordination/transition.go",
+      "sourceBlob": "04eb2431fd7833e23c09a32c7a16e77c037f06e1",
+      "sourceSHA256": "0aa28b0b3e0e8f7ed4f5568cbc702bab5c74f8c9b51265e0f122e828262f0647",
+      "output": "operations/coordination/transition.go",
+      "outputSHA256": "0aa28b0b3e0e8f7ed4f5568cbc702bab5c74f8c9b51265e0f122e828262f0647",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/operations/coordination/transition_test.go",
+      "sourceBlob": "6fec308e93c419ca263d0fa89449141110e63284",
+      "sourceSHA256": "eabb6e7df24bfe73c8b88104de0b1d98d9e5aff25701d2b31659e6fc1d5c73b3",
+      "output": "operations/coordination/transition_test.go",
+      "outputSHA256": "eabb6e7df24bfe73c8b88104de0b1d98d9e5aff25701d2b31659e6fc1d5c73b3",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/realtime/event.go",
+      "sourceBlob": "dfb5b69b3e29e31031d3dda05bf6cb3b36f4209a",
+      "sourceSHA256": "a322383196b3e276a9a534dc60c49795ca82ba565b0127ab073ac6b28d224b8f",
+      "output": "realtime/event.go",
+      "outputSHA256": "a322383196b3e276a9a534dc60c49795ca82ba565b0127ab073ac6b28d224b8f",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/realtime/hub.go",
+      "sourceBlob": "accd3f877e9022aa3715378a2bf218afba74d496",
+      "sourceSHA256": "c515176c7ae0b7b6d96cb0aa722dec5ec00fa490b857d16032c9b30f1628af3f",
+      "output": "realtime/hub.go",
+      "outputSHA256": "c515176c7ae0b7b6d96cb0aa722dec5ec00fa490b857d16032c9b30f1628af3f",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/realtime/hub_bench_test.go",
+      "sourceBlob": "34429fbd7f4624563dc7f23e612d587ef7631770",
+      "sourceSHA256": "6a1451170a8cd289c64fb271f9d5a48a1d97de6aae8d7ff08573a717bb5b1af5",
+      "output": "realtime/hub_bench_test.go",
+      "outputSHA256": "6a1451170a8cd289c64fb271f9d5a48a1d97de6aae8d7ff08573a717bb5b1af5",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/realtime/hub_extra_test.go",
+      "sourceBlob": "40265b4785e706aba1484ab5ca35c754457360c4",
+      "sourceSHA256": "b976bfd6031a58b86afa9464fca386b7307b1f09b33cf630a6470450131586a3",
+      "output": "realtime/hub_extra_test.go",
+      "outputSHA256": "b976bfd6031a58b86afa9464fca386b7307b1f09b33cf630a6470450131586a3",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/realtime/hub_test.go",
+      "sourceBlob": "77031f4826d84d526074be0557398748ce287102",
+      "sourceSHA256": "93967a249a61f13a00c713d2c305dfe5b2b25ee3d16532cb51f1892d1d80e7a9",
+      "output": "realtime/hub_test.go",
+      "outputSHA256": "93967a249a61f13a00c713d2c305dfe5b2b25ee3d16532cb51f1892d1d80e7a9",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/secrets/ownedvalue/value.go",
+      "sourceBlob": "fe4b90175f6f7bca218af08876419abaf082a8ac",
+      "sourceSHA256": "e29cc580ff68c78405bdee86a0a307c21f97085404501a89a053ef65d74cc1b6",
+      "output": "secrets/ownedvalue/value.go",
+      "outputSHA256": "56712b78639ee1e333412772653fa8b70fd368832ed3728b844348f99607186b",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/secrets/ownedvalue/value_test.go",
+      "sourceBlob": "8115d2e4cb6cd92d7a95c659bb1c210d60c0e25a",
+      "sourceSHA256": "e8f4ccdb8b80518f020962544029633685f70dd429f63dbd26df17ea4e4e120d",
+      "output": "secrets/ownedvalue/value_test.go",
+      "outputSHA256": "118daceeaadaa5a1449770a134b0d630362db937eed0a5258a2fa70048292b0b",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/secrets/ownerdb/transaction_test.go",
+      "sourceBlob": "56ed63ac3595e43d67cd18c794cc0446c2cc19f6",
+      "sourceSHA256": "7175f93049ceae17fbbd5e96ab69f783c38117f2ff2f421ae48e4935056e378b",
+      "output": "secrets/ownerdb/transaction_test.go",
+      "outputSHA256": "e04889f714ec29c88daaefb41bb9bef202cba6c68ba64b2594f029eb9ce72b23",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/secrets/ownerdb/value.go",
+      "sourceBlob": "08cdff4f3d03f4a8ee329934fea26440d85188c7",
+      "sourceSHA256": "f35c64086ba1e65c6875eae0e6a1a2f4b4d8a744fbb7ab6e71eaa239a5582a10",
+      "output": "secrets/ownerdb/value.go",
+      "outputSHA256": "5d84c7a69215af2763b8cfbe1c3effb04b4fc7293d36d555da3ae210019eb956",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/accounts/import.go",
+      "sourceBlob": "f4bab51b1dfddfef49da0fd0bcdc5be38b60cf7c",
+      "sourceSHA256": "ed8dcf04229e0763f1b728c16f5141eec2e58c9a73f475d85c019f010980a13e",
+      "output": "security/accounts/import.go",
+      "outputSHA256": "f15ecf5d462abef94b4adb1d59a7b5c58829a464f25974d15064c0c438d34f02",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/accounts/service.go",
+      "sourceBlob": "27e79fb08545acc90c7918f6a973964348240413",
+      "sourceSHA256": "d3e802408f2796627146fc33c7ee3b53f42701ab8dbb1ad0847e0e8c6dae6690",
+      "output": "security/accounts/service.go",
+      "outputSHA256": "4cefdd41a95f788e932db4da809537e159ea11aefb4e2c05fe05c00da0112fc0",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/administrator_owner_test.go",
+      "sourceBlob": "5df10c0a2f2132b81158a50552a40bc9b187ad3f",
+      "sourceSHA256": "d299ea16e0d64987aa63f213754a374c137400734fd31e2c380dda5aa22783e8",
+      "output": "security/administrator_owner_test.go",
+      "outputSHA256": "21e27138b69aace01c0da87aacfc6d1fbfff11f81a1b4c8c4a1f28f14c6e3af2",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/administrators.go",
+      "sourceBlob": "580bb10062262a4b5a5fdf7730d764387ed3bae4",
+      "sourceSHA256": "2f3ab72f80991f8cd754e908936038f9f775fe8eab4e7a038ab845aecc94d603",
+      "output": "security/administrators.go",
+      "outputSHA256": "2f3ab72f80991f8cd754e908936038f9f775fe8eab4e7a038ab845aecc94d603",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/authorization_test.go",
+      "sourceBlob": "091a736f06fbc4b17845c9973ba3e270281bf628",
+      "sourceSHA256": "5a471c2d967c151787461028f2cda33a13ac82230abc0648f3a310e2e3fa894c",
+      "output": "security/authorization_test.go",
+      "outputSHA256": "e731e2d5ab5586c93476efdf2796fb33738fd2962722fafd01c323e30fb2a39f",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/clientidentity/client_identity.go",
+      "sourceBlob": "9f82a782e9974391bef21217abf9390264143422",
+      "sourceSHA256": "98333f32faa29d17ce7424172b3daab7e0aa0a2f79099a9bc6c082b4df3108ad",
+      "output": "security/clientidentity/client_identity.go",
+      "outputSHA256": "98333f32faa29d17ce7424172b3daab7e0aa0a2f79099a9bc6c082b4df3108ad",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/clientidentity/client_identity_test.go",
+      "sourceBlob": "4f8f1725b9cfc754a6be338bf5c1b2f0ceb99a51",
+      "sourceSHA256": "af8095a9c5326ec37d09f927bb1f3679f755206934eb45453c7ec6707958cc92",
+      "output": "security/clientidentity/client_identity_test.go",
+      "outputSHA256": "af8095a9c5326ec37d09f927bb1f3679f755206934eb45453c7ec6707958cc92",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/crypto/hkdf.go",
+      "sourceBlob": "855748f5633b41b863e4c4d27752ecdc63c17666",
+      "sourceSHA256": "d1b86a91c3ac08d85145188407da8be3e4381f42010de4bb829351cbd2bba40f",
+      "output": "security/crypto/hkdf.go",
+      "outputSHA256": "d1b86a91c3ac08d85145188407da8be3e4381f42010de4bb829351cbd2bba40f",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/crypto/hkdf_test.go",
+      "sourceBlob": "624481fa2daa5388e7db2cce5ef000eec279145b",
+      "sourceSHA256": "6392bcbadd1ffa1e3476e81c1d7e823e6f3384087b718f4a44d3c81a44ec84d0",
+      "output": "security/crypto/hkdf_test.go",
+      "outputSHA256": "6392bcbadd1ffa1e3476e81c1d7e823e6f3384087b718f4a44d3c81a44ec84d0",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/crypto/random.go",
+      "sourceBlob": "fe190aa366fd3866eb79a55af154728f8a01d3dd",
+      "sourceSHA256": "bfb89b60388de3553e2c0ce5d65edcea2bf94e0797e4557e9a8978c3e956f7f8",
+      "output": "security/crypto/random.go",
+      "outputSHA256": "bfb89b60388de3553e2c0ce5d65edcea2bf94e0797e4557e9a8978c3e956f7f8",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/crypto/random_test.go",
+      "sourceBlob": "fa5fa9bb28e244b901bbed532a54e9248b9d5d65",
+      "sourceSHA256": "d9c81a7b65b967d33334a384b22d6c0aa977ddcb83e8299d02be086061e0caad",
+      "output": "security/crypto/random_test.go",
+      "outputSHA256": "d9c81a7b65b967d33334a384b22d6c0aa977ddcb83e8299d02be086061e0caad",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/crypto/secure_compare.go",
+      "sourceBlob": "eb41d14f36f2cf295c423bbfd4fc6acc5514132a",
+      "sourceSHA256": "0e900e5cf9a412cb467d162fe5201295b4f02e0c718ee8940a0d68a1b910592e",
+      "output": "security/crypto/secure_compare.go",
+      "outputSHA256": "0e900e5cf9a412cb467d162fe5201295b4f02e0c718ee8940a0d68a1b910592e",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/mfa/service.go",
+      "sourceBlob": "ee8b51d5a2a1d3761bf544c329d78d23e4483792",
+      "sourceSHA256": "bef33649075723869814b13b50139063262c69e531a4b486501e6e51c2c7f71e",
+      "output": "security/mfa/service.go",
+      "outputSHA256": "e0fcf21146e8b0f1627698046d3dfd8b0970d90c7b20d19e8b210020cf0ab1f0",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/password/common-passwords-v1.txt",
+      "sourceBlob": "3a6dbf8f1449cae4b017fd0bef41eb7f7e77a268",
+      "sourceSHA256": "c1de443ef238acc78e7018e991ead8dda8b49c08f162aaad2eca4aac95fba428",
+      "output": "security/password/common-passwords-v1.txt",
+      "outputSHA256": "c1de443ef238acc78e7018e991ead8dda8b49c08f162aaad2eca4aac95fba428",
+      "adaptation": "none"
+    },
+    {
+      "source": "backend/security/password/password.go",
+      "sourceBlob": "e0c7e60eb1c0248a0b5579f2411a54120c18af78",
+      "sourceSHA256": "d718bce4523584cb38137482cc7c5e383238f67ade0a2354ca3e00185718af3d",
+      "output": "security/password/password.go",
+      "outputSHA256": "d718bce4523584cb38137482cc7c5e383238f67ade0a2354ca3e00185718af3d",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/password/password_test.go",
+      "sourceBlob": "48c848b84f61cce51bcc282eb0c8cd678a47ba34",
+      "sourceSHA256": "fe083de0eea180eb51c8908b51354dccdf4478e23f4bb23aebc620487f2ea627",
+      "output": "security/password/password_test.go",
+      "outputSHA256": "fe083de0eea180eb51c8908b51354dccdf4478e23f4bb23aebc620487f2ea627",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/secretbox/legacy_vector_test.go",
+      "sourceBlob": "d56e2b0426629d4c64f509e956cf4e3c0fe29d08",
+      "sourceSHA256": "d8d1b3288df77a65db905c3f47dc4c97272df6e75ccfadedb4937b76df92da89",
+      "output": "security/secretbox/legacy_vector_test.go",
+      "outputSHA256": "d8d1b3288df77a65db905c3f47dc4c97272df6e75ccfadedb4937b76df92da89",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/secretbox/secretbox.go",
+      "sourceBlob": "4c5a3b459caca4c6bb89a6110672ba87a17ecbfc",
+      "sourceSHA256": "b0bbd9e76ff1533b1e165d74c7e8eb9cb12c2db3e9396998a0c4ebba3d8f2dd6",
+      "output": "security/secretbox/secretbox.go",
+      "outputSHA256": "28913c3729571c302df74f1b16b2807c5f0e3bad96e1b3cbb25c50353c047d00",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/secretbox/secretbox_test.go",
+      "sourceBlob": "714aef1156c69591ffa934d46e08bf78f4331c28",
+      "sourceSHA256": "b2c347dd6aae86f84fac7af3c6b503c1a9046769c2b6301da68f7f4fb2a53a39",
+      "output": "security/secretbox/secretbox_test.go",
+      "outputSHA256": "b2c347dd6aae86f84fac7af3c6b503c1a9046769c2b6301da68f7f4fb2a53a39",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/session.go",
+      "sourceBlob": "6bc389b2dd6c2c7dd23575d27a99c3b7b208f86e",
+      "sourceSHA256": "0d2a5848156540dadaa008e60ae67879eb4b9a4504d2be4a3829b0c02bb9aa95",
+      "output": "security/session.go",
+      "outputSHA256": "0d2a5848156540dadaa008e60ae67879eb4b9a4504d2be4a3829b0c02bb9aa95",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/sessions/service.go",
+      "sourceBlob": "adc67af20bcff36ce10949fedb143e4dd3fe28db",
+      "sourceSHA256": "31a0139e03029a28af44ad4d66ed69f75d6a63ff5613b95b996ef1ce89fa6c64",
+      "output": "security/sessions/service.go",
+      "outputSHA256": "15a9e0e7efd535076b4004f943480d96b81104a20cb323166f3a163b9aa6ac68",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/sessionstore/replacement_publication_test.go",
+      "sourceBlob": "781d3a36ca686beabdea8c03afea0cf54977d2e5",
+      "sourceSHA256": "b264bd3effc24ab3667176d6c0f8f9b740a221686fbd806019b101ae74827bc1",
+      "output": "security/sessionstore/replacement_publication_test.go",
+      "outputSHA256": "1134b082cc59e0920c0256df6b4b89cfe835ec3f3cbabb7cad712807547aeccb",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/sessionstore/session_missing_metadata_test.go",
+      "sourceBlob": "53251f5d9840e9e5d0fc0171efff40ddae295db9",
+      "sourceSHA256": "7bbb4b6abe45a3e770edd3c0e7bbcbb60882fb34ea89b84205dde24a4e2d9423",
+      "output": "security/sessionstore/session_missing_metadata_test.go",
+      "outputSHA256": "3478a39d8c81cafcd1e157a94787e881fb16da68e519d206117be5f41cab89b6",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/sessionstore/session_rotation_test.go",
+      "sourceBlob": "a9526329f9c30b921704e3a40ca6e15c832a58a8",
+      "sourceSHA256": "9af100e194e1f3e161f49b96592685905dd2f8ac906211269923b6d1aa39f046",
+      "output": "security/sessionstore/session_rotation_test.go",
+      "outputSHA256": "13586a4784f3c1e14a8181462cbc2b47e58c178c3659f49b0dc012276079f58a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/sessionstore/session_security_test.go",
+      "sourceBlob": "d01470aad18476904ebdc98c6e98c33aa000a2ff",
+      "sourceSHA256": "372778998ddebd51794a11dbdfe53887d488b96f5ae68252ef2e323429bccdb8",
+      "output": "security/sessionstore/session_security_test.go",
+      "outputSHA256": "19e2a6d7939c5816f565cbf319d5387bd96e3d71997bec31af86e1436b19601d",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/sessionstore/session_store.go",
+      "sourceBlob": "d71d8a11f37582f7dc3466a54c1750b31cab21af",
+      "sourceSHA256": "ab6cebb227cec374fde2fc9d76ce3279f1dedc016eb839dc21813c22da4c8e18",
+      "output": "security/sessionstore/session_store.go",
+      "outputSHA256": "64814deaea487989fe9192ba7b150671002a622a58f050b5feee1c06081a1dd1",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/sessionstore/session_store_test.go",
+      "sourceBlob": "b2e8367dba53342c7dcb1b6b2c73b83c8aa1b8ce",
+      "sourceSHA256": "a419504f07d911b3646f3d11f5d157c6f1a6fe5995e57f8cbc406becae6478d6",
+      "output": "security/sessionstore/session_store_test.go",
+      "outputSHA256": "0ec1bdcd5a372ad82e9be4ca9effb1be9b66c90fcc4f1021fc58af545177bfe1",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/ssrf/README.md",
+      "sourceBlob": "5fd9c5d4659875544cf00123a568cde55577b0b7",
+      "sourceSHA256": "461b0f701b516e72a9ab7e9a81b68a401ee4636e23304e28a516c24a7977ef6a",
+      "output": "security/ssrf/README.md",
+      "outputSHA256": "461b0f701b516e72a9ab7e9a81b68a401ee4636e23304e28a516c24a7977ef6a",
+      "adaptation": "none"
+    },
+    {
+      "source": "backend/security/ssrf/http_client.go",
+      "sourceBlob": "0569a893594651a02c1cdca9437f1b0adc2074f7",
+      "sourceSHA256": "dd0af84ac452ec11e4c0864177e9e7b66c06934996c91d7808d7d7ed99060fdc",
+      "output": "security/ssrf/http_client.go",
+      "outputSHA256": "dd0af84ac452ec11e4c0864177e9e7b66c06934996c91d7808d7d7ed99060fdc",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/ssrf/http_client_test.go",
+      "sourceBlob": "33196b4aebda4615ee01019b4594bbfc4e701724",
+      "sourceSHA256": "b07a279c3c1c9b6d411ff41a6b05e0895fe7531f2b57c1d0c942f4694d10698a",
+      "output": "security/ssrf/http_client_test.go",
+      "outputSHA256": "b07a279c3c1c9b6d411ff41a6b05e0895fe7531f2b57c1d0c942f4694d10698a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/ssrf/validator.go",
+      "sourceBlob": "abe5c03408860b31e19a2da75834755fecd9dd1a",
+      "sourceSHA256": "dad1746593851fb522b6155d8a94b36a3bbd4bf3c5d43b64b86a478851c41d3b",
+      "output": "security/ssrf/validator.go",
+      "outputSHA256": "dad1746593851fb522b6155d8a94b36a3bbd4bf3c5d43b64b86a478851c41d3b",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/ssrf/validator_test.go",
+      "sourceBlob": "e918dcecd4bb72f244cf8e4c0d1e4d7bd6be9166",
+      "sourceSHA256": "801a3db158b7b0cc30fa476061089317ea0785b8bbf77dd9692af3790c127cc1",
+      "output": "security/ssrf/validator_test.go",
+      "outputSHA256": "801a3db158b7b0cc30fa476061089317ea0785b8bbf77dd9692af3790c127cc1",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/stepup/service.go",
+      "sourceBlob": "77a7843656715817d98062c455762a1b2e6f77f3",
+      "sourceSHA256": "e474149e7bf8b49d87acb5a62ea1a0114484101134beb01160bb3b1cb4e5ae8f",
+      "output": "security/stepup/service.go",
+      "outputSHA256": "74a769fef7050abce21d1a4d13b8c4cb2d4fe861734dd415359db1cb90bf4d63",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/tokens/registry_test.go",
+      "sourceBlob": "ed1f5166a9221bc4d62cf056ca5315dc9f4fdfa9",
+      "sourceSHA256": "0026163da5a35ecb4e8b643fb2cf6dd208c07258fc593a8332ccce7c2dead0d3",
+      "output": "security/tokens/registry_test.go",
+      "outputSHA256": "0026163da5a35ecb4e8b643fb2cf6dd208c07258fc593a8332ccce7c2dead0d3",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/tokens/service.go",
+      "sourceBlob": "03af3291273a7d774d97ad921c55f6ce5c00d0a1",
+      "sourceSHA256": "3446efc449a6e7f12f155e56977e6b91a5bd8455366adb087d4ad26de361c678",
+      "output": "security/tokens/service.go",
+      "outputSHA256": "c6e0d3f1007a5a78ea96280a4c6a9615db07e778b1eca2c61b6bb8aee16c2ad9",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/tokenuse/debouncer.go",
+      "sourceBlob": "a5397cb085facf479921f072cd991f51f6b59a0c",
+      "sourceSHA256": "78991c4dee381bf5652e679d4323e661871323304b7315829bc460cd0017116a",
+      "output": "security/tokenuse/debouncer.go",
+      "outputSHA256": "c68915b27c600f24a4af7a06325a523e47578469ab1a20a0ef6b33aa7e7280f5",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/tokenuse/debouncer_bench_test.go",
+      "sourceBlob": "77e7fe86d1b115262f91570f56854a4d2a225035",
+      "sourceSHA256": "f41add0c271fac7c1f464beb43462695761a65bb99393e2ebc169c171b1a6646",
+      "output": "security/tokenuse/debouncer_bench_test.go",
+      "outputSHA256": "e9f2f1798da5d74aeacf7874244ce285ca8e71b6019a916338e1ec73e4799085",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/tokenuse/debouncer_test.go",
+      "sourceBlob": "6a4a2d80785cd9513b3ea284c692fbbb6e21b180",
+      "sourceSHA256": "a22e64bc361e33022efcffa2e151d83c4110d61928a8b370a17b0b3149ccabda",
+      "output": "security/tokenuse/debouncer_test.go",
+      "outputSHA256": "a22e64bc361e33022efcffa2e151d83c4110d61928a8b370a17b0b3149ccabda",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/tokenuse/generation_test.go",
+      "sourceBlob": "9d6d551a22c001d475754071c872f24192c2621e",
+      "sourceSHA256": "676f28a6fc73e8430c211f4d287a73b879e7633406e09b7714316b279fca0527",
+      "output": "security/tokenuse/generation_test.go",
+      "outputSHA256": "2cb20c33207293cf9c672ba5a713788329fb3eaba5a8e1151c05ac947e523265",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/totp/totp.go",
+      "sourceBlob": "33920f4b2a7ace970fa9f0f55b05719b755c4106",
+      "sourceSHA256": "627abb4cc919c0c295e1e3c02e004e842fecea8b88bdc9a0415233252e940ea7",
+      "output": "security/totp/totp.go",
+      "outputSHA256": "627abb4cc919c0c295e1e3c02e004e842fecea8b88bdc9a0415233252e940ea7",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/security/totp/totp_test.go",
+      "sourceBlob": "fe761a59c789ef513bc71a5856c3b49fe82ce0e9",
+      "sourceSHA256": "9224e84a015991e7294cd20a7203ea5047580d2ccd93383881fa953c48b19570",
+      "output": "security/totp/totp_test.go",
+      "outputSHA256": "9224e84a015991e7294cd20a7203ea5047580d2ccd93383881fa953c48b19570",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/catalog/catalog.go",
+      "sourceBlob": "d3fe99116c4a933134abcd3ab26e83ad28ea68b9",
+      "sourceSHA256": "276896b7c75b3fc6a46ec4a413f548c6c33aa1f1566a72d62ec9b8d26c847f29",
+      "output": "settings/catalog/catalog.go",
+      "outputSHA256": "276896b7c75b3fc6a46ec4a413f548c6c33aa1f1566a72d62ec9b8d26c847f29",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/catalog/catalog_test.go",
+      "sourceBlob": "5b8852545dccae64695728c895257a0c4c814c23",
+      "sourceSHA256": "79dba208d9dbe2408f0ef67545ab2e86480f16e700dc337ec711011b70342148",
+      "output": "settings/catalog/catalog_test.go",
+      "outputSHA256": "79dba208d9dbe2408f0ef67545ab2e86480f16e700dc337ec711011b70342148",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/catalog/defaults.go",
+      "sourceBlob": "c0c09a1c91eefd503e5a33200b2e50608fd2569d",
+      "sourceSHA256": "abbd065c26cc14ba60436076857a75a53536f680a5cf37b38382751a6d414267",
+      "output": "settings/catalog/defaults.go",
+      "outputSHA256": "abbd065c26cc14ba60436076857a75a53536f680a5cf37b38382751a6d414267",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/catalog/defaults_test.go",
+      "sourceBlob": "145cf43c74e04f7c82026623ffd7ffcb7d614981",
+      "sourceSHA256": "6e8792a1fb5257d36ed42625e1f3dd86c0c4c548c2ae94e27f7e18e337c32fa2",
+      "output": "settings/catalog/defaults_test.go",
+      "outputSHA256": "6e8792a1fb5257d36ed42625e1f3dd86c0c4c548c2ae94e27f7e18e337c32fa2",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/catalog/ip_cert.go",
+      "sourceBlob": "1370dd3f927684d3cecf556a374129515f7f903f",
+      "sourceSHA256": "f0f8442be76fcdd91bfd5550368b69c6ebc521318385a027b3894b2863ea2d7c",
+      "output": "settings/catalog/ip_cert.go",
+      "outputSHA256": "f0f8442be76fcdd91bfd5550368b69c6ebc521318385a027b3894b2863ea2d7c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/catalog/ip_cert_test.go",
+      "sourceBlob": "53a14f1a49806f34d09ece19ae39973c9c63804b",
+      "sourceSHA256": "dd0ec7105db3abfa3bd216634b31bffdb013d550c61ab7a53d76da0771c91a3f",
+      "output": "settings/catalog/ip_cert_test.go",
+      "outputSHA256": "dd0ec7105db3abfa3bd216634b31bffdb013d550c61ab7a53d76da0771c91a3f",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/catalog/subscription.go",
+      "sourceBlob": "7cb569e118f5e6c54143b0298217c2e1fbf05e5e",
+      "sourceSHA256": "2ec1de76cdf20f699d856c2a22fb1a3ee12c38bbf8b8d85f12afd9fdd0e7fa58",
+      "output": "settings/catalog/subscription.go",
+      "outputSHA256": "2ec1de76cdf20f699d856c2a22fb1a3ee12c38bbf8b8d85f12afd9fdd0e7fa58",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/catalog/subscription_test.go",
+      "sourceBlob": "2442b07b0677fe2925d83bd53d800266f1cda288",
+      "sourceSHA256": "5617b413bf0c0c935c446cee2b3d26912dbc7ab202b186f0024f133d1a59c3c7",
+      "output": "settings/catalog/subscription_test.go",
+      "outputSHA256": "5617b413bf0c0c935c446cee2b3d26912dbc7ab202b186f0024f133d1a59c3c7",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/crypto/crypto.go",
+      "sourceBlob": "ac419304e8d1b21c9bc2175b9dc642624f61b635",
+      "sourceSHA256": "702f3dbb6678d0267491edb015271405abd82717a25e2e78aa6655ece4436c9e",
+      "output": "settings/crypto/crypto.go",
+      "outputSHA256": "b1f20eefebfbf780e046ed999f332874aee8432f242302d56423f2116a9a777a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/crypto/crypto_test.go",
+      "sourceBlob": "601fd8e64616faaf1f886f41c5bc428388de8129",
+      "sourceSHA256": "25b00132e64095d02a13c146ea7129a65c690b79d0734b8ee13bfd62bb4575b3",
+      "output": "settings/crypto/crypto_test.go",
+      "outputSHA256": "25b00132e64095d02a13c146ea7129a65c690b79d0734b8ee13bfd62bb4575b3",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/manager/manager.go",
+      "sourceBlob": "e39c76524b89f09c1c47a479e2f78be640efa236",
+      "sourceSHA256": "9f6a0f59f98e936917217ba504779b12dc5d572c33a945f36e9628f0754e625c",
+      "output": "settings/manager/manager.go",
+      "outputSHA256": "32cacc4d4ee7d3d1b75b0481fb5fe6680d608de9dc38ddd7ea12825a465cda41",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/manager/manager_test.go",
+      "sourceBlob": "a534f9a65b3260eb09498f7e15234898f5b05334",
+      "sourceSHA256": "181ce98634f099216547a9bf04a1f0c5bb8a47f98bb299176de0bf414fb32aeb",
+      "output": "settings/manager/manager_test.go",
+      "outputSHA256": "353c559c081bf5e781a1ff9a3b1426af1a138d3cea840e47a252b49549f51a82",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/manager/reseal.go",
+      "sourceBlob": "783b9bbd9e1b0a578a70b525ce540d0bffacd5af",
+      "sourceSHA256": "db4eabbe397194b23e8c11e2134c205e4bdbcacc4c060f1e315413855c116f6f",
+      "output": "settings/manager/reseal.go",
+      "outputSHA256": "a7a4b631d79a6bdda932b976ba398fedfbec09db3077b47ec39f5a450af57220",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/schema/field.go",
+      "sourceBlob": "ec49316ac9534e215aad3b6065d69515f4379642",
+      "sourceSHA256": "fc644a2d853a27868c881de3564d4266869a4d2c5f54245caf5305526ac1e7de",
+      "output": "settings/schema/field.go",
+      "outputSHA256": "fc644a2d853a27868c881de3564d4266869a4d2c5f54245caf5305526ac1e7de",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/schema/fields.go",
+      "sourceBlob": "546b2a0537660d2ecec48f3ea226673c5e52e6a0",
+      "sourceSHA256": "e426cc2141debfb792b4bd70d3e84379e9a1c4f20637b3de6ee98ee413fb9e5d",
+      "output": "settings/schema/fields.go",
+      "outputSHA256": "e426cc2141debfb792b4bd70d3e84379e9a1c4f20637b3de6ee98ee413fb9e5d",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/schema/fields_core.go",
+      "sourceBlob": "4adb799a65287ce1c4143f4453111062b9372b9c",
+      "sourceSHA256": "0415155b2e6155a42ac0a49b00eeea65f38dabefa4a03b1488ef6c7ddafbcf14",
+      "output": "settings/schema/fields_core.go",
+      "outputSHA256": "3b19990fcbde82441bbebcc00b85c59abdbe5ed631738a752330b1fcf871026a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/schema/fields_ip_cert.go",
+      "sourceBlob": "14527aef39adece917b4bb8d79fe4b4d21030d19",
+      "sourceSHA256": "6144ba192e4f064175f24653243e3a4bc70a815cbd9ff324ecb1dc8c77920e01",
+      "output": "settings/schema/fields_ip_cert.go",
+      "outputSHA256": "aafaa9ebe619e9551788a3a10438d7464f2ae06d3e99f35a0048582d13827e9a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/schema/fields_subscription.go",
+      "sourceBlob": "42d453297b7c228e84a64a2f14f97a89016bb5d1",
+      "sourceSHA256": "467c5f3d9e2833b8ed7b099fd455fd4f9452d1b8418d4947e0db1bbebb864d8b",
+      "output": "settings/schema/fields_subscription.go",
+      "outputSHA256": "e504683959902dff98cd48bf1cf49833eba94a205581250f6120b3ea11a69d7c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/schema/schema.go",
+      "sourceBlob": "e46dd82d495676007bad9165e617027b646b7c19",
+      "sourceSHA256": "4294462555269c68dc0ca6bacf5ac58fc4146661fa200c1e09865a7ccd6d3bf7",
+      "output": "settings/schema/schema.go",
+      "outputSHA256": "30b198db2fb70fa495b70918695dd54483bb4bedacaceebc29c9b30929bbbe00",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/schema/schema_test.go",
+      "sourceBlob": "89689ef3d28f04cd6b54c243057b25eca43e1bc8",
+      "sourceSHA256": "1683d76886730e823f3d80f31554b53f62dffc6c6901e19d6da948d5047af699",
+      "output": "settings/schema/schema_test.go",
+      "outputSHA256": "4c77128e7a4969f56722429aafc6d20ff57b7a2f4df5964c4be3aee6a784bc18",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/store/codec.go",
+      "sourceBlob": "52f95cd10c56c2d88b077dacde70780887b7497e",
+      "sourceSHA256": "e2212e3c99deba59dbcd56231fa8b6dbb9a24d3fd11ac5800a8bc309e314d6ab",
+      "output": "settings/store/codec.go",
+      "outputSHA256": "fcc7130e4e66dcb8ce0015259675202f1241f460942eb3894002cadcc0a65655",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/store/encryption.go",
+      "sourceBlob": "00f0c4aacfc5d36105ad9f4d22a33e5d8b32513d",
+      "sourceSHA256": "05b42bb0d9cd90534ac3bd9e66e0d09804781c3ac59d5bc8e97814106f4a71ce",
+      "output": "settings/store/encryption.go",
+      "outputSHA256": "6a3f3f842726e6ad5fa9be80584c04726641d93dc1278cfec3fcff0d51db267d",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/store/encryption_test.go",
+      "sourceBlob": "b3ef7537bab03ffe9207046041c1402398044fc9",
+      "sourceSHA256": "c979a4a9308303b98f0ce2721444708880567b4d50d91a52b3b71f12a5018284",
+      "output": "settings/store/encryption_test.go",
+      "outputSHA256": "a9e88273e31a36fb6a186c86f8243289fbeb028ff2c62d16c628f0dbe9ac4903",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/store/master.go",
+      "sourceBlob": "a7ca6843b299265b03f5a59731d21d7ae070d8e2",
+      "sourceSHA256": "44b71b420b8fa958c79f51f62dbc046a58b4edac5f86d268ee06ed48c9566d17",
+      "output": "settings/store/master.go",
+      "outputSHA256": "5dacbc4f2d884bb3889f7e978ee229b4a8ab31e213e4a49bd47ea1bf94c94273",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/store/master_test.go",
+      "sourceBlob": "fba3c727bdd961a7db3b26d451ec307203885203",
+      "sourceSHA256": "5134cc78ce7aacf88a22b8f89ccf09f07919ae80bde5c028e8781c1c6744f839",
+      "output": "settings/store/master_test.go",
+      "outputSHA256": "83344050fce87664fa64e4ca92dca47ddc6a42b38ccf6833818db641e18e6fe0",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/store/sqlite.go",
+      "sourceBlob": "37eaca616177de5576bd961a8a4009547abb952e",
+      "sourceSHA256": "e54e50197550bace97894fed78703d7e5dd42816bb849d1472999d8e76175329",
+      "output": "settings/store/sqlite.go",
+      "outputSHA256": "c5aa9e5979f5189541427659000ac25e80654e9c1267a4578344ecbd3c5d6a43",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/store/store_test.go",
+      "sourceBlob": "5aaaca5f781438c56492206745492f21a0b6e758",
+      "sourceSHA256": "c0c491881ded5575973fa017847f843d626e1b59c637914d4665a40d264c7f8c",
+      "output": "settings/store/store_test.go",
+      "outputSHA256": "173e54ec03535a04750791b60dfc3305a01df7d1836d0c2214c39d4148de105b",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/clash_udp_test.go",
+      "sourceBlob": "63b905ebe1b288d52c69ec812207875995ff1c36",
+      "sourceSHA256": "951bf25048bfd5c4eff3903ea9ff126e21cb59cec104460b5a59e540deab527d",
+      "output": "settings/validation/clash_udp_test.go",
+      "outputSHA256": "ced5bddbec7ce0053fe5c8056bc848bba4cf84dc5b160477a2e6b816de7da494",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/doc.go",
+      "sourceBlob": "fac4de37e06232aa58ef8d63909e330586b67bf7",
+      "sourceSHA256": "e3a9fe4e70acb0959873cdb8311782bad04ca92ea1ce653f496056b478482b36",
+      "output": "settings/validation/doc.go",
+      "outputSHA256": "e3a9fe4e70acb0959873cdb8311782bad04ca92ea1ce653f496056b478482b36",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/endpoint.go",
+      "sourceBlob": "68841a63cdcb580b35c5cfd35d9c3f48f0338fd0",
+      "sourceSHA256": "de6500a00ee51634c70d52dd0ecc7abae6e7e4292ea6b2242a8c3feeae25246c",
+      "output": "settings/validation/endpoint.go",
+      "outputSHA256": "a063d04378cc8210c422cd6ebb4379d14d13e7ee61d38f5c019f0a52a01ff58e",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/endpoint_test.go",
+      "sourceBlob": "aa32b3af2302e782608518891cd6d33898edcd4f",
+      "sourceSHA256": "d2fe83874b89143b509b922e0a119df9b2c72d9c5a84f900607dc9bebc7bf5ad",
+      "output": "settings/validation/endpoint_test.go",
+      "outputSHA256": "8e590ce10fb3219fc04d112c6829bd2ad9f58be7c8ac1d2a963b1a9d408a8deb",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/hostname.go",
+      "sourceBlob": "42ce85554934edd33c02e876c365055bb842ebd6",
+      "sourceSHA256": "ac426f22578705ded385e6dde22a31294932e8fca4b0562e63537c4d7e8486fe",
+      "output": "settings/validation/hostname.go",
+      "outputSHA256": "ac426f22578705ded385e6dde22a31294932e8fca4b0562e63537c4d7e8486fe",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/hostname_test.go",
+      "sourceBlob": "c613b84945c81aff44ccc0b9f50b06011510bf4c",
+      "sourceSHA256": "1aed5a84bd7bbd2b427825e4be499b975b1cb7e49c68b612b3089c2a59ff6cc2",
+      "output": "settings/validation/hostname_test.go",
+      "outputSHA256": "1aed5a84bd7bbd2b427825e4be499b975b1cb7e49c68b612b3089c2a59ff6cc2",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/ip_cert.go",
+      "sourceBlob": "9480c00d3c1a6a23def19b777eb26544acd4686d",
+      "sourceSHA256": "54323f130aad5268edb8b0d440d753d715e5738675a9aaac44e6b91770defd7c",
+      "output": "settings/validation/ip_cert.go",
+      "outputSHA256": "7f93e6eb0532b610f475470ac1fde2f4a301d130798bbcff448eb23a478fc5d2",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/ip_cert_test.go",
+      "sourceBlob": "1cce0360a59855240ce2db208f491307802a822e",
+      "sourceSHA256": "dbc4a6230c693ffee4da2237efc75368a6b194411b57a99292429aca4a533147",
+      "output": "settings/validation/ip_cert_test.go",
+      "outputSHA256": "a6a8d5e87ca1dd1174c591ac2357b3a2083ede708053bcfe7fc23b672c294298",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/json.go",
+      "sourceBlob": "3472f1d5788bba43232f314d2ae32076dfe5e255",
+      "sourceSHA256": "b1e88d917ed1e31ca79914775b68e21de49088e2ac3b0e7946dd604041313fbe",
+      "output": "settings/validation/json.go",
+      "outputSHA256": "b1e88d917ed1e31ca79914775b68e21de49088e2ac3b0e7946dd604041313fbe",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/json_test.go",
+      "sourceBlob": "beaa065e592be384e1beab9cbedb1eae287ce317",
+      "sourceSHA256": "a57b0a02a801f5cb591b871a626d5a5b68058ff5396ab0d5268d4f1fa34e03e5",
+      "output": "settings/validation/json_test.go",
+      "outputSHA256": "a57b0a02a801f5cb591b871a626d5a5b68058ff5396ab0d5268d4f1fa34e03e5",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/path.go",
+      "sourceBlob": "7c76a1ff4944453e55e6de0f518ba16c2dcd2fd4",
+      "sourceSHA256": "28ea282f09f2fecd15f52f73419e7accd79ce95e3094e24afa851c63af9ca846",
+      "output": "settings/validation/path.go",
+      "outputSHA256": "aa293ce98dcadfb8dd9c2f3ebed1aa50320a85148d1985e2de7dd22e9a3f5376",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/path_test.go",
+      "sourceBlob": "23adac5ba34177aae461f0c32b923af43c8c7f28",
+      "sourceSHA256": "3febd05a19532f4726b337fbd0a01dfa4c5cd09efc859acee5e777b04c63a658",
+      "output": "settings/validation/path_test.go",
+      "outputSHA256": "a2ca9000e662d7dd40cbe8b10b6584ad8ca73b50881cae9557f549ba20faccdb",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/proxy.go",
+      "sourceBlob": "2dd89aed15db41b60b2de8bebc52a865e64c183e",
+      "sourceSHA256": "8d9456ec59b6c9ee5bd1aae63ae548bde809bb9b7f662fb6536abfdee10badb8",
+      "output": "settings/validation/proxy.go",
+      "outputSHA256": "4003db2d303a3f0ed39ec62bfccbd30a9b2267a897e8150570f8e231f8a5806f",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/proxy_test.go",
+      "sourceBlob": "cd324a18486bc49ceea036b2481b6cc88f4167ad",
+      "sourceSHA256": "32241272b434c617ffc121b67b5c6f1ec0715fb18115eecce59578a9caf8ef5c",
+      "output": "settings/validation/proxy_test.go",
+      "outputSHA256": "32241272b434c617ffc121b67b5c6f1ec0715fb18115eecce59578a9caf8ef5c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/route_path.go",
+      "sourceBlob": "74a90e02c75e4d4fec9deaf8af64f7ad33e4cd68",
+      "sourceSHA256": "0334979ebc2fefada56a8226acdf9111f4e5352c89def767f58699687a45f6fd",
+      "output": "settings/validation/route_path.go",
+      "outputSHA256": "0334979ebc2fefada56a8226acdf9111f4e5352c89def767f58699687a45f6fd",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/route_path_test.go",
+      "sourceBlob": "d3ecc3537071becc1f2255680f0a7cd8e5f31c8a",
+      "sourceSHA256": "412c453a9dee53b7646102a0699a32ee8ea19d8157865af483a4bcf7b3fa96ff",
+      "output": "settings/validation/route_path_test.go",
+      "outputSHA256": "412c453a9dee53b7646102a0699a32ee8ea19d8157865af483a4bcf7b3fa96ff",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/schema_contract_test.go",
+      "sourceBlob": "5e867d529a9b3ba521587901a5bc93267d857881",
+      "sourceSHA256": "4cef933afe156b14f686e7e7933cf26f1b935b5f1c8dcbc5e2e1c46d3a054b34",
+      "output": "settings/validation/schema_contract_test.go",
+      "outputSHA256": "380de047b6d76d900e34d6809e7ceca63902303d71689d934db4594c070fe8b3",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/subscription.go",
+      "sourceBlob": "1f0b057f9018b4eee99f78852241b749173a2aad",
+      "sourceSHA256": "be7cce1428c8e07bf9e3cc8f8f136b816e4758692237e7a6b9ff7c813994ede5",
+      "output": "settings/validation/subscription.go",
+      "outputSHA256": "499a66f915c425910d8ab44c20c2c6a61599418ac055746444ccf908cefa5be9",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/subscription_test.go",
+      "sourceBlob": "b9813a96abb28a4b934a49db544cabc9bef0bb0c",
+      "sourceSHA256": "8a2dee86b1c66e39711fb26b3610d2a1de1edcb73bddb2ec49285b3ade0d8061",
+      "output": "settings/validation/subscription_test.go",
+      "outputSHA256": "a803a6031f7d4394e4437f1dca8c212065a6d469436531ff655253b213b9a8ff",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/url.go",
+      "sourceBlob": "3b38adab2188864867afadd4cf29c3454a4a63e5",
+      "sourceSHA256": "98b9133a4d3fe5ac4b3b29ba2911b78d7dc452e3e7024115eb4d562597a71ebb",
+      "output": "settings/validation/url.go",
+      "outputSHA256": "3360ee33068151c93f11012b3af773ec340e7d5904ce4bba30c7fc4f7c0cdf94",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/url_test.go",
+      "sourceBlob": "e86b857e04f0abce83fb365966a3efc0a95533e5",
+      "sourceSHA256": "a652abdac1d89705cfcb2922926a2cacb572bf075976bb350ffd0e1f38465001",
+      "output": "settings/validation/url_test.go",
+      "outputSHA256": "a652abdac1d89705cfcb2922926a2cacb572bf075976bb350ffd0e1f38465001",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/validation.go",
+      "sourceBlob": "21f140d8d4f13660c65d95e5e737bf01906d4c3e",
+      "sourceSHA256": "646bb0c33cd4422c93ba275fbb90142d125d5666cb9e9d3ce6ce2ba5fef5ed2c",
+      "output": "settings/validation/validation.go",
+      "outputSHA256": "646bb0c33cd4422c93ba275fbb90142d125d5666cb9e9d3ce6ce2ba5fef5ed2c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/settings/validation/validation_test.go",
+      "sourceBlob": "3ef794f315406f7a12e66a4421ffd46477631c91",
+      "sourceSHA256": "ab418fe45e6b095e2a5aead06f3ecb142b31b58c9d100ed6e61ab6031778db5f",
+      "output": "settings/validation/validation_test.go",
+      "outputSHA256": "ab418fe45e6b095e2a5aead06f3ecb142b31b58c9d100ed6e61ab6031778db5f",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/contracts.go",
+      "sourceBlob": "01247841adfe8527d6a5781c583ca47550811bac",
+      "sourceSHA256": "2b75189125d9c00e1a3e41c96feef238fd695b7cf161fa7214acc416498d8577",
+      "output": "storage/backup/contracts.go",
+      "outputSHA256": "edf567c757af9d3e3420377248662222b8dd1393eeb7201234a6b349c11cff09",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/file_bounds.go",
+      "sourceBlob": "72c8ee817a6efe5d584ad4c686bb3799cb158066",
+      "sourceSHA256": "a85ec161b950815f9fc12570916715a55a80dae1a49b73acc989111edb90af5e",
+      "output": "storage/backup/file_bounds.go",
+      "outputSHA256": "a85ec161b950815f9fc12570916715a55a80dae1a49b73acc989111edb90af5e",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/owned_file_io.go",
+      "sourceBlob": "ead6c653428546e569cd69c1b740de7e70cb1c8c",
+      "sourceSHA256": "68a591a07dc1d7dadc458e5da286bc577531e2c3945c6ac1a2aafe13c3b4af99",
+      "output": "storage/backup/owned_file_io.go",
+      "outputSHA256": "68a591a07dc1d7dadc458e5da286bc577531e2c3945c6ac1a2aafe13c3b4af99",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/owned_file_io_test.go",
+      "sourceBlob": "efb7824673eeb0eda57bd7cac8e6f765d6abaf8c",
+      "sourceSHA256": "5c628efa932cfb2746da6ce637cbba18456cbb596f9045c52c47a485ff1b8c8b",
+      "output": "storage/backup/owned_file_io_test.go",
+      "outputSHA256": "5c628efa932cfb2746da6ce637cbba18456cbb596f9045c52c47a485ff1b8c8b",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/owned_file_io_windows_test.go",
+      "sourceBlob": "f9dbe77a282cbc615c13fb57e0b4a302e468915d",
+      "sourceSHA256": "e4d86b24b95a5b24612c48719efec1df108a1c491cde92e6d2b0d3360154127a",
+      "output": "storage/backup/owned_file_io_windows_test.go",
+      "outputSHA256": "e4d86b24b95a5b24612c48719efec1df108a1c491cde92e6d2b0d3360154127a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/owned_path.go",
+      "sourceBlob": "7f90e64ae3d2b602c7302cc4c7a946535fe943cb",
+      "sourceSHA256": "01f87948333131e025ffe04ff455452d5152c8f20d136647d3f025e9fbd0c390",
+      "output": "storage/backup/owned_path.go",
+      "outputSHA256": "01f87948333131e025ffe04ff455452d5152c8f20d136647d3f025e9fbd0c390",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/owned_path_windows.go",
+      "sourceBlob": "9290c762f777dd8f23974619508abd223c1c664f",
+      "sourceSHA256": "c26699891468569ca800bcd8f734e6daf5d0476517d6a3c2ff652286dc35fd0c",
+      "output": "storage/backup/owned_path_windows.go",
+      "outputSHA256": "c26699891468569ca800bcd8f734e6daf5d0476517d6a3c2ff652286dc35fd0c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/restore_recovery_durability_linux.go",
+      "sourceBlob": "683f6e779a1074349fee53c24a39f4a5901f59e6",
+      "sourceSHA256": "d66834c4f5ce133891d58c0461a33f7e2013acf7523dfd9b59dd712188b1afee",
+      "output": "storage/backup/restore_recovery_durability_linux.go",
+      "outputSHA256": "d66834c4f5ce133891d58c0461a33f7e2013acf7523dfd9b59dd712188b1afee",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/restore_recovery_durability_other.go",
+      "sourceBlob": "79e594399ef66598244dfaec0ad1618e3e6fe43d",
+      "sourceSHA256": "73470e98d1fdb3a25284b15298a24018ff9ba7e6dc8e5a3619aec2d8b959dff0",
+      "output": "storage/backup/restore_recovery_durability_other.go",
+      "outputSHA256": "73470e98d1fdb3a25284b15298a24018ff9ba7e6dc8e5a3619aec2d8b959dff0",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/durableowner/binding.go",
+      "sourceBlob": "7fe7175ddaddac1f2fe298339b66e3349faf947c",
+      "sourceSHA256": "707fbce9a916362e43bac52bff85cf511b9c83af406ebd77ec656dfd599f3944",
+      "output": "storage/durableowner/binding.go",
+      "outputSHA256": "d1cdf129fc1580299bff062be78fcd65ccb78b3ab09592f7c4b9d9a0d2801c0a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/durableowner/binding_test.go",
+      "sourceBlob": "1d116efa52b57b733d1cfae90676b025bb9fe6e4",
+      "sourceSHA256": "00e68cc7a027d2d171a030006c5fd68f40b70c28eb65a3ccca19484d84e57400",
+      "output": "storage/durableowner/binding_test.go",
+      "outputSHA256": "00e68cc7a027d2d171a030006c5fd68f40b70c28eb65a3ccca19484d84e57400",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/durableowner/hooks.go",
+      "sourceBlob": "b3a877c96adce7e3749ae3fa31cb04bc18ceb113",
+      "sourceSHA256": "3cb334604ff4358b44eeeee77b837baa4db9e2f01f3425e536672ddd171abf2f",
+      "output": "storage/durableowner/hooks.go",
+      "outputSHA256": "3cb334604ff4358b44eeeee77b837baa4db9e2f01f3425e536672ddd171abf2f",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/durableowner/hooks_test.go",
+      "sourceBlob": "687a497a9b64b2db22c62cf45129e2437f2fad89",
+      "sourceSHA256": "e940b483ae5225a46f1b00f681bb42aab59f630d86f8e8be7dc9e0f7c5aad61c",
+      "output": "storage/durableowner/hooks_test.go",
+      "outputSHA256": "e940b483ae5225a46f1b00f681bb42aab59f630d86f8e8be7dc9e0f7c5aad61c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/durableowner/registry.go",
+      "sourceBlob": "c54f1dc882bd5786592601ad791666b3ab3e6dd5",
+      "sourceSHA256": "322f5901c464b89848ec767986ae3ec19eda346b65d1693138b6883ce738afc6",
+      "output": "storage/durableowner/registry.go",
+      "outputSHA256": "322f5901c464b89848ec767986ae3ec19eda346b65d1693138b6883ce738afc6",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/durableowner/registry_test.go",
+      "sourceBlob": "e6af5f3b43cfce947a5ec1775621c33b2360883f",
+      "sourceSHA256": "1dadefcd294ffa6e8ac20ebe56499f8160e5783f279f3b35bed63d383340bc9b",
+      "output": "storage/durableowner/registry_test.go",
+      "outputSHA256": "1dadefcd294ffa6e8ac20ebe56499f8160e5783f279f3b35bed63d383340bc9b",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/hooks/reset.go",
+      "sourceBlob": "10f96ee751978105e3e046c0b961d58418818770",
+      "sourceSHA256": "f9e51558fa5ddcc81947c8deda6389430af131e04def7e98bb6f6b1f3dc3dd11",
+      "output": "storage/hooks/reset.go",
+      "outputSHA256": "f9e51558fa5ddcc81947c8deda6389430af131e04def7e98bb6f6b1f3dc3dd11",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/hooks/restore.go",
+      "sourceBlob": "3fe4b8a160655e63e22be38fe48e21489173af65",
+      "sourceSHA256": "1347e9a7c6b7d799c59acf488e273c3c5498a8881c4a198d0ac6012779a92d0c",
+      "output": "storage/hooks/restore.go",
+      "outputSHA256": "1347e9a7c6b7d799c59acf488e273c3c5498a8881c4a198d0ac6012779a92d0c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/hooks/restore_test.go",
+      "sourceBlob": "1a6f085b2b46b70e41c04ca28111a13a2ae222a4",
+      "sourceSHA256": "1ddaee0c254541e339f968af89a9bcc536e4428e9c72345c9db15ffe8e0fa57c",
+      "output": "storage/hooks/restore_test.go",
+      "outputSHA256": "1ddaee0c254541e339f968af89a9bcc536e4428e9c72345c9db15ffe8e0fa57c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/integrity/foreign_keys.go",
+      "sourceBlob": "797f6cc16af114bdfb24b230335baf29c0255164",
+      "sourceSHA256": "1b36f485c7ce818351aa534d2ade9d3d18ad20e439ec6576edda122caea3f9fb",
+      "output": "storage/integrity/foreign_keys.go",
+      "outputSHA256": "745ae9bc0c23b38bdb4bd6e66d9996996fb5ded9c6c1a10eb14054692e01a737",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/integrity/foreign_keys_test.go",
+      "sourceBlob": "b8634988faccc244c2afcb581cd816635546bd52",
+      "sourceSHA256": "b6fd3d0d8d4f26991bfae3ba83c3b8a4a81b1d800c604b1061ed6a1c8c4daf22",
+      "output": "storage/integrity/foreign_keys_test.go",
+      "outputSHA256": "b6fd3d0d8d4f26991bfae3ba83c3b8a4a81b1d800c604b1061ed6a1c8c4daf22",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/jsonvalue/shape.go",
+      "sourceBlob": "38a793cb9d042a368395b42dee9857d03e145cc2",
+      "sourceSHA256": "fd6acb81a1fae5ca204c3c245e930053feae56bb51aa3ceb3146370860fa9673",
+      "output": "storage/jsonvalue/shape.go",
+      "outputSHA256": "fd6acb81a1fae5ca204c3c245e930053feae56bb51aa3ceb3146370860fa9673",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/jsonvalue/shape_test.go",
+      "sourceBlob": "f3a2ff51cb456ec462fdd361158dacd40eff3195",
+      "sourceSHA256": "a0b1ddfa4604f9627e262e40938897dc59ba7b2649a0bd186aaf0817042d9f8e",
+      "output": "storage/jsonvalue/shape_test.go",
+      "outputSHA256": "a0b1ddfa4604f9627e262e40938897dc59ba7b2649a0bd186aaf0817042d9f8e",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/jsonvalue/strict.go",
+      "sourceBlob": "c0f7f5a527c32337ec86e3f7721a79bf52be5c04",
+      "sourceSHA256": "9a4bd0e063b4054fc027356128025941df2dca42896eeaaa1e70bc62e423318f",
+      "output": "storage/jsonvalue/strict.go",
+      "outputSHA256": "9a4bd0e063b4054fc027356128025941df2dca42896eeaaa1e70bc62e423318f",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/jsonvalue/strict_test.go",
+      "sourceBlob": "38cc41ecefd16c37774a94d5c249c818861d2171",
+      "sourceSHA256": "43f933c3737c4ba319e0c6334fb005c1852372cef1686bbb39a4df72d512f8a6",
+      "output": "storage/jsonvalue/strict_test.go",
+      "outputSHA256": "43f933c3737c4ba319e0c6334fb005c1852372cef1686bbb39a4df72d512f8a6",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/migration/authority_test.go",
+      "sourceBlob": "d03b5543115a83a0a584ffc552b59510aa20402f",
+      "sourceSHA256": "940c29eb7cf7be60369109c4286e80ef13e5ee112d2e34df69806f6650933b40",
+      "output": "storage/migration/authority_test.go",
+      "outputSHA256": "940c29eb7cf7be60369109c4286e80ef13e5ee112d2e34df69806f6650933b40",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/migration/connection.go",
+      "sourceBlob": "c92f485f3b35ba671583bde78b6823a78c0257ad",
+      "sourceSHA256": "b81d9bf51ed553a5e415d026db5613575c943775f0f8ec9e536708b404051015",
+      "output": "storage/migration/connection.go",
+      "outputSHA256": "b81d9bf51ed553a5e415d026db5613575c943775f0f8ec9e536708b404051015",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/migration/doc.go",
+      "sourceBlob": "aaae80652907d6dadfeb76191fb11df2f4fa5bb5",
+      "sourceSHA256": "f55ad2f11cd41b445e17587ab63d751a9a279ca144830ab86f9584c28551b5cc",
+      "output": "storage/migration/doc.go",
+      "outputSHA256": "f55ad2f11cd41b445e17587ab63d751a9a279ca144830ab86f9584c28551b5cc",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/migration/runner.go",
+      "sourceBlob": "b9a14b9fa4c578741f6647cea1419951639e7d3e",
+      "sourceSHA256": "2becd58fb9968e73f9aea33791c914db25d60ea53b713c3b43d316c3e7fd1913",
+      "output": "storage/migration/runner.go",
+      "outputSHA256": "2becd58fb9968e73f9aea33791c914db25d60ea53b713c3b43d316c3e7fd1913",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/admins.go",
+      "sourceBlob": "b354db80df1691363ebfef4ee8a103c29af5de07",
+      "sourceSHA256": "3065586fce5afba63cd06f1a6bd5af895e8f7bc50f9e0a3afb3103cb28ec9057",
+      "output": "storage/model/admins.go",
+      "outputSHA256": "3065586fce5afba63cd06f1a6bd5af895e8f7bc50f9e0a3afb3103cb28ec9057",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/audit.go",
+      "sourceBlob": "aa03c4eb66b5b9bbc451feb90d3a704fbe077631",
+      "sourceSHA256": "2e9411ca49de12e88301b530064e42cd485754294c1ad0dd5de99163b40bea04",
+      "output": "storage/model/audit.go",
+      "outputSHA256": "2e9411ca49de12e88301b530064e42cd485754294c1ad0dd5de99163b40bea04",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/client_ips.go",
+      "sourceBlob": "39a2290b868fe9f4d9e08313f79327987ce1a7c8",
+      "sourceSHA256": "d8fee6d4eefc0cc0eae2e43b2aedf2f67291afb56dd867a30cac03c989b05f63",
+      "output": "storage/model/client_ips.go",
+      "outputSHA256": "d8fee6d4eefc0cc0eae2e43b2aedf2f67291afb56dd867a30cac03c989b05f63",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/clients.go",
+      "sourceBlob": "26ed3d906c8689aaa4be6c049c2a56f5b4a85465",
+      "sourceSHA256": "11c17217e6aebfeb9e3e77b78ab55412ef20e4051aff1c84a4bd26d7e3834c55",
+      "output": "storage/model/clients.go",
+      "outputSHA256": "11c17217e6aebfeb9e3e77b78ab55412ef20e4051aff1c84a4bd26d7e3834c55",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/component_migrations.go",
+      "sourceBlob": "36aab685dfade53c080f4af020556f1cfea261bc",
+      "sourceSHA256": "8233a94c0a4a295fdedf2f1f74ee5557c21718bf4f96d01d4ec2f2a46258ca7d",
+      "output": "storage/model/component_migrations.go",
+      "outputSHA256": "8233a94c0a4a295fdedf2f1f74ee5557c21718bf4f96d01d4ec2f2a46258ca7d",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/deployment.go",
+      "sourceBlob": "1cb6f760113d7e197fa3b0b2cd5d0cdbade5a580",
+      "sourceSHA256": "28ddfac4f6db1491d6020fa9483bc92130a74867f305f996782691d3333f4614",
+      "output": "storage/model/deployment.go",
+      "outputSHA256": "28ddfac4f6db1491d6020fa9483bc92130a74867f305f996782691d3333f4614",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/doc.go",
+      "sourceBlob": "aea3e39b9bf20267db1e5920a54e2cd5b8fd913b",
+      "sourceSHA256": "81739dffce5e3c52699c2d9b86444c1a22869d3ec10fae8a7da9ef0d28941f1e",
+      "output": "storage/model/doc.go",
+      "outputSHA256": "81739dffce5e3c52699c2d9b86444c1a22869d3ec10fae8a7da9ef0d28941f1e",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/endpoints.go",
+      "sourceBlob": "12a5ad2d425eb34efd34f03140dad88d739b3edf",
+      "sourceSHA256": "4e66fa6c78393d413aeb99a62c8fc3eac43642e26955294f81303e6ff4123f71",
+      "output": "storage/model/endpoints.go",
+      "outputSHA256": "69eef35483b93c7fa18fc645a6b3b77e48ef092bf2c83cea1fd953372b03d874",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/entity_identity.go",
+      "sourceBlob": "c3ecbec69b3e1c87bba3fd2a3874b9e297f54aec",
+      "sourceSHA256": "a74f9edd3f008f9cf00d9ec95184c7d36c97536bec11af5bee7cfa3a8cda41ee",
+      "output": "storage/model/entity_identity.go",
+      "outputSHA256": "c0130163a674cc819ddf9e6d052e3312faf16faa243a02a4ba698238407a7bcb",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/entity_json_test.go",
+      "sourceBlob": "3568d5b75f49b10cf965530f136d13574daf17ec",
+      "sourceSHA256": "aa88918838c79679a4c3f83770ecef4da12d172dbc8fc6a0162f4b4881c0c6f4",
+      "output": "storage/model/entity_json_test.go",
+      "outputSHA256": "aa88918838c79679a4c3f83770ecef4da12d172dbc8fc6a0162f4b4881c0c6f4",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/failover.go",
+      "sourceBlob": "8218c09eaa4053b49b4777915e7be033845a62f5",
+      "sourceSHA256": "4f62f7adc9b21dcb9f3286709c20e30f4f38eaf1c1ffc1e5cfed1d75d45222c9",
+      "output": "storage/model/failover.go",
+      "outputSHA256": "4f62f7adc9b21dcb9f3286709c20e30f4f38eaf1c1ffc1e5cfed1d75d45222c9",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/inbound_drafts.go",
+      "sourceBlob": "dc72d7d3b7d5a8b21c9091b96c86dda8410b6a09",
+      "sourceSHA256": "47a861d69d35bd77bdaff26e9db23bd5d251ac5e5fd02626ff9adf7ca72343b3",
+      "output": "storage/model/inbound_drafts.go",
+      "outputSHA256": "47a861d69d35bd77bdaff26e9db23bd5d251ac5e5fd02626ff9adf7ca72343b3",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/inbound_endpoint_leases.go",
+      "sourceBlob": "b1e2ce0c27ba9eeae2a2799d94372c12d76d68b0",
+      "sourceSHA256": "5dcf1e9ee275e7e078d8fd72ce045ecbf160cd8300dfa76581612dba066cdf11",
+      "output": "storage/model/inbound_endpoint_leases.go",
+      "outputSHA256": "5dcf1e9ee275e7e078d8fd72ce045ecbf160cd8300dfa76581612dba066cdf11",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/inbound_fallback_checkpoints.go",
+      "sourceBlob": "d5695878025d2094abccf21f832718dd1d50fa33",
+      "sourceSHA256": "9c7d16b3802ca60d6333af14f1b69462074fe3ce23927dd65de588fbb8677557",
+      "output": "storage/model/inbound_fallback_checkpoints.go",
+      "outputSHA256": "9c7d16b3802ca60d6333af14f1b69462074fe3ce23927dd65de588fbb8677557",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/inbounds.go",
+      "sourceBlob": "d77626a3b7da4b7f129dcf108f29474bf5fd1d61",
+      "sourceSHA256": "22ed12a365f01a857c93f014aa24484853253e61f9d9cfeef6549cd8fe3b54ae",
+      "output": "storage/model/inbounds.go",
+      "outputSHA256": "22ed12a365f01a857c93f014aa24484853253e61f9d9cfeef6549cd8fe3b54ae",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/json_fields.go",
+      "sourceBlob": "d8128764261c8170baa21c7a5ea5e5388077c94f",
+      "sourceSHA256": "4cf54bd9e492fbc77839018844f2bd5c68e0de102e38bb7789c31dc261d523f4",
+      "output": "storage/model/json_fields.go",
+      "outputSHA256": "4cf54bd9e492fbc77839018844f2bd5c68e0de102e38bb7789c31dc261d523f4",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/operations_lifecycle.go",
+      "sourceBlob": "909445d3caf30b89128bab2298cfa2eefd3af0d8",
+      "sourceSHA256": "c76241b00da558e1b0535a6bff64ffa40b2a8de825aeb4e6eda710af85ddee33",
+      "output": "storage/model/operations_lifecycle.go",
+      "outputSHA256": "c76241b00da558e1b0535a6bff64ffa40b2a8de825aeb4e6eda710af85ddee33",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/outbounds.go",
+      "sourceBlob": "c8c506c5616b52c8c07506a732bc224dd210cc9f",
+      "sourceSHA256": "5dbacbda001763645045fc78765c79bdd6e5bd45b2b19315816bc3aee10626bc",
+      "output": "storage/model/outbounds.go",
+      "outputSHA256": "5dbacbda001763645045fc78765c79bdd6e5bd45b2b19315816bc3aee10626bc",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/panel_security.go",
+      "sourceBlob": "e956e84c08bb0ad6e598c831f6019cfa5f22c991",
+      "sourceSHA256": "a43dc4399f7d269086a078df780004fb19b24ad09d13754f472f639768438e9c",
+      "output": "storage/model/panel_security.go",
+      "outputSHA256": "a43dc4399f7d269086a078df780004fb19b24ad09d13754f472f639768438e9c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/schema.go",
+      "sourceBlob": "fabf45491249541bb4e3a950dc5e979aef8ff216",
+      "sourceSHA256": "252c96f7abd8df978f10b72c9a8ba2807f15475261483a3a5212ec70dfc78d53",
+      "output": "storage/model/schema.go",
+      "outputSHA256": "252c96f7abd8df978f10b72c9a8ba2807f15475261483a3a5212ec70dfc78d53",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/services.go",
+      "sourceBlob": "a332cf462af566376a22901dff6dc2ec6595369f",
+      "sourceSHA256": "bcde8fb74a687ea49a08a1da407771a0a40cc5f1f919194d2506daa88932fc20",
+      "output": "storage/model/services.go",
+      "outputSHA256": "bcde8fb74a687ea49a08a1da407771a0a40cc5f1f919194d2506daa88932fc20",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/settings.go",
+      "sourceBlob": "498e27e0f1dce415ac858ebc0ee8154cf2154143",
+      "sourceSHA256": "6c7e9313aad86a5c6734b6968adef647209b6a5f92fb92f4af999450d38b8f5d",
+      "output": "storage/model/settings.go",
+      "outputSHA256": "6c7e9313aad86a5c6734b6968adef647209b6a5f92fb92f4af999450d38b8f5d",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/ssh_management.go",
+      "sourceBlob": "85359a99447370043e09230e2a1d464db3246fea",
+      "sourceSHA256": "b332764a99cc7d93cce03c9f76a64c613a85caa70c87c5502136e9d81bd885d1",
+      "output": "storage/model/ssh_management.go",
+      "outputSHA256": "b332764a99cc7d93cce03c9f76a64c613a85caa70c87c5502136e9d81bd885d1",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/statistics.go",
+      "sourceBlob": "de7cbb386caf7c22aee4fe071847a114eb0b0103",
+      "sourceSHA256": "8afd72ab6485c6a960137fee1c2ca6a51cbdfe75db29d4cc8b03792e46ac4e0b",
+      "output": "storage/model/statistics.go",
+      "outputSHA256": "8afd72ab6485c6a960137fee1c2ca6a51cbdfe75db29d4cc8b03792e46ac4e0b",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/tls.go",
+      "sourceBlob": "518d5342bfeca2895d6d5fb7b4e7697a46efcc80",
+      "sourceSHA256": "1a993ee497fa0b64db8477e608d7eebdd22ca26d322e4f5b1f5f4a42bae9d2a5",
+      "output": "storage/model/tls.go",
+      "outputSHA256": "1a993ee497fa0b64db8477e608d7eebdd22ca26d322e4f5b1f5f4a42bae9d2a5",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/tls_provider.go",
+      "sourceBlob": "235b9d5612e36422e3bc3b2b355c4e6fa3b0f9c7",
+      "sourceSHA256": "cd6ac2048afb42db39eeced01678f121955befbe33952b56fbe9b1932bce4927",
+      "output": "storage/model/tls_provider.go",
+      "outputSHA256": "cd6ac2048afb42db39eeced01678f121955befbe33952b56fbe9b1932bce4927",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/tokens.go",
+      "sourceBlob": "b01a63cc849e1041e2d6da85bb5f1656689009e3",
+      "sourceSHA256": "8dde96932f4ae4f0737bf6aea2d7b9e8bf079ffb62010e17bc10e03e31d3358d",
+      "output": "storage/model/tokens.go",
+      "outputSHA256": "8dde96932f4ae4f0737bf6aea2d7b9e8bf079ffb62010e17bc10e03e31d3358d",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/model/tokens_test.go",
+      "sourceBlob": "624d46619822f3f291c04ec17e74aecd9dba9e06",
+      "sourceSHA256": "3b6ab70e748b034ab25b82913498278adf149a3ea2b6b7bfc6819807b5a64bd5",
+      "output": "storage/model/tokens_test.go",
+      "outputSHA256": "3b6ab70e748b034ab25b82913498278adf149a3ea2b6b7bfc6819807b5a64bd5",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/restorestate/state.go",
+      "sourceBlob": "1f7507fe72f3c0d8a405de8c14ad7d04644cb834",
+      "sourceSHA256": "6091dc10516d6ad0d37fa19f54d0c557543af24c6b7a4342dfad295ed0f201a1",
+      "output": "storage/restorestate/state.go",
+      "outputSHA256": "6091dc10516d6ad0d37fa19f54d0c557543af24c6b7a4342dfad295ed0f201a1",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/restorestate/state_test.go",
+      "sourceBlob": "5b0b09784cbc76e19d9f806c48e3993ed9396f13",
+      "sourceSHA256": "17fd02860dc2c5d76dd514529502994f3a9e007f44deee0532e2d98258aac9bb",
+      "output": "storage/restorestate/state_test.go",
+      "outputSHA256": "17fd02860dc2c5d76dd514529502994f3a9e007f44deee0532e2d98258aac9bb",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/schema/version.go",
+      "sourceBlob": "fdd580fcd50b3e650eeb0f048904e4d68d2e3892",
+      "sourceSHA256": "db78f6e68d031957660ce5c7de56be14b2e45b3f1bcf234ee9afdfc3074ada27",
+      "output": "storage/schema/version.go",
+      "outputSHA256": "9c6828baa265e59934160ca95e0e791f6520efafc3d020dd72be4ec04816dad1",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/sqlite/bulk.go",
+      "sourceBlob": "ba4c3e52dba0448ab69c9e659dddd39b626ff4ca",
+      "sourceSHA256": "a6c03e32f599590cce729ff51d3212461265133a276cd23b0c53abb56f8aa6cd",
+      "output": "storage/sqlite/bulk.go",
+      "outputSHA256": "a6c03e32f599590cce729ff51d3212461265133a276cd23b0c53abb56f8aa6cd",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/sqlite/bulk_test.go",
+      "sourceBlob": "9a5d5fc627a1fb575552826fa7604adc741d15d9",
+      "sourceSHA256": "af535a286fbd34e659c595d174b795521ef4cadc28c79cb915d4d37db7f0c644",
+      "output": "storage/sqlite/bulk_test.go",
+      "outputSHA256": "ae7bf616abe055525b96e55cc2b14a4ad9f4ec364267393fe9cb5eca4637ca89",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/sqlite/connection.go",
+      "sourceBlob": "83ee5bd702bc057673b85c34348e0b442352f365",
+      "sourceSHA256": "5f2850d1ba8f39c30b7587581f28780b23ff0c99840267194f5cd84139c61851",
+      "output": "storage/sqlite/connection.go",
+      "outputSHA256": "5f2850d1ba8f39c30b7587581f28780b23ff0c99840267194f5cd84139c61851",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/sqlite/connection_test.go",
+      "sourceBlob": "6a9e41f0284ec1290100f4056cfc193a9ba05e26",
+      "sourceSHA256": "b4c195817dfe65096d67b3bf6ae8b199de42c57d0395e8e08bdc5dcf9ec2360a",
+      "output": "storage/sqlite/connection_test.go",
+      "outputSHA256": "b4c195817dfe65096d67b3bf6ae8b199de42c57d0395e8e08bdc5dcf9ec2360a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/sqlite/connector.go",
+      "sourceBlob": "2ed45f05ecde9762c230f6a37c9393f70d468f4e",
+      "sourceSHA256": "063b7aa885ed17c6317943629d17c8b7792f898a0ba984fd8e1729619a3ffae7",
+      "output": "storage/sqlite/connector.go",
+      "outputSHA256": "063b7aa885ed17c6317943629d17c8b7792f898a0ba984fd8e1729619a3ffae7",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/sqlite/doc.go",
+      "sourceBlob": "d1059eaa3206fe6e4d0fbabca0bd4e60e0fc68d3",
+      "sourceSHA256": "c6f1133115b55a74fda78f20d86eac4f2baef425a739036802660bfb05cfa5bf",
+      "output": "storage/sqlite/doc.go",
+      "outputSHA256": "c6f1133115b55a74fda78f20d86eac4f2baef425a739036802660bfb05cfa5bf",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/sqlite/initialize.go",
+      "sourceBlob": "0eef2594bf03ace0d009432ceff9ad0b8eebbbd7",
+      "sourceSHA256": "1fdbd2635e831b9a0407c426287fd87b5d34ab8d6073c0fe92b8c227325ab629",
+      "output": "storage/sqlite/initialize.go",
+      "outputSHA256": "1fdbd2635e831b9a0407c426287fd87b5d34ab8d6073c0fe92b8c227325ab629",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/sqlite/initialize_test.go",
+      "sourceBlob": "d40fbca94daa343a9a5d7bd124d696a551098bd2",
+      "sourceSHA256": "21182bef9c5f55437d6d058499a5a84d830f8e16e2877f442aec1d0a3139b48d",
+      "output": "storage/sqlite/initialize_test.go",
+      "outputSHA256": "21182bef9c5f55437d6d058499a5a84d830f8e16e2877f442aec1d0a3139b48d",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/sqlite/operation_lifetime.go",
+      "sourceBlob": "7787399f67206d5440fba7fc0a915f4a38a738f1",
+      "sourceSHA256": "2f5a470e6af2add91925cfd359d8a8b084645691d5de0bf01380e986684a395f",
+      "output": "storage/sqlite/operation_lifetime.go",
+      "outputSHA256": "2f5a470e6af2add91925cfd359d8a8b084645691d5de0bf01380e986684a395f",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/sqlite/operation_lifetime_test.go",
+      "sourceBlob": "2afee0b1852762b884eaba44833c447e48dcff7b",
+      "sourceSHA256": "dd4c6b2692ad5e4d884075231124966b9952313c5df97cdab691e7c91e4b991e",
+      "output": "storage/sqlite/operation_lifetime_test.go",
+      "outputSHA256": "dd4c6b2692ad5e4d884075231124966b9952313c5df97cdab691e7c91e4b991e",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/sqlite/read_only.go",
+      "sourceBlob": "fd22d0b107513e3a0ebfaf65dd5b412afc91b4fb",
+      "sourceSHA256": "288a31d00b75c08319949edbb18859e1863569abff786353da7598ac58cc8438",
+      "output": "storage/sqlite/read_only.go",
+      "outputSHA256": "288a31d00b75c08319949edbb18859e1863569abff786353da7598ac58cc8438",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/sqlite/read_only_test.go",
+      "sourceBlob": "20b699d4dc013d7e4d9b3f51f8e6eb7b80b39d2b",
+      "sourceSHA256": "c2719ac495963c4a42bd47ee040cedd7288ae7ef16c0cfbaf38ff47b1d319449",
+      "output": "storage/sqlite/read_only_test.go",
+      "outputSHA256": "c2719ac495963c4a42bd47ee040cedd7288ae7ef16c0cfbaf38ff47b1d319449",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/sqlite/runtime_status.go",
+      "sourceBlob": "b3c7d2be4eef545f808d0fcc09de906f2af9e705",
+      "sourceSHA256": "17371a991e83084cb507fbed66847a35dc59b63cde9365bea4e45bff744d26d5",
+      "output": "storage/sqlite/runtime_status.go",
+      "outputSHA256": "17371a991e83084cb507fbed66847a35dc59b63cde9365bea4e45bff744d26d5",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/sqlite/test_helpers_test.go",
+      "sourceBlob": "8871e520943730e99c8229406e6caa089f0ce02a",
+      "sourceSHA256": "6c31e647a2c184b0572dd04990b520ec371f9a62e0ba318b9df3aa72e739e463",
+      "output": "storage/sqlite/test_helpers_test.go",
+      "outputSHA256": "76d1af75597ca38ea2d393bc733dea309f9125866dcc3ebbcbf61fb54ef4fe3a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/sqlite/wal_regression_test.go",
+      "sourceBlob": "947c5b98b5af5df1819058d30f7123f1e9564354",
+      "sourceSHA256": "7f1be051c5befc6b32104c0755d7cab1739924a4a4d42f52f48571fd098e32c9",
+      "output": "storage/sqlite/wal_regression_test.go",
+      "outputSHA256": "7f1be051c5befc6b32104c0755d7cab1739924a4a4d42f52f48571fd098e32c9",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/sqlite/write_reservation.go",
+      "sourceBlob": "5f6082bba868d2f43d6d077e484667f11a185c01",
+      "sourceSHA256": "ef175cdf5ad62337309b3f4319b5c85ed636f768a3f03eb9c762ab07bba8ec80",
+      "output": "storage/sqlite/write_reservation.go",
+      "outputSHA256": "ef175cdf5ad62337309b3f4319b5c85ed636f768a3f03eb9c762ab07bba8ec80",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/sqliteident/identifier.go",
+      "sourceBlob": "5bd66b894673be56c346b8dd50c5143f1a770148",
+      "sourceSHA256": "b6485f08d0a055143b51e22f502e037a5c6df6b82bbcf1fc36bd89e7c7e9bc58",
+      "output": "storage/sqliteident/identifier.go",
+      "outputSHA256": "b6485f08d0a055143b51e22f502e037a5c6df6b82bbcf1fc36bd89e7c7e9bc58",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/sqliteident/identifier_test.go",
+      "sourceBlob": "abb223bd65c5a0043306f8bc30b0397e1163dbc1",
+      "sourceSHA256": "a22021262519d01a722c2c62cc4e5f137ddfba90a9b9d4aa6128581d7260d1a4",
+      "output": "storage/sqliteident/identifier_test.go",
+      "outputSHA256": "a22021262519d01a722c2c62cc4e5f137ddfba90a9b9d4aa6128581d7260d1a4",
+      "adaptation": "canonical Backend self-import prefix only"
+    }
+  ]
+}

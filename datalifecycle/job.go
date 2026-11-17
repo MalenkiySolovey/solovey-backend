@@ -1,0 +1,13 @@
+package datalifecycle
+
+import (
+	"github.com/MalenkiySolovey/solovey-backend/operations/coordination"
+	"github.com/MalenkiySolovey/solovey-backend/storage/model"
+)
+
+func ProjectJob(operation model.DataLifecycleOperation) operationcoordination.Job {
+	change := ProjectChange(operation)
+	critical := change.Outcome == operationcoordination.OutcomePending && (operation.State == "RESTORING" || operation.State == "DROPPING" || operation.State == "VERIFYING")
+	// Data has durable phases, not a trustworthy byte/percentage counter.
+	return operationcoordination.ProjectJob(change, nil, critical)
+}
