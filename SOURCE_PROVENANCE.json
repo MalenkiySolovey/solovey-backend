@@ -1,8 +1,8 @@
 {
-  "status": "LOCAL_SOURCE_CLOSURE_CANDIDATE",
+  "status": "CANONICAL_BACKEND_SOURCE",
   "sourceRepository": "https://github.com/MalenkiySolovey/solovey-ui",
-  "sourceCommit": "3561326f343098609be018846b04ff7b52933cf2",
-  "sourceTree": "02eee694aaac51107b7883b2387b9f738956adac",
+  "sourceCommit": "063b71f32b3e4043fb16b84912bd934d68846370",
+  "sourceTree": "01d1003568eee8c4261cbf949a6b9a6dfcc5d2dc",
   "files": [
     {
       "source": "LICENSE",
@@ -1666,6 +1666,46 @@
       "sourceSHA256": "a85ec161b950815f9fc12570916715a55a80dae1a49b73acc989111edb90af5e",
       "output": "storage/backup/file_bounds.go",
       "outputSHA256": "a85ec161b950815f9fc12570916715a55a80dae1a49b73acc989111edb90af5e",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/file_payload.go",
+      "sourceBlob": "ad0cccb74b079703ffcee1d95ae0976fad670e82",
+      "sourceSHA256": "62995309cf34d6b170eb772c12541a58c6cc0584267bb0c2e525d8bfacc6bce5",
+      "output": "storage/backup/file_payload.go",
+      "outputSHA256": "62995309cf34d6b170eb772c12541a58c6cc0584267bb0c2e525d8bfacc6bce5",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/file_payload_test.go",
+      "sourceBlob": "cf0938c9816c6e8cbd8ad20d681077bdfc76fe77",
+      "sourceSHA256": "203bf6fa38e4705eda0612c6ee25f5454f16e480b3bd224c84e2dc32fb13b52a",
+      "output": "storage/backup/file_payload_test.go",
+      "outputSHA256": "203bf6fa38e4705eda0612c6ee25f5454f16e480b3bd224c84e2dc32fb13b52a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/manifest.go",
+      "sourceBlob": "9ad81f3340a18b6a34dd08be637b3ffa7ef5a507",
+      "sourceSHA256": "6ba8a69ed2e44f55751eef41d9fd005e1389c9afabe6ec4b99976f61ac440a2a",
+      "output": "storage/backup/manifest.go",
+      "outputSHA256": "35095f54e647959f4d8d091cc147fca376511721ce493e9fd196d2764cad3293",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/manifest_modes_test.go",
+      "sourceBlob": "bf5c313d1dd151ef7a03751df355b6d131bc563b",
+      "sourceSHA256": "cbebedef44cc57b6a7f87e0c7480a2a5f253772966b8fa993158f9e9f08fb0da",
+      "output": "storage/backup/manifest_modes_test.go",
+      "outputSHA256": "cbebedef44cc57b6a7f87e0c7480a2a5f253772966b8fa993158f9e9f08fb0da",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/manifest_test.go",
+      "sourceBlob": "e4bd207f6210e3a9e76a39dd87bb747059295e34",
+      "sourceSHA256": "4d9d1c0885f2df2232dbaf4795e1cb244a37ad17e8180e3b6553f0817bccdeb9",
+      "output": "storage/backup/manifest_test.go",
+      "outputSHA256": "e1a0401ff0d7dce49afe461275ab54047161b6febe74366eb771a3eca1f75cb9",
       "adaptation": "canonical Backend self-import prefix only"
     },
     {
