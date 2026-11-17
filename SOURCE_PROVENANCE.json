@@ -1,8 +1,8 @@
 {
   "status": "CANONICAL_BACKEND_SOURCE",
   "sourceRepository": "https://github.com/MalenkiySolovey/solovey-ui",
-  "sourceCommit": "063b71f32b3e4043fb16b84912bd934d68846370",
-  "sourceTree": "01d1003568eee8c4261cbf949a6b9a6dfcc5d2dc",
+  "sourceCommit": "ef27cc001176ff8e7169cbeb3a23d9f9831db49b",
+  "sourceTree": "2883e0f5e288f94ca70f866109d1b98fd56e73b2",
   "files": [
     {
       "source": "LICENSE",
@@ -1661,6 +1661,54 @@
       "adaptation": "canonical Backend self-import prefix only"
     },
     {
+      "source": "backend/storage/backup/contributions.go",
+      "sourceBlob": "fb54d6136046d73038ace15e187acdfcf148022e",
+      "sourceSHA256": "d2b5fe72f84b3d2b0ca9aec174c8ae2384d57605cafe2208dfe58a06cc5fe72e",
+      "output": "storage/backup/contributions.go",
+      "outputSHA256": "d2b5fe72f84b3d2b0ca9aec174c8ae2384d57605cafe2208dfe58a06cc5fe72e",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/copy_context.go",
+      "sourceBlob": "811b5277a6c4aa713b0ca125ea38d5cea850167a",
+      "sourceSHA256": "6ad1a7a51841db9d207b719c3fe18d5d511dfa81b65d27d954875c502ddb36c9",
+      "output": "storage/backup/copy_context.go",
+      "outputSHA256": "6ad1a7a51841db9d207b719c3fe18d5d511dfa81b65d27d954875c502ddb36c9",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/copy_test.go",
+      "sourceBlob": "ef336174978184d63ab5fb85f2f8d3956d5b25aa",
+      "sourceSHA256": "b74aa3d4da7641316755a2ef0c2000fe3346daaee8cb227da76f06f41526b7a0",
+      "output": "storage/backup/copy_test.go",
+      "outputSHA256": "b74aa3d4da7641316755a2ef0c2000fe3346daaee8cb227da76f06f41526b7a0",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/export.go",
+      "sourceBlob": "61c13f3d9c0ff581624bf664a35dbe751a5adb2a",
+      "sourceSHA256": "9144b24b11ab7ad67fd27b83362be4c766d123ae40b5f80b0a8abf44ed0f8360",
+      "output": "storage/backup/export.go",
+      "outputSHA256": "2958dfd5a546a138f53c101792d8f78b2ca0edded9ff4c041085d42fbb992215",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/export_checkpoint_test.go",
+      "sourceBlob": "62f694d6b59c4e783d3043ce8faebee3a3ae500f",
+      "sourceSHA256": "a2939957279f9c021f23b9d6de8f028a97fd7b6176942ea673b7c665aee6352b",
+      "output": "storage/backup/export_checkpoint_test.go",
+      "outputSHA256": "a2939957279f9c021f23b9d6de8f028a97fd7b6176942ea673b7c665aee6352b",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/export_policy_test.go",
+      "sourceBlob": "38893cfe53bdf1f34849b788172a32cb7888684c",
+      "sourceSHA256": "bf03b848824622509a9e6057d916e426a973014323ca26fd2bf3b169c03711ae",
+      "output": "storage/backup/export_policy_test.go",
+      "outputSHA256": "bf03b848824622509a9e6057d916e426a973014323ca26fd2bf3b169c03711ae",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
       "source": "backend/storage/backup/file_bounds.go",
       "sourceBlob": "72c8ee817a6efe5d584ad4c686bb3799cb158066",
       "sourceSHA256": "a85ec161b950815f9fc12570916715a55a80dae1a49b73acc989111edb90af5e",
@@ -1749,6 +1797,38 @@
       "adaptation": "canonical Backend self-import prefix only"
     },
     {
+      "source": "backend/storage/backup/owners.go",
+      "sourceBlob": "9e4375c36b2d2144b9e12a181424db2a6bc08b16",
+      "sourceSHA256": "a9eb8249ca494d95077a028982c4fd44c7a4e2d704e7ccafae300f7ac0519b58",
+      "output": "storage/backup/owners.go",
+      "outputSHA256": "f9f61b9e943729bab629d86f8ce1314a9b87b0d8f39e6d5a594e796f118d0917",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/restore.go",
+      "sourceBlob": "fe49059a153c5319f042dc79aabf490ba79c2dae",
+      "sourceSHA256": "111c1420901994012805307cf03504a0160ca2756950d3c38c0e2544eb0a1e0a",
+      "output": "storage/backup/restore.go",
+      "outputSHA256": "4ffefd2de0e8884c322ee1196750881d28c0347d8d0e0a73fc328cdcb18e8d5f",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/restore_actions.go",
+      "sourceBlob": "155258f9bf2f25ed0d2f3141610662c28967294b",
+      "sourceSHA256": "73ff9dfb46871aee2cbffc4b4916b481e14c76cbee6b5eca16419181686a6bd3",
+      "output": "storage/backup/restore_actions.go",
+      "outputSHA256": "c8b01cac8980b81c617988475bab3ddabc3a7f82cd44acb53eea22e6aca5f66e",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/restore_actions_test.go",
+      "sourceBlob": "6550f058b84b682b6ea015d1f26019bd0da40509",
+      "sourceSHA256": "3daef56de88127269abe69a415886407fbe4e14e65776c4c90d1363b8fd5c4e4",
+      "output": "storage/backup/restore_actions_test.go",
+      "outputSHA256": "3daef56de88127269abe69a415886407fbe4e14e65776c4c90d1363b8fd5c4e4",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
       "source": "backend/storage/backup/restore_recovery_durability_linux.go",
       "sourceBlob": "683f6e779a1074349fee53c24a39f4a5901f59e6",
       "sourceSHA256": "d66834c4f5ce133891d58c0461a33f7e2013acf7523dfd9b59dd712188b1afee",
@@ -1762,6 +1842,38 @@
       "sourceSHA256": "73470e98d1fdb3a25284b15298a24018ff9ba7e6dc8e5a3619aec2d8b959dff0",
       "output": "storage/backup/restore_recovery_durability_other.go",
       "outputSHA256": "73470e98d1fdb3a25284b15298a24018ff9ba7e6dc8e5a3619aec2d8b959dff0",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/restore_recovery_durability_test.go",
+      "sourceBlob": "4f8f5c2c60ef53047ec460a2d3c823a65005d25c",
+      "sourceSHA256": "7d40503312102968fde7a93ccaedfa6b501c9979f69f94e8d073f4f47ca28ee1",
+      "output": "storage/backup/restore_recovery_durability_test.go",
+      "outputSHA256": "7d40503312102968fde7a93ccaedfa6b501c9979f69f94e8d073f4f47ca28ee1",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/restore_recovery_files.go",
+      "sourceBlob": "aea01876d6479339e5314545277c3d1bde0298de",
+      "sourceSHA256": "d290bba5beed3485ae6867585209ade33360e6b344e60ebfa4f4b7c4975e6f1a",
+      "output": "storage/backup/restore_recovery_files.go",
+      "outputSHA256": "d290bba5beed3485ae6867585209ade33360e6b344e60ebfa4f4b7c4975e6f1a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/restore_test.go",
+      "sourceBlob": "6002669192eb879ff6ae27b086cb84fa962920f3",
+      "sourceSHA256": "6a7789a4ce40a8ea07c87aec3a58adaeb13079f70b4cca1a5529b2d10e1b927c",
+      "output": "storage/backup/restore_test.go",
+      "outputSHA256": "41534e0fd8013f7eeac839aed1a3d7583a5e0ebf434d777902975b14b49568d3",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/backup/sqlite_signature.go",
+      "sourceBlob": "f7ef86daec1f3f7b87cb09ac50b8eb8fbb2f0a56",
+      "sourceSHA256": "e0bea760d161827426b7199c116d2290aa98583d18a30969d838e263a22c2b7e",
+      "output": "storage/backup/sqlite_signature.go",
+      "outputSHA256": "e0bea760d161827426b7199c116d2290aa98583d18a30969d838e263a22c2b7e",
       "adaptation": "canonical Backend self-import prefix only"
     },
     {
