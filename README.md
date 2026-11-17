@@ -1,6 +1,8 @@
 # Solovey Backend
 
-Solovey Backend is the Panel control plane library used by Solovey UI. It owns authenticated HTTP adapters, Panel administrator security, browser sessions and CSRF, settings and encrypted values, audit storage, SQLite admission and migration coordination, and data lifecycle operations.
+Solovey Backend is the Panel control plane library used by Solovey UI. It owns authenticated HTTP adapters, Panel administrator security, browser sessions and CSRF, settings and encrypted values, audit storage, SQLite admission and migration coordination, data lifecycle operations, VPN user persistence and credential/device commands, accounting and IP admission, and subscription publishing.
+
+Subscription admission, format security gates, output caching, HTTP status/header behavior and listener lifetime belong to Backend. Product composition supplies provider-native rendering and the existing listener/AutoHTTPS owners through typed ports.
 
 The Product composes the library into its existing executable. Component lifecycle, network configuration, privileged operations, frontend assets and signed Product updates remain with their semantic owners. Data lifecycle receives narrow installed-owner, backup and resource-admission ports; it uses the existing Panel database authority.
 
