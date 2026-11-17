@@ -1,8 +1,8 @@
 {
   "status": "CANONICAL_BACKEND_SOURCE",
   "sourceRepository": "https://github.com/MalenkiySolovey/solovey-ui",
-  "sourceCommit": "ef27cc001176ff8e7169cbeb3a23d9f9831db49b",
-  "sourceTree": "2883e0f5e288f94ca70f866109d1b98fd56e73b2",
+  "sourceCommit": "6541e26a867cf876bf138799c8e4f735d60aeca9",
+  "sourceTree": "58a1b4efebee6646ec40f3d5c5dad126d7423307",
   "files": [
     {
       "source": "LICENSE",
@@ -485,6 +485,38 @@
       "adaptation": "canonical Backend self-import prefix only"
     },
     {
+      "source": "backend/http/bearer/admission_test.go",
+      "sourceBlob": "7a5528d480dce4dc3114448b8e2a8ac579c68d15",
+      "sourceSHA256": "808fdda2bc60e7f1d385c30967eb3c43df70c9648127d678432ef0e86d385f19",
+      "output": "http/bearer/admission_test.go",
+      "outputSHA256": "b1e4cff72d9bef4707f18950e233a86f615d0f1f671d1d2446c37c39619a97c3",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/bearer/handler.go",
+      "sourceBlob": "dcec98468aa204e105de7362e471da558c8e814b",
+      "sourceSHA256": "a6bba001db9a0309d7f988d39b69601416c722961f4671970051290889379b56",
+      "output": "http/bearer/handler.go",
+      "outputSHA256": "f3e08f7d692f6d073d559e134fbd7e197c27199f7364e63b4e41c62181070d00",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/bearer/reload_test.go",
+      "sourceBlob": "c8c9520db13585078017decbc1d4b47690ce67cf",
+      "sourceSHA256": "857989a18b3870ce07a4782b8a37354e28faf4b8bbae39f1a3f3ef6205cf6a68",
+      "output": "http/bearer/reload_test.go",
+      "outputSHA256": "857989a18b3870ce07a4782b8a37354e28faf4b8bbae39f1a3f3ef6205cf6a68",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/bearer/request_test.go",
+      "sourceBlob": "d92ede5faaa0d1227bb8c55d366add90f9d913ac",
+      "sourceSHA256": "a762450fd7d0b47a82034cb7502b2a5c9492965fecb04ba4e14e0ba2c8db6086",
+      "output": "http/bearer/request_test.go",
+      "outputSHA256": "a762450fd7d0b47a82034cb7502b2a5c9492965fecb04ba4e14e0ba2c8db6086",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
       "source": "backend/http/browser/cookie_policy.go",
       "sourceBlob": "ed57b2406be69bf54b483224b1f9d3ccea9dbaa8",
       "sourceSHA256": "8e765add32b9327ce7a28e845a13cdf82c2d674d6ba375ea6909c8bcf4a94965",
@@ -950,10 +982,10 @@
     },
     {
       "source": "backend/security/administrators.go",
-      "sourceBlob": "580bb10062262a4b5a5fdf7730d764387ed3bae4",
-      "sourceSHA256": "2f3ab72f80991f8cd754e908936038f9f775fe8eab4e7a038ab845aecc94d603",
+      "sourceBlob": "18a5eb4bddb18c912047cc3166d1a0559ccba18f",
+      "sourceSHA256": "79cb410abf3e2cbe594e372306a3200d02fa611cb888bc5207dd5e25b5c92fab",
       "output": "security/administrators.go",
-      "outputSHA256": "2f3ab72f80991f8cd754e908936038f9f775fe8eab4e7a038ab845aecc94d603",
+      "outputSHA256": "79cb410abf3e2cbe594e372306a3200d02fa611cb888bc5207dd5e25b5c92fab",
       "adaptation": "canonical Backend self-import prefix only"
     },
     {
@@ -1198,10 +1230,10 @@
     },
     {
       "source": "backend/security/tokens/service.go",
-      "sourceBlob": "03af3291273a7d774d97ad921c55f6ce5c00d0a1",
-      "sourceSHA256": "3446efc449a6e7f12f155e56977e6b91a5bd8455366adb087d4ad26de361c678",
+      "sourceBlob": "6da20bc03a981d85c24cd6b1abe79fd15ffec35c",
+      "sourceSHA256": "379c9696faaa16bd1f61e141bbf9fb3212e6dc3d5baaa8bc96cf397953d68b4d",
       "output": "security/tokens/service.go",
-      "outputSHA256": "c6e0d3f1007a5a78ea96280a4c6a9615db07e778b1eca2c61b6bb8aee16c2ad9",
+      "outputSHA256": "cc23ad5442ab2f2f0d4782695925ec63d177f091851103eea169cc9c04442a0f",
       "adaptation": "canonical Backend self-import prefix only"
     },
     {
@@ -1874,6 +1906,86 @@
       "sourceSHA256": "e0bea760d161827426b7199c116d2290aa98583d18a30969d838e263a22c2b7e",
       "output": "storage/backup/sqlite_signature.go",
       "outputSHA256": "e0bea760d161827426b7199c116d2290aa98583d18a30969d838e263a22c2b7e",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/bootstrap/administrator.go",
+      "sourceBlob": "7458f7e4a9ca8ee017427dd0671e1c655774e012",
+      "sourceSHA256": "b0a03f308bdf86f6d6c79f220068f282bdf0d13eeae5216870ee1fd1130d59a1",
+      "output": "storage/bootstrap/administrator.go",
+      "outputSHA256": "ced73144d90626f2d9281dd0ecfd280003b4dc3d77a058da1ccdd91761d8ed9a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/bootstrap/bootstrap_test.go",
+      "sourceBlob": "428a5e5f6bfc97f3ff91126ca52f4f446647a07f",
+      "sourceSHA256": "dd5b970e093a062161e6725ebe43d0b76a7e8aebd7bd3dbb509f91b40b241a99",
+      "output": "storage/bootstrap/bootstrap_test.go",
+      "outputSHA256": "de3834193d14f3e347d6e3a420664e1aeae89cc687759d0cabdf91adfaef1b64",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/bootstrap/initial_admin.go",
+      "sourceBlob": "8b7f49ae5a23b9d999253f80b1992fc75d488b76",
+      "sourceSHA256": "9755029bef17838a5e51a1df05bc6bd69ccededfe1462735f18f323333f08702",
+      "output": "storage/bootstrap/initial_admin.go",
+      "outputSHA256": "e199b5dfb4ed458f72d25d67a443b5fe0480d6805489c7fc0e094dcf50da3217",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/bootstrap/legacy_passwords.go",
+      "sourceBlob": "8f806cd965257365feee31af1ed2b253ba218887",
+      "sourceSHA256": "56959149890d446b2c4fbbed0e9ae5fb76730433495bd46f575ea5c51a7c294c",
+      "output": "storage/bootstrap/legacy_passwords.go",
+      "outputSHA256": "fc26781ad9bb4ecac8d4d75b1a111025ebbd897668ecf00c2dabdf298d2883dc",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/bootstrap/policy.go",
+      "sourceBlob": "f76a26b3f9fc22540f2cd232442cbcf0987a1bd9",
+      "sourceSHA256": "5c1a152b4e54072538b5f60af2a48e051907f72493b62a51ce9157f484c549e7",
+      "output": "storage/bootstrap/policy.go",
+      "outputSHA256": "5c1a152b4e54072538b5f60af2a48e051907f72493b62a51ce9157f484c549e7",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/bootstrap/retention.go",
+      "sourceBlob": "2f53af055a8e919947e2603a15fc03a6ce8f9fec",
+      "sourceSHA256": "c78f8fb8a0b5637f363d4ce523d9f1130554d322d45c1b067a8f54b3ef36e236",
+      "output": "storage/bootstrap/retention.go",
+      "outputSHA256": "b22933332d1f61ad988cdb2866be35568b2835003ef3996edf52c9a92eecbb4c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/bootstrap/retention_test.go",
+      "sourceBlob": "8649218451fd2d84924b0b798607bc559408ceb4",
+      "sourceSHA256": "d7f78131259602d97c4185d99a1dcbdb247503113841dbb88762a0444467923d",
+      "output": "storage/bootstrap/retention_test.go",
+      "outputSHA256": "13355c9af00a685d61348e8518bc5e0e445080afc2961aaf9e2572164128c40b",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/bootstrap/schema.go",
+      "sourceBlob": "41451d6d1ddf7eb64f68b3f03ebb3d210b277782",
+      "sourceSHA256": "c2a94561639ec748537c554ea8435ce2333ea99c437ae58a458318411b3e5f6e",
+      "output": "storage/bootstrap/schema.go",
+      "outputSHA256": "9635ba7eef92ffa5136238bb02e18da2fc04255b645dd87aeb3b56ebec083307",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/bootstrap/version_marker.go",
+      "sourceBlob": "6c479bc199fda99fea70a6bc81a9131148148804",
+      "sourceSHA256": "e0816ac58508ebac60896f5de530164e3d9190ef510e27eacd4a1943a3cf2b8d",
+      "output": "storage/bootstrap/version_marker.go",
+      "outputSHA256": "017cba0455209f0f4bf7370edbc072a162b721111fe0fc88179a68a9e0cdcf9a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/bootstrap/version_preflight.go",
+      "sourceBlob": "fc95b50c225d0be58959f13bafb7695d34f6f0a0",
+      "sourceSHA256": "47dd6f77a91f443284a6e818ff99091839241f73a2b20a291de1cd61f8387db7",
+      "output": "storage/bootstrap/version_preflight.go",
+      "outputSHA256": "47dd6f77a91f443284a6e818ff99091839241f73a2b20a291de1cd61f8387db7",
       "adaptation": "canonical Backend self-import prefix only"
     },
     {
