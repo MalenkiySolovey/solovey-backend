@@ -1,8 +1,8 @@
 {
   "status": "CANONICAL_BACKEND_SOURCE",
   "sourceRepository": "https://github.com/MalenkiySolovey/solovey-ui",
-  "sourceCommit": "ac33a01ca3172ae8fb5fc53cf9423a0475fa71d0",
-  "sourceTree": "4ec5e1e4211e45a47f3376e6414c6a3a9ca1d461",
+  "sourceCommit": "227f1d4f8f6ca0ace938a41fa8dbe3a9345801f5",
+  "sourceTree": "d8e463c47001570505bf6fd1c3f8e919a3d3e9ca",
   "files": [
     {
       "source": "LICENSE",
@@ -754,6 +754,38 @@
       "sourceSHA256": "4eb4fde25b9762b88cd42ffb92b3ff94dfda296c98f49c52938dd4078723a11d",
       "output": "http/domain/validator_test.go",
       "outputSHA256": "4eb4fde25b9762b88cd42ffb92b3ff94dfda296c98f49c52938dd4078723a11d",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/frontend/assets.go",
+      "sourceBlob": "c34f3796fd1ca834f3930a10d0bad69d9223bd2b",
+      "sourceSHA256": "eb0b3d3aee9add47ba1fa5fab7506bf3b8224d268e2eb57397c832c05764b449",
+      "output": "http/frontend/assets.go",
+      "outputSHA256": "eb0b3d3aee9add47ba1fa5fab7506bf3b8224d268e2eb57397c832c05764b449",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/frontend/bundle.go",
+      "sourceBlob": "12b2fe636540c61ac94d86693cb7d85444f73d81",
+      "sourceSHA256": "996c95f7c475041160582be3d244a1d5894cac6c18fd4a993cb771fcda42214c",
+      "output": "http/frontend/bundle.go",
+      "outputSHA256": "996c95f7c475041160582be3d244a1d5894cac6c18fd4a993cb771fcda42214c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/frontend/overlay.go",
+      "sourceBlob": "da651495573833007c4e544bfb250be3929988ba",
+      "sourceSHA256": "db53aa2c6b545424ceb400aaca9343db01cd0a4965d3e512f4d00c3b82df24d9",
+      "output": "http/frontend/overlay.go",
+      "outputSHA256": "db53aa2c6b545424ceb400aaca9343db01cd0a4965d3e512f4d00c3b82df24d9",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/http/frontend/runtime_test.go",
+      "sourceBlob": "d516fb7eae03b0ffe78a13e2b6a86eceab6d8e3d",
+      "sourceSHA256": "f55d46d879852e9c3b532d1ee264076298d20630c11d2d80ca9af77213cb5458",
+      "output": "http/frontend/runtime_test.go",
+      "outputSHA256": "f55d46d879852e9c3b532d1ee264076298d20630c11d2d80ca9af77213cb5458",
       "adaptation": "canonical Backend self-import prefix only"
     },
     {

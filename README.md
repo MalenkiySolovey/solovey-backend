@@ -4,6 +4,8 @@ Solovey Backend is the Panel control plane library used by Solovey UI. It owns a
 
 Subscription admission, format security gates, output caching, HTTP status/header behavior and listener lifetime belong to Backend. Product composition supplies provider-native rendering and the existing listener/AutoHTTPS owners through typed ports.
 
+The frontend HTTP runtime accepts the Product-selected fs.FS bundle, validates its entry and asset tree, and serves assets with the existing missing-chunk rejection and overlay precedence. Product composition supplies installed Component asset directories and retains their metadata authority.
+
 The Product composes the library into its existing executable. Component lifecycle, network configuration, privileged operations, frontend assets and signed Product updates remain with their semantic owners. Data lifecycle receives narrow installed-owner, backup and resource-admission ports; it uses the existing Panel database authority.
 
 The module path is `github.com/MalenkiySolovey/solovey-backend`. Its accepted shared interfaces are `solovey-host v0.10.0` and `solovey-contracts v1.0.0`. Consumers select an immutable accepted module version. Repository separation does not require another daemon or listener.
