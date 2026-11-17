@@ -1,8 +1,8 @@
 {
   "status": "CANONICAL_BACKEND_SOURCE",
   "sourceRepository": "https://github.com/MalenkiySolovey/solovey-ui",
-  "sourceCommit": "473f6a612432fa7f346e65a142c70b395719cc75",
-  "sourceTree": "90dc1e8d8f413ae4ade2be6e7e7bf1cc13a4e3d6",
+  "sourceCommit": "15524b26dfadca67e9aaaff512957dc5151e4623",
+  "sourceTree": "fb24e8f156b105d9d4def6dc854bc5cd0290ddef",
   "files": [
     {
       "source": "LICENSE",
@@ -2698,6 +2698,30 @@
       "sourceSHA256": "a22021262519d01a722c2c62cc4e5f137ddfba90a9b9d4aa6128581d7260d1a4",
       "output": "storage/sqliteident/identifier_test.go",
       "outputSHA256": "a22021262519d01a722c2c62cc4e5f137ddfba90a9b9d4aa6128581d7260d1a4",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/users/journal_test.go",
+      "sourceBlob": "514d54bff2d40cef0bf9ef167c5bb2975fd9b716",
+      "sourceSHA256": "0cabf147407fc7e848b100091d1803a98ba5a6d735ca94f2f53edd03e49cabe6",
+      "output": "users/journal_test.go",
+      "outputSHA256": "44a688b5509d7b02def6e56a516d8539cf5fa222206d7fc3d4b6fad01a7c36eb",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/users/lifecycle.go",
+      "sourceBlob": "f93c2b4dc524254cbe82418e7e038b5869f15691",
+      "sourceSHA256": "a82677cd34df56be96e9569dae956775849cf9421b35b5786bf94401e47d5ffa",
+      "output": "users/lifecycle.go",
+      "outputSHA256": "f32c63856ce28d7bf56730deadea8ac00b8bccc7f53f26620b3ceb4895a39537",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/users/lifecycle_test.go",
+      "sourceBlob": "1aeed4d09d60df95f27162ac9fd59c5948ea6c41",
+      "sourceSHA256": "cead1eb15da910e9d5cd043f497080ebf2c8f48c9d83421f746ef259771756d5",
+      "output": "users/lifecycle_test.go",
+      "outputSHA256": "e35995fd0bd3154fbce938c6fff6f4b27e469d0ed6d005a1a5cb7db910d1a2d8",
       "adaptation": "canonical Backend self-import prefix only"
     }
   ]
