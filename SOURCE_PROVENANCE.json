@@ -1,8 +1,8 @@
 {
   "status": "CANONICAL_BACKEND_SOURCE",
   "sourceRepository": "https://github.com/MalenkiySolovey/solovey-ui",
-  "sourceCommit": "65a261955d021b55abd9701eac36cc3371686855",
-  "sourceTree": "0f28557c5d6b34f69a79638192057324cd5e391e",
+  "sourceCommit": "ac33a01ca3172ae8fb5fc53cf9423a0475fa71d0",
+  "sourceTree": "4ec5e1e4211e45a47f3376e6414c6a3a9ca1d461",
   "files": [
     {
       "source": "LICENSE",
@@ -2754,6 +2754,150 @@
       "sourceSHA256": "a22021262519d01a722c2c62cc4e5f137ddfba90a9b9d4aa6128581d7260d1a4",
       "output": "storage/sqliteident/identifier_test.go",
       "outputSHA256": "a22021262519d01a722c2c62cc4e5f137ddfba90a9b9d4aa6128581d7260d1a4",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/subscriptions/formats.go",
+      "sourceBlob": "f6e1d3f7293a7d11bddf8d229adcd884dfba0fba",
+      "sourceSHA256": "c26ea154d9d0a666dd0371c18c7a64afbce9ff69ed88a3380e2e3e63f84ff4c4",
+      "output": "subscriptions/formats.go",
+      "outputSHA256": "1d19fd6b7e07b0db418d5c8b858d91800be486f44b049cdf6565a8fcd4ec9980",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/subscriptions/header_safety.go",
+      "sourceBlob": "505c2f70772ff888f9fca100022c3c504a39a9da",
+      "sourceSHA256": "15164f679957fd0e7b203d2b74045fb771cca8bd7d0e98801e4e3cbb49da5398",
+      "output": "subscriptions/header_safety.go",
+      "outputSHA256": "15164f679957fd0e7b203d2b74045fb771cca8bd7d0e98801e4e3cbb49da5398",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/subscriptions/http.go",
+      "sourceBlob": "75cf50244473e76170168ef97bedbebbce3698f8",
+      "sourceSHA256": "d848e949e65f57b06da872ff20e47c613ac6f46cf92d103bcc49e64dff0a8595",
+      "output": "subscriptions/http.go",
+      "outputSHA256": "e0694df3dcf299d4e558171847bf332889bc2a7beef65882d1f2d92dd523cbd1",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/subscriptions/output_cache.go",
+      "sourceBlob": "b0a26c8b5f22bcaa2b21b88aa4fadfc71a4d8971",
+      "sourceSHA256": "94617e5ecc87b0eed8b4eda81d37fdb8aa41248ce44402a85017fe9713784e4d",
+      "output": "subscriptions/output_cache.go",
+      "outputSHA256": "c92d3dd05a7dd494b3da2d9080b91f5bdb59acee335cef7787ed22aa23d7cc8f",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/subscriptions/output_cache_test.go",
+      "sourceBlob": "4dd117e9602f3a92bd580333c9321016c0d607f6",
+      "sourceSHA256": "d8efd4a6d5cb7fc4a70960304d665452a5bcd4673c0a1a5884a5007659b78c06",
+      "output": "subscriptions/output_cache_test.go",
+      "outputSHA256": "d8efd4a6d5cb7fc4a70960304d665452a5bcd4673c0a1a5884a5007659b78c06",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/subscriptions/publisher.go",
+      "sourceBlob": "43bc86c303012152123b02edcb51bcba3bfb4f05",
+      "sourceSHA256": "ab9281c6b60e39790cab4fe23ffd244279499b909e698c3794134d3c68f351e5",
+      "output": "subscriptions/publisher.go",
+      "outputSHA256": "a5f2f0cfcb3a626bf2e4ed5ef75e90c182de84404232d05a5bf69efabb3de766",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/subscriptions/publisher_test.go",
+      "sourceBlob": "9174e18a940ef966d36b19e0f736b06425389e73",
+      "sourceSHA256": "dcbd20bc6e1383c700960f88888ecae3eaedf413a3d5493ba9858a02e7baa487",
+      "output": "subscriptions/publisher_test.go",
+      "outputSHA256": "7b731dab74760400e854fb1d1229e13e8979a397d7406ebf6a5838c6c8183237",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/subscriptions/server/enumeration.go",
+      "sourceBlob": "7e042ffa0004f37e01c3db8b50f9bf6abba19336",
+      "sourceSHA256": "765acd851c69859a1fdf58cca399df9f7ce47684fb36cdd69d10791cdecb76c8",
+      "output": "subscriptions/server/enumeration.go",
+      "outputSHA256": "6bdea85b502ca0773e9752a340cb287af941336a2dfa5097f7a1f27c09c92e93",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/subscriptions/server/headers.go",
+      "sourceBlob": "68cd03ef257501f15ff1830af93fea3c78624414",
+      "sourceSHA256": "730568627ef4849457ef45e422d1ad27de7f240164c97ed0433b853d6ea10cd4",
+      "output": "subscriptions/server/headers.go",
+      "outputSHA256": "730568627ef4849457ef45e422d1ad27de7f240164c97ed0433b853d6ea10cd4",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/subscriptions/server/hooks.go",
+      "sourceBlob": "0318e5d7b1c76e41ad2be932b2efa88a95c6b5c7",
+      "sourceSHA256": "ad02af00a2fde0d0ecab10cff491a68f86cb3ef525e2593ec94de398263b17ad",
+      "output": "subscriptions/server/hooks.go",
+      "outputSHA256": "ad02af00a2fde0d0ecab10cff491a68f86cb3ef525e2593ec94de398263b17ad",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/subscriptions/server/hooks_test.go",
+      "sourceBlob": "e0ddcf38d6210b906d1c35b74bc550a3e6506b73",
+      "sourceSHA256": "227d778c8f389ad916b779d4642d80cb9043cb2219f707f9d709834068882cad",
+      "output": "subscriptions/server/hooks_test.go",
+      "outputSHA256": "227d778c8f389ad916b779d4642d80cb9043cb2219f707f9d709834068882cad",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/subscriptions/server/rate_limit.go",
+      "sourceBlob": "f4385a0f7146578c2ca32b82d179ccd1bb6607fe",
+      "sourceSHA256": "44679e7a9aa407745eccc1b3fe7b063cbd9e32cd06fff0df3ddd6cd00ec2d0e3",
+      "output": "subscriptions/server/rate_limit.go",
+      "outputSHA256": "03e306aeec671e915ed055107be0a27d072d71cb563104d3b9d3bebf99bc9021",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/subscriptions/server/rate_limit_test.go",
+      "sourceBlob": "2b1371f5bfe0639ea78c4c619a31c5237d395546",
+      "sourceSHA256": "39af1a3c70984d98b49d2808e9f0a9b7b593c9c10bf326238e2712cff6fe5320",
+      "output": "subscriptions/server/rate_limit_test.go",
+      "outputSHA256": "39af1a3c70984d98b49d2808e9f0a9b7b593c9c10bf326238e2712cff6fe5320",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/subscriptions/server/routes.go",
+      "sourceBlob": "b8d7b47590f9cd6b445f1e8298003b079fc49ea8",
+      "sourceSHA256": "959a36015fa616a435e5e0a4a9bce2c8e5cbc70039c32037311bda5745b6602c",
+      "output": "subscriptions/server/routes.go",
+      "outputSHA256": "959a36015fa616a435e5e0a4a9bce2c8e5cbc70039c32037311bda5745b6602c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/subscriptions/server/runtime.go",
+      "sourceBlob": "26ce3102ee44d4a7c4518a00dcdc48753f6b14a0",
+      "sourceSHA256": "358c058017eae4f084f71c311be21159cb3cff60784ab4ac74b3159cca8d933f",
+      "output": "subscriptions/server/runtime.go",
+      "outputSHA256": "2dd475d92d3aa3d03412d3b59db9da88248a1826a1890e35710c45d10948afbf",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/subscriptions/server/runtime_gzip_test.go",
+      "sourceBlob": "e93ebe826bebf8f4ac489495086412c19db4b6a4",
+      "sourceSHA256": "9623362d7ffa0664449eb680453f799ab6b99e2fbbe1ab6b7d42c59102f62287",
+      "output": "subscriptions/server/runtime_gzip_test.go",
+      "outputSHA256": "9623362d7ffa0664449eb680453f799ab6b99e2fbbe1ab6b7d42c59102f62287",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/subscriptions/server/runtime_ports_test.go",
+      "sourceBlob": "deaf5bbb831ac636b905224e9e869c7ae265f784",
+      "sourceSHA256": "6ac2104adc05f37e4b10a8296059c658564d7884acb0274a151f1ec2677241a1",
+      "output": "subscriptions/server/runtime_ports_test.go",
+      "outputSHA256": "6ac2104adc05f37e4b10a8296059c658564d7884acb0274a151f1ec2677241a1",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/subscriptions/server/settings_cache.go",
+      "sourceBlob": "5f2477f235b4c939346ff032d7081d9d6604da26",
+      "sourceSHA256": "e6be1e50380a632ff333a93a4a6ddf9190d68109f92eebe688877a1a0d63ef9d",
+      "output": "subscriptions/server/settings_cache.go",
+      "outputSHA256": "e6be1e50380a632ff333a93a4a6ddf9190d68109f92eebe688877a1a0d63ef9d",
       "adaptation": "canonical Backend self-import prefix only"
     },
     {
