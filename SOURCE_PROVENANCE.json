@@ -1,8 +1,8 @@
 {
   "status": "CANONICAL_BACKEND_SOURCE",
   "sourceRepository": "https://github.com/MalenkiySolovey/solovey-ui",
-  "sourceCommit": "10872d90eea7dfcace82941cce2204bc0ee9733a",
-  "sourceTree": "5edd1dc4ec7a85c91bb155706184ccbb3b598d4d",
+  "sourceCommit": "65a261955d021b55abd9701eac36cc3371686855",
+  "sourceTree": "0f28557c5d6b34f69a79638192057324cd5e391e",
   "files": [
     {
       "source": "LICENSE",
@@ -2765,6 +2765,102 @@
       "adaptation": "canonical Backend self-import prefix only"
     },
     {
+      "source": "backend/users/credential_manager.go",
+      "sourceBlob": "373eb54b7cf1883c2277f8940ae961549d418c31",
+      "sourceSHA256": "776ab87254f0a58def28875fc81f3d0f97c0b0d348bb040200203c8680ec8ec3",
+      "output": "users/credential_manager.go",
+      "outputSHA256": "420c5220f4693934d599dcc4e9e0df04d6facb3b30ad5adbf61618b7f8e4045a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/users/credentials/client.go",
+      "sourceBlob": "d907b68ed4096dbe9d8869d86bf275033c452ec2",
+      "sourceSHA256": "f9841f45da41c5f0b4658a38de1c2ba69e9365701a601bedd36bd00d0f9f3342",
+      "output": "users/credentials/client.go",
+      "outputSHA256": "5827939b239e80ddb3d001cdf19618841163818211b0a676f344e17da91895c8",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/users/credentials/client_test.go",
+      "sourceBlob": "86ff2728358a909b0c8cf28bec7cb3b9d0c3c67f",
+      "sourceSHA256": "f3a73f65189aa65fb5fb9c59b2351d2a379b7fd98073e9b083a0d77914160b1a",
+      "output": "users/credentials/client_test.go",
+      "outputSHA256": "9b6c427cf957fc2871a7d56def7ffa511e9c8b736f3f25b157042955ae6f9e6b",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/users/credentials/generation.go",
+      "sourceBlob": "4a0973f56821c7345938fc48c33901c0830c4dcf",
+      "sourceSHA256": "491a47f219c4e9f0c81da01aa37d3c841d4446213bc632d0d7df58ec9142be2f",
+      "output": "users/credentials/generation.go",
+      "outputSHA256": "9ea52f1a3f27fc79222562d4d4515b8e5d98b8c2af4b6661d0192541693c6131",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/users/credentials/generation_test.go",
+      "sourceBlob": "8d0002d696d755774b878811904d186424497143",
+      "sourceSHA256": "2e0aa790cc11d18a6feb7bb5a7fc28e6a3b260a291093cec9c52c20d026d6da3",
+      "output": "users/credentials/generation_test.go",
+      "outputSHA256": "2e0aa790cc11d18a6feb7bb5a7fc28e6a3b260a291093cec9c52c20d026d6da3",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/users/credentials/sudoku.go",
+      "sourceBlob": "35a160f1a3fcb676e511ec8b1e4c14f7c4118001",
+      "sourceSHA256": "98814dd1bfa85adb8d76d3643be745fa2b93ba47ba247f0fcabbae8a3b9968c7",
+      "output": "users/credentials/sudoku.go",
+      "outputSHA256": "27194298582c1a8a82bcfcdd2e2808315bfbe9cf746554290fbd51c3658ac633",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/users/credentials/sudoku_test.go",
+      "sourceBlob": "2f04703878ac2d37f3ec0044562475eb612286a3",
+      "sourceSHA256": "ae5e862e9e34bc69e50a0bafea3944689affab2c74ec415ff8b5c2741e3e3392",
+      "output": "users/credentials/sudoku_test.go",
+      "outputSHA256": "ae5e862e9e34bc69e50a0bafea3944689affab2c74ec415ff8b5c2741e3e3392",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/users/delivery.go",
+      "sourceBlob": "81573cd12abb5e51cb6dae5cdfef7391fec8a07c",
+      "sourceSHA256": "0fe9e38c258132329881d6461df1922e12e4dcd2300993639c71349a1072edfd",
+      "output": "users/delivery.go",
+      "outputSHA256": "aadf88b950751cc133e80fb00f77ce7c351036cabda59e6234dba22b69bd1dc4",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/users/devices/accounting.go",
+      "sourceBlob": "373a0188b6d5fe3b9031454a4e21d173ddd33d0f",
+      "sourceSHA256": "da83d22ea9b9d1bf760ec54b26492794508d5bb3cfade7f8001b6cd63ab717fc",
+      "output": "users/devices/accounting.go",
+      "outputSHA256": "d37f162b6e0e65f52a3a6d0b4d2baafd684ec56a5d8c001815e8a58062194839",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/users/devices/projection.go",
+      "sourceBlob": "664fb89e79f3037af6d077d332a4441c3b30dfac",
+      "sourceSHA256": "1ce6ad39641be59c708aa64cb986db47ad924f8aa519e4c8ad1bdf6108c898b7",
+      "output": "users/devices/projection.go",
+      "outputSHA256": "428c58807c76592ebec4c677ded9b9272c7ac13bf3bf3bf608f873f39ddcd9d7",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/users/devices/state.go",
+      "sourceBlob": "eab20b5eb946b53174f50fe840a77966a712bf23",
+      "sourceSHA256": "f79ec07e8389850ac7aa235285c53875ccc6be2c3c6dc3a60ddc8a38f55079a6",
+      "output": "users/devices/state.go",
+      "outputSHA256": "755fe37ad0d3beb1268902ec7fa2c63d443c4b8e04634f8eb280436ff98c2108",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/users/devices/state_test.go",
+      "sourceBlob": "7b7d53427e81f801a91cd8a844c836283c100cb7",
+      "sourceSHA256": "4af210863fa52b34cb1143c9c987b34cecdbb8225fe38767de9758ccc3ae7c46",
+      "output": "users/devices/state_test.go",
+      "outputSHA256": "00e2d3f802e282f1a03bf969515f10f1b163882d42a0ee8a655dc24a7a984659",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
       "source": "backend/users/journal_test.go",
       "sourceBlob": "514d54bff2d40cef0bf9ef167c5bb2975fd9b716",
       "sourceSHA256": "0cabf147407fc7e848b100091d1803a98ba5a6d735ca94f2f53edd03e49cabe6",
@@ -2789,6 +2885,14 @@
       "adaptation": "canonical Backend self-import prefix only"
     },
     {
+      "source": "backend/users/managed_credentials.go",
+      "sourceBlob": "189a454cdb371f093b420bd1ae60f633afed4110",
+      "sourceSHA256": "8bc8e7578c6c1e82e5719bf4eb4062c40d919d37de17260c2ea17a7694d7d4ca",
+      "output": "users/managed_credentials.go",
+      "outputSHA256": "acb46cb0f204758118d687790509191d994dad30a6ad22cdb71fc3963d350a5c",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
       "source": "backend/users/membership.go",
       "sourceBlob": "504cdb7f04a11f72a1418fe17aa20e8794795318",
       "sourceSHA256": "f3b14e86504879efefdc782f53993ffb59802be2e34aeb2ba4903c370de18114",
@@ -2810,6 +2914,22 @@
       "sourceSHA256": "e0e822c3c06943584f1440637374ec5592b6198d8580b18ebae7f6eb1d7a2990",
       "output": "users/persistence_test.go",
       "outputSHA256": "45f8382883555424e0f670184c80ac35fb38c4cf5cc5a29f099221350c18bf75",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/users/snell.go",
+      "sourceBlob": "745dfa4aaf00e87ce81a06069113a4505afaad4c",
+      "sourceSHA256": "89f514e848e01f8f321c39690865a93d917295f6b8e0a071402617c70d312ba2",
+      "output": "users/snell.go",
+      "outputSHA256": "e6bd38e7c49f5b51bccf14ea691e8a3a21851dd479cc9ebcf5e233bc240eced4",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/users/sudoku_delivery.go",
+      "sourceBlob": "bebf44481890ea966c9aa7750335d6590c6543fa",
+      "sourceSHA256": "9342a8ece79293ece7d0c8a4ca803b2cf9860a8c6af5f4e1539242c28ae964d0",
+      "output": "users/sudoku_delivery.go",
+      "outputSHA256": "74a7352429fa30386c502bdb8987efa9e780b4e6f2447dfc94bebd73a7616ccf",
       "adaptation": "canonical Backend self-import prefix only"
     }
   ]
