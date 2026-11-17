@@ -1,8 +1,8 @@
 {
   "status": "CANONICAL_BACKEND_SOURCE",
   "sourceRepository": "https://github.com/MalenkiySolovey/solovey-ui",
-  "sourceCommit": "15524b26dfadca67e9aaaff512957dc5151e4623",
-  "sourceTree": "fb24e8f156b105d9d4def6dc854bc5cd0290ddef",
+  "sourceCommit": "10872d90eea7dfcace82941cce2204bc0ee9733a",
+  "sourceTree": "5edd1dc4ec7a85c91bb155706184ccbb3b598d4d",
   "files": [
     {
       "source": "LICENSE",
@@ -1453,6 +1453,14 @@
       "adaptation": "canonical Backend self-import prefix only"
     },
     {
+      "source": "backend/security/uuid/uuid.go",
+      "sourceBlob": "fd23104b8b3481f8aed4294799e6a980faad3502",
+      "sourceSHA256": "fad8633cea0806c88b9971348961ffa5c1f9a3a252bf660285073da1774c5918",
+      "output": "security/uuid/uuid.go",
+      "outputSHA256": "fad8633cea0806c88b9971348961ffa5c1f9a3a252bf660285073da1774c5918",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
       "source": "backend/settings/catalog/catalog.go",
       "sourceBlob": "d3fe99116c4a933134abcd3ab26e83ad28ea68b9",
       "sourceSHA256": "276896b7c75b3fc6a46ec4a413f548c6c33aa1f1566a72d62ec9b8d26c847f29",
@@ -2205,6 +2213,38 @@
       "adaptation": "canonical Backend self-import prefix only"
     },
     {
+      "source": "backend/storage/entityidentity/identity.go",
+      "sourceBlob": "295837c8836ff6ad3ef805cc93870769cc1573ff",
+      "sourceSHA256": "566577e75dafc8bc21131c28cfbf3da70a07623fbc468d54df4b9d9e0a98ab40",
+      "output": "storage/entityidentity/identity.go",
+      "outputSHA256": "168dd1f42f9185410e494b407e37ffe01f2f12b0b7a31d8a5c9bb3cec0ec385e",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/entityidentity/identity_test.go",
+      "sourceBlob": "336d3b54dc53d5ad7d583712d06b3ec67f639f20",
+      "sourceSHA256": "1e78d546f6dfe552183ea7a3e2e9256e18af8f65cb6232befcecd5c8c7a6d2be",
+      "output": "storage/entityidentity/identity_test.go",
+      "outputSHA256": "d855d35d664cc4dd5c9c3716fb28a14b2a5035d6b1a77f57b920cc41f8f6c0ab",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/entityorder/order.go",
+      "sourceBlob": "b5375899cb305e7e86a3c50bfa7db88ffcb04cb2",
+      "sourceSHA256": "ce2dc4ab3d6e0bbbae8007150e9b27c595f2bf09275a88001e7037f80a406ad1",
+      "output": "storage/entityorder/order.go",
+      "outputSHA256": "ce2dc4ab3d6e0bbbae8007150e9b27c595f2bf09275a88001e7037f80a406ad1",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/entityorder/order_test.go",
+      "sourceBlob": "bb4ce362593c86b7ebe00f37874542accdb7315a",
+      "sourceSHA256": "b47dc46df63077634c3298e55e2f750d21f0c5ac6421df24fa4d14e1457a31c3",
+      "output": "storage/entityorder/order_test.go",
+      "outputSHA256": "b47dc46df63077634c3298e55e2f750d21f0c5ac6421df24fa4d14e1457a31c3",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
       "source": "backend/storage/hooks/reset.go",
       "sourceBlob": "10f96ee751978105e3e046c0b961d58418818770",
       "sourceSHA256": "f9e51558fa5ddcc81947c8deda6389430af131e04def7e98bb6f6b1f3dc3dd11",
@@ -2549,6 +2589,22 @@
       "adaptation": "canonical Backend self-import prefix only"
     },
     {
+      "source": "backend/storage/saveidentity/identity.go",
+      "sourceBlob": "9a2b845c8a0b40ab18fbcf648f3a695e7f47ef6f",
+      "sourceSHA256": "59978720ece9c446cc96245ffa99a3432e75f59ea8300140a01a59f1c95448f0",
+      "output": "storage/saveidentity/identity.go",
+      "outputSHA256": "59978720ece9c446cc96245ffa99a3432e75f59ea8300140a01a59f1c95448f0",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/storage/saveidentity/identity_test.go",
+      "sourceBlob": "899c5244aacfce42ba6ee2b960f5087d55982d5d",
+      "sourceSHA256": "a6e087b9102a515a85f6658c3f290e1a84b95918c4f95ae364dc4169d3940762",
+      "output": "storage/saveidentity/identity_test.go",
+      "outputSHA256": "a6e087b9102a515a85f6658c3f290e1a84b95918c4f95ae364dc4169d3940762",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
       "source": "backend/storage/schema/version.go",
       "sourceBlob": "fdd580fcd50b3e650eeb0f048904e4d68d2e3892",
       "sourceSHA256": "db78f6e68d031957660ce5c7de56be14b2e45b3f1bcf234ee9afdfc3074ada27",
@@ -2701,6 +2757,14 @@
       "adaptation": "canonical Backend self-import prefix only"
     },
     {
+      "source": "backend/users/actions_test.go",
+      "sourceBlob": "06243c2c112bd3fcb032624efed34f4311991324",
+      "sourceSHA256": "59c2d9d1ed335602b789c77300663cb0099acb8d7fe54f4c81e3c8e02b1ef829",
+      "output": "users/actions_test.go",
+      "outputSHA256": "59c2d9d1ed335602b789c77300663cb0099acb8d7fe54f4c81e3c8e02b1ef829",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
       "source": "backend/users/journal_test.go",
       "sourceBlob": "514d54bff2d40cef0bf9ef167c5bb2975fd9b716",
       "sourceSHA256": "0cabf147407fc7e848b100091d1803a98ba5a6d735ca94f2f53edd03e49cabe6",
@@ -2722,6 +2786,30 @@
       "sourceSHA256": "cead1eb15da910e9d5cd043f497080ebf2c8f48c9d83421f746ef259771756d5",
       "output": "users/lifecycle_test.go",
       "outputSHA256": "e35995fd0bd3154fbce938c6fff6f4b27e469d0ed6d005a1a5cb7db910d1a2d8",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/users/membership.go",
+      "sourceBlob": "504cdb7f04a11f72a1418fe17aa20e8794795318",
+      "sourceSHA256": "f3b14e86504879efefdc782f53993ffb59802be2e34aeb2ba4903c370de18114",
+      "output": "users/membership.go",
+      "outputSHA256": "363c4f65958229cea46d3902e59ac56a5cd7da39b2287174399a19639df0571a",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/users/persistence.go",
+      "sourceBlob": "91448620714741e01673f657a09ea9922cc057ce",
+      "sourceSHA256": "27f730fe2ae7af4ef4ca8a15636372880eb4a117d9cd15f73e3c896dd6831733",
+      "output": "users/persistence.go",
+      "outputSHA256": "c62caa22fb259fcb096e57e3477e190345bf436a2d5b534b17c508c15fcb13ff",
+      "adaptation": "canonical Backend self-import prefix only"
+    },
+    {
+      "source": "backend/users/persistence_test.go",
+      "sourceBlob": "0589af0037c6bf109421f4d1d02e69a7f1e9f9a4",
+      "sourceSHA256": "e0e822c3c06943584f1440637374ec5592b6198d8580b18ebae7f6eb1d7a2990",
+      "output": "users/persistence_test.go",
+      "outputSHA256": "45f8382883555424e0f670184c80ac35fb38c4cf5cc5a29f099221350c18bf75",
       "adaptation": "canonical Backend self-import prefix only"
     }
   ]
