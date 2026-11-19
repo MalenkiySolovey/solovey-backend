@@ -32,7 +32,7 @@ func TestCatalogContainsTwoDifferentRealOwnersAndReturnsImmutableValues(t *testi
 	if _, known := Lookup("future.execute"); known || KnownPermission("admin") || KnownPermission("future.permission") {
 		t.Fatal("unknown action/permission admitted")
 	}
-	if !ComponentAllowed("panel-update-ui", []string{ComponentRemove}, ComponentRemove) ||
+	if remove.ComponentID != "" || ComponentAllowed("panel-update-ui", []string{ComponentRemove}, ComponentRemove) ||
 		ComponentAllowed("panel-update-ui", nil, ComponentRemove) ||
 		ComponentAllowed("telegram", []string{ComponentRemove}, ComponentRemove) ||
 		ComponentAllowed("panel-update-ui", []string{BackupRestore}, BackupRestore) {

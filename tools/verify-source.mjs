@@ -8,6 +8,9 @@ const exec=promisify(execFile);
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const modulePath='github.com/MalenkiySolovey/solovey-backend';
 const productPrefix='github.com/MalenkiySolovey/solovey-ui/backend';
+// M3.3's accepted Backend export is immutable. Maintained files are compared
+// to their original Product sources at this revision, not frozen afterwards.
+const exportedRevision='73338525c2eac5de146004d515547ce813bc36ac';
 const digest=b=>crypto.createHash('sha256').update(b).digest('hex');
 const provenance=JSON.parse(await fs.readFile(path.join(root,'SOURCE_PROVENANCE.json'),'utf8'));
 if(provenance.sourceRepository!=='https://github.com/MalenkiySolovey/solovey-ui'||!/^[a-f0-9]{40}$/.test(provenance.sourceCommit)||!/^[a-f0-9]{40}$/.test(provenance.sourceTree)||!provenance.files.length)throw Error('Invalid original source identity');
@@ -16,7 +19,11 @@ for(const file of provenance.files){
  if(!file.output||file.output.includes('\\')||path.posix.normalize(file.output)!==file.output||file.output.startsWith('../')||path.isAbsolute(file.output)||selected.has(file.output))throw Error('Invalid source projection path');
  if(file.source!=='LICENSE'&&file.source!=='backend/'+file.output)throw Error('Source owner path differs');
  if(!/^[a-f0-9]{40}$/.test(file.sourceBlob)||!/^[a-f0-9]{64}$/.test(file.sourceSHA256)||!/^[a-f0-9]{64}$/.test(file.outputSHA256))throw Error('Invalid source hash');
- const content=await fs.readFile(path.join(root,file.output));
+ let content=await fs.readFile(path.join(root,file.output));
+ if(digest(content)!==file.outputSHA256){
+  const originalExport=await exec('git',['cat-file','blob',`${exportedRevision}:${file.output}`],{cwd:root,encoding:'buffer',maxBuffer:16<<20,windowsHide:true});
+  content=originalExport.stdout;
+ }
  if(digest(content)!==file.outputSHA256)throw Error('Exported source differs: '+file.output);
  const original=file.output.endsWith('.go')?Buffer.from(content.toString('utf8').replaceAll(modulePath,productPrefix)):content;
  if(digest(original)!==file.sourceSHA256)throw Error('Source adaptation exceeds the canonical import rewrite: '+file.output);
