@@ -3,9 +3,9 @@ package componentview
 
 import (
 	"context"
-	"github.com/MalenkiySolovey/solovey-host/componenthost/manifest"
-	"github.com/MalenkiySolovey/solovey-backend/actions"
 	"time"
+
+	"github.com/MalenkiySolovey/solovey-host/componenthost/manifest"
 )
 
 type Group string
@@ -49,7 +49,6 @@ type ComponentStatus struct {
 }
 
 type OperationContext struct {
-	Authorize      actions.Authorizer
 	RequestContext context.Context
 	Actor          string
 	Hostname       string

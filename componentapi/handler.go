@@ -1,13 +1,14 @@
 package componentapi
 
 import (
-	requestcontext "context"
-	"github.com/MalenkiySolovey/solovey-backend/actions"
 	"net/http"
 
-	"github.com/MalenkiySolovey/solovey-host/componenthost/manifest"
+	"github.com/MalenkiySolovey/solovey-backend/actions"
 	backendaudit "github.com/MalenkiySolovey/solovey-backend/audit"
 	"github.com/MalenkiySolovey/solovey-backend/componentview"
+	"github.com/MalenkiySolovey/solovey-backend/security/uuid"
+	"github.com/MalenkiySolovey/solovey-host/componenthost/manifest"
+	"github.com/MalenkiySolovey/solovey-host/operationref"
 	"github.com/gin-gonic/gin"
 )
 
@@ -129,15 +130,19 @@ func (h Handler) componentRemove(context *gin.Context) {
 		context.AbortWithStatusJSON(http.StatusServiceUnavailable, gin.H{"success": false, "msg": "component step-up boundary unavailable"})
 		return
 	}
-	var actionInvocation actions.Invocation
-	policy := h.deps.ActionPolicy(context)
+	operationID, err := uuid.RandomUUID()
+	if err != nil {
+		h.deps.JSONMsg(context, "", err)
+		return
+	}
+	invocation := actions.RemoveComponent(operationref.NewReference("component-lifecycle", "component:"+id, "component-remove:"+operationID),
+		actions.ComponentRemoveInput{ComponentID: id})
 	operation := h.componentOperationContext(context)
-	operation.Authorize = func(ctx requestcontext.Context, invocation actions.Invocation) (actions.Decision, error) {
-		actionInvocation = invocation
-		if policy == nil {
-			return actions.Decision{}, actions.ErrDenied
+	if _, err := actions.Require(operation.RequestContext, invocation, h.deps.ActionPolicy(context)); err != nil {
+		if !context.IsAborted() {
+			context.AbortWithStatusJSON(http.StatusForbidden, gin.H{"success": false, "msg": "semantic action denied"})
 		}
-		return policy(ctx, invocation)
+		return
 	}
 	status, err := h.deps.ComponentManager.Remove(operation, id)
 	if err != nil {
@@ -148,8 +153,8 @@ func (h Handler) componentRemove(context *gin.Context) {
 		return
 	}
 	h.deps.Audit(context, h.deps.LoginUser(context), "component_installed_changed", "component", backendaudit.SeverityWarn, map[string]any{
-		"actionId": actionInvocation.ID, "inputDigest": actionInvocation.InputDigest,
-		"correlation": actionInvocation.Reference.Correlation(),
+		"actionId": invocation.ID, "inputDigest": invocation.InputDigest,
+		"correlation": invocation.Reference.Correlation(),
 		"component":   id,
 		"installed":   false,
 	})
@@ -179,6 +184,10 @@ func (h Handler) requireComponentDependencies(context *gin.Context, mutation boo
 
 func (h Handler) validComponentID(context *gin.Context) (string, bool) {
 	id := context.Param("id")
+	if id == "panel-update-ui" {
+		context.AbortWithStatusJSON(http.StatusConflict, gin.H{"success": false, "msg": "Panel Update is built in and cannot be managed as a component"})
+		return "", false
+	}
 	if err := manifest.ValidateID(id); err != nil {
 		h.deps.JSONMsg(context, "", err)
 		return "", false

@@ -51,7 +51,7 @@ func Lookup(id string) (Descriptor, bool) {
 		return Descriptor{ID: id, Owner: "component-lifecycle", Permission: PermissionComponentUninstall,
 			HostScope: "LOCAL", ResourceScope: "component:<id>", RiskClass: "HIGH",
 			InputSchema:  "solovey.action/component.remove/v1",
-			StepUpPolicy: "existing_browser_one_use", AuditClass: "component_installed_changed", ComponentID: "panel-update-ui"}, true
+			StepUpPolicy: "existing_browser_one_use", AuditClass: "component_installed_changed"}, true
 	case ProviderMaintenance:
 		return Descriptor{ID: id, Owner: "update", Permission: PermissionProviderMaintenance,
 			HostScope: "LOCAL", ResourceScope: "panel", RiskClass: "CRITICAL",

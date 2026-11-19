@@ -3,40 +3,39 @@ package componentapi
 import (
 	"context"
 	"encoding/json"
-	operationcoordination "github.com/MalenkiySolovey/solovey-host/operationref"
-	"github.com/MalenkiySolovey/solovey-backend/actions"
 	"net/http"
 	"net/http/httptest"
 	"strings"
 	"testing"
 
-	"github.com/MalenkiySolovey/solovey-host/componenthost/manifest"
+	"github.com/MalenkiySolovey/solovey-backend/actions"
 	"github.com/MalenkiySolovey/solovey-backend/componentview"
+	"github.com/MalenkiySolovey/solovey-host/componenthost/manifest"
 	"github.com/gin-gonic/gin"
 )
 
 type componentManagerStepUpStub struct {
 	removeCalls int
+	otherCalls  int
 	operation   componentview.OperationContext
 }
 
 func (stub *componentManagerStepUpStub) Enable(componentview.OperationContext, string) (componentview.ComponentStatus, error) {
+	stub.otherCalls++
 	return componentview.ComponentStatus{}, nil
 }
 
 func (stub *componentManagerStepUpStub) Disable(componentview.OperationContext, string) (componentview.ComponentStatus, error) {
+	stub.otherCalls++
 	return componentview.ComponentStatus{}, nil
 }
 
 func (stub *componentManagerStepUpStub) Install(componentview.OperationContext, string) (componentview.ComponentStatus, error) {
+	stub.otherCalls++
 	return componentview.ComponentStatus{}, nil
 }
 
 func (stub *componentManagerStepUpStub) Remove(operation componentview.OperationContext, id string) (componentview.ComponentStatus, error) {
-	invocation := actions.RemoveComponent(operationcoordination.NewReference("component-lifecycle", "component:"+id, "component-remove:fixture"), actions.ComponentRemoveInput{ComponentID: id})
-	if _, err := actions.Require(operation.RequestContext, invocation, operation.Authorize); err != nil {
-		return componentview.ComponentStatus{}, err
-	}
 	stub.removeCalls++
 	stub.operation = operation
 	return componentview.ComponentStatus{ID: id, Installed: false}, nil
@@ -74,9 +73,10 @@ func TestComponentRemoveFailsClosedWithoutReauthenticationBoundary(t *testing.T)
 	}
 }
 
-func TestComponentRemoveRequiresExactActionTargetAtOwner(t *testing.T) {
-	for _, allowed := range []bool{false, true} {
-		t.Run(map[bool]string{false: "denied", true: "accepted"}[allowed], func(t *testing.T) {
+func TestComponentRemoveRequiresExactActionTargetBeforeMutation(t *testing.T) {
+	for _, variant := range []string{"denied", "mismatched", "accepted"} {
+		t.Run(variant, func(t *testing.T) {
+			allowed := variant != "denied"
 			manager := &componentManagerStepUpStub{}
 			router := gin.New()
 			requireStepUp := func(c *gin.Context, action, target string) bool {
@@ -105,6 +105,12 @@ func TestComponentRemoveRequiresExactActionTargetAtOwner(t *testing.T) {
 						if !requireStepUp(c, actual.ID, actual.Target) {
 							return actions.Decision{}, actions.ErrDenied
 						}
+						if actual.Reference.ResourceID != "component:telegram" || !actual.Reference.HostRef.IsLocal() {
+							t.Fatal("unbound removal target", actual)
+						}
+						if variant == "mismatched" {
+							actual.Target = "component:observability-extra"
+						}
 						return actions.Decision{Allowed: true, Actor: "admin", Permission: actions.PermissionComponentUninstall, Invocation: actual}, nil
 					}
 				},
@@ -112,13 +118,39 @@ func TestComponentRemoveRequiresExactActionTargetAtOwner(t *testing.T) {
 			request := httptest.NewRequest(http.MethodPost, "/api/update/components/telegram/remove", strings.NewReader(`{}`))
 			recorder := httptest.NewRecorder()
 			router.ServeHTTP(recorder, request)
-			if allowed && (manager.removeCalls != 1 || manager.operation.RequestContext != request.Context() || recorder.Code != http.StatusOK) {
+			if variant == "accepted" && (manager.removeCalls != 1 || manager.operation.RequestContext != request.Context() || recorder.Code != http.StatusOK) {
 				t.Fatal("accepted owner action lost its request context")
 			}
-			if !allowed && (manager.removeCalls != 0 || recorder.Code != http.StatusForbidden) {
+			if variant != "accepted" && (manager.removeCalls != 0 || recorder.Code != http.StatusForbidden) {
 				t.Fatal("rejected assurance reached mutation")
 			}
 		})
+	}
+}
+
+func TestRetiredPanelUpdateRejectsEveryLifecycleOperation(t *testing.T) {
+	manager := &componentManagerStepUpStub{}
+	router := gin.New()
+	RegisterRoutes(router.Group("/api"), Deps{
+		ComponentManager: manager,
+		RequireScope:     func(*gin.Context, string, ...string) bool { return true },
+		LoginUser:        func(*gin.Context) string { return "admin" },
+		RemoteIP:         func(*gin.Context) string { return "192.0.2.1" },
+		Audit: func(*gin.Context, string, string, string, string, map[string]any) {
+			t.Error("legacy target reached audit as a mutation")
+		},
+		JSONMsg: func(*gin.Context, string, error) { t.Error("legacy target reached owner") },
+		JSONObj: func(*gin.Context, any, error) { t.Error("legacy target reached owner") },
+	})
+	for _, suffix := range []string{"install", "enable", "disable", "remove"} {
+		response := httptest.NewRecorder()
+		router.ServeHTTP(response, httptest.NewRequest(http.MethodPost, "/api/update/components/panel-update-ui/"+suffix, nil))
+		if response.Code != http.StatusConflict || !strings.Contains(response.Body.String(), "Panel Update is built in") {
+			t.Fatalf("legacy %s: status=%d, body=%s", suffix, response.Code, response.Body)
+		}
+	}
+	if manager.removeCalls != 0 || manager.otherCalls != 0 {
+		t.Fatal("retired identity reached lifecycle owner")
 	}
 }
 
