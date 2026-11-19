@@ -15,6 +15,9 @@ const digest=b=>crypto.createHash('sha256').update(b).digest('hex');
 const provenance=JSON.parse(await fs.readFile(path.join(root,'SOURCE_PROVENANCE.json'),'utf8'));
 if(provenance.sourceRepository!=='https://github.com/MalenkiySolovey/solovey-ui'||!/^[a-f0-9]{40}$/.test(provenance.sourceCommit)||!/^[a-f0-9]{40}$/.test(provenance.sourceTree)||!provenance.files.length)throw Error('Invalid original source identity');
 const selected=new Set();
+// New Backend-owned source is reviewed and pinned by the Backend Git tree,
+// not retroactively attributed to the historical Product export.
+const native=new Set(['users/entitlement/entitlement.go','users/entitlement/entitlement_test.go']);
 for(const file of provenance.files){
  if(!file.output||file.output.includes('\\')||path.posix.normalize(file.output)!==file.output||file.output.startsWith('../')||path.isAbsolute(file.output)||selected.has(file.output))throw Error('Invalid source projection path');
  if(file.source!=='LICENSE'&&file.source!=='backend/'+file.output)throw Error('Source owner path differs');
@@ -33,11 +36,12 @@ async function walk(directory){let files=[];for(const item of await fs.readdir(d
 for(const full of await walk(root)){
  const relative=path.relative(root,full).split(path.sep).join('/');
  if(!relative.endsWith('.go'))continue;
- if(!selected.has(relative))throw Error('Go source has no provenance: '+relative);
+ if(!selected.has(relative)&&!native.delete(relative))throw Error('Go source has no provenance: '+relative);
  const content=await fs.readFile(full,'utf8');
  if(/github\.com\/MalenkiySolovey\/solovey-(?:ui|node)(?:\/|["\s])/.test(content))throw Error('Forbidden private owner import: '+relative);
  if(/-----BEGIN (?:RSA |EC |OPENSSH |ENCRYPTED )?PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9_]{30,}|AKIA[0-9A-Z]{16}/.test(content))throw Error('Possible private credential in exported source: '+relative);
 }
+if(native.size)throw Error('Missing reviewed Backend source: '+[...native].join(', '));
 function parseStream(text){let values=[],start=-1,depth=0,quoted=false,escaped=false;for(let i=0;i<text.length;i++){const c=text[i];if(start<0){if(/\s/.test(c))continue;if(c!=='{')throw Error('Unexpected JSON stream');start=i;}if(quoted){if(escaped)escaped=false;else if(c==='\\')escaped=true;else if(c==='"')quoted=false;}else if(c==='"')quoted=true;else if(c==='{')depth++;else if(c==='}'){depth--;if(!depth){values.push(JSON.parse(text.slice(start,i+1)));start=-1;}}}if(start!==-1)throw Error('Truncated JSON stream');return values;}
 const options={cwd:root,env:{...process.env,GOWORK:'off',GOFLAGS:'-mod=readonly'},windowsHide:true,maxBuffer:64<<20};
 const modules=parseStream((await exec('go',['list','-m','-json','all'],options)).stdout);
