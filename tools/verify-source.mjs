@@ -17,7 +17,7 @@ if(provenance.sourceRepository!=='https://github.com/MalenkiySolovey/solovey-ui'
 const selected=new Set();
 // New Backend-owned source is reviewed and pinned by the Backend Git tree,
 // not retroactively attributed to the historical Product export.
-const native=new Set(['users/entitlement/entitlement.go','users/entitlement/entitlement_test.go']);
+const native=new Set(['storage/sqlite/transaction.go','storage/sqlite/transaction_test.go','users/entitlement/entitlement.go','users/entitlement/entitlement_test.go']);
 for(const file of provenance.files){
  if(!file.output||file.output.includes('\\')||path.posix.normalize(file.output)!==file.output||file.output.startsWith('../')||path.isAbsolute(file.output)||selected.has(file.output))throw Error('Invalid source projection path');
  if(file.source!=='LICENSE'&&file.source!=='backend/'+file.output)throw Error('Source owner path differs');
