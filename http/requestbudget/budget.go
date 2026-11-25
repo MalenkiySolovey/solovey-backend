@@ -31,6 +31,11 @@ const (
 	sessionAdmissionLanes = 64
 )
 
+const (
+	diagnosticStreamClass  = "diagnostic_stream"
+	diagnosticControlClass = "diagnostic_control"
+)
+
 type BodyClass string
 
 const (
@@ -109,6 +114,17 @@ func (r *Registry) DeclareGinRoutes(routes gin.RoutesInfo) {
 			continue
 		}
 		policy := classify(route.Method, route.Path)
+		if route.Method == http.MethodPost {
+			switch strings.TrimPrefix(route.Path, r.basePath) {
+			case "/api/components/blockcheck/run/stream":
+				policy.ConcurrencyClass = diagnosticStreamClass
+				policy.ResponseClass = "bounded_ndjson_stream"
+			case "/api/components/blockcheck/run/cancel":
+				policy.ConcurrencyClass = diagnosticControlClass
+				policy.BodyClass, policy.MaxBodyBytes = BodyAuthTiny, AuthTinyBytes
+				policy.PressureClass = "essential"
+			}
+		}
 		r.policies[policyKey(route.Method, route.Path)] = policy
 	}
 }
@@ -152,6 +168,8 @@ func newAdmission() *admission {
 		"backup":               make(chan struct{}, 1),
 		"component":            make(chan struct{}, 2),
 		"diagnostics":          make(chan struct{}, 2),
+		diagnosticStreamClass:  make(chan struct{}, 1),
+		diagnosticControlClass: make(chan struct{}, 1),
 		"ssh_candidate":        make(chan struct{}, 1),
 		"deployment_migration": make(chan struct{}, 1),
 		"update":               make(chan struct{}, 1),
@@ -629,7 +647,10 @@ func (a *admission) acquire(r *http.Request, policy Policy) (func(), bool) {
 	// An expensive/global lane supplements the per-session mutation lane; it
 	// never replaces it. Bearer tokens use a transient hash of Authorization so
 	// distinct API credentials do not collapse onto one peer-address lane.
-	if isMutationMethod(r.Method) && policy.Authentication != "public_preauth" {
+	// The diagnostic stream and its exact cancellation route own separate
+	// bounded lanes. Otherwise a session cannot cancel the job it just started.
+	if isMutationMethod(r.Method) && policy.Authentication != "public_preauth" &&
+		policy.ConcurrencyClass != diagnosticStreamClass && policy.ConcurrencyClass != diagnosticControlClass {
 		key := ""
 		if cookie, err := r.Cookie("s-ui"); err == nil {
 			key = "session:" + cookie.Value
