@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"net/http"
 	"net/http/httptest"
+	"sync/atomic"
 	"testing"
 	"time"
 
@@ -275,6 +276,72 @@ func TestMiddlewareKeepsSessionLaneForGlobalComponentMutation(t *testing.T) {
 	close(release)
 	if recorder := <-firstDone; recorder.Code != http.StatusNoContent {
 		t.Fatalf("first component mutation status=%d", recorder.Code)
+	}
+}
+
+func TestBlockCheckCancellationHasBoundedAdmissionWhileSessionIsBusy(t *testing.T) {
+	gin.SetMode(gin.TestMode)
+	const base = "/app+v1"
+	const run = base + "/api/components/blockcheck/run/"
+	const stream = run + "stream"
+	const cancel = run + "cancel"
+	const other = base + "/api/mutate"
+	registry := NewRegistry(base + "/")
+	var pressure atomic.Bool
+	registry.SetPressureGate(func(policy Policy) PressureDecision {
+		return PressureDecision{Allowed: !pressure.Load() || policy.PressureClass == "essential"}
+	})
+	router := gin.New()
+	router.Use(Middleware(registry))
+	done := make(chan struct{})
+	defer close(done)
+	entered := make(chan string, 2)
+	for _, path := range []string{stream, other} {
+		router.POST(path, func(c *gin.Context) {
+			entered <- path
+			<-done
+			c.Status(http.StatusNoContent)
+		})
+	}
+	noContent := func(c *gin.Context) { c.Status(http.StatusNoContent) }
+	router.POST(cancel, noContent)
+	router.POST(run+"cancel-extra", noContent)
+	router.POST(base+"/apiv2/components/blockcheck/run/cancel", noContent)
+	registry.DeclareGinRoutes(router.Routes())
+	submit := func(path, session string, body []byte) int {
+		req := httptest.NewRequest(http.MethodPost, path, bytes.NewReader(body))
+		req.Header.Set("Content-Type", "application/json")
+		req.AddCookie(&http.Cookie{Name: "s-ui", Value: session})
+		w := httptest.NewRecorder()
+		router.ServeHTTP(w, req)
+		return w.Code
+	}
+	body := []byte(`{}`)
+	for _, path := range []string{stream, other} {
+		go submit(path, "same-session", body)
+		select {
+		case got := <-entered:
+			if got != path {
+				t.Fatalf("entered %s, want %s", got, path)
+			}
+		case <-time.After(time.Second):
+			t.Fatalf("request to %s did not enter the handler", path)
+		}
+	}
+	for _, tc := range []struct{ path, session string }{
+		{stream, "another-session"}, {run + "cancel-extra", "same-session"},
+		{base + "/apiv2/components/blockcheck/run/cancel", "same-session"},
+	} {
+		if status := submit(tc.path, tc.session, body); status != http.StatusTooManyRequests {
+			t.Fatalf("unrelated or duplicate request admitted through %s: %d", tc.path, status)
+		}
+	}
+	pressure.Store(true)
+	if status := submit(cancel, "same-session", make([]byte, AuthTinyBytes+1)); status != http.StatusRequestEntityTooLarge {
+		t.Fatalf("cancel request size was not bounded: %d", status)
+	}
+	if status := submit(cancel, "same-session", body); status != http.StatusNoContent {
+		t.Fatalf("the exact cancel route was unavailable to the busy session: %d", status)
 	}
 }
 
